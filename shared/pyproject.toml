@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "perfos"
+version = "0.2.0"
+description = "The math behind Redavio's paid search skills: volume gate, Shapley diagnosis, budget, targets, forecast, tests. Standard library only."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+google = ["google-ads"]
+microsoft = ["bingads"]
+test = ["pytest"]
+
+[project.scripts]
+perfos = "perfos.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["perfos*"]

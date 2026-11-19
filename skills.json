@@ -1,0 +1,509 @@
+{
+  "repo": "https://github.com/redavio/skills",
+  "standard": "https://agentskills.io",
+  "license": "MIT",
+  "roles": {
+    "paid-search-lead": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max."
+  },
+  "stages": [
+    "role",
+    "status",
+    "set-up",
+    "run",
+    "review",
+    "cadence"
+  ],
+  "skills": [
+    {
+      "name": "paid-search-lead",
+      "role": "paid-search-lead",
+      "stage": "role",
+      "description": "The role: what each skill does and which one to use, with the principles they share.",
+      "needs": [
+        "A paid search question or goal"
+      ],
+      "path": "skills/paid-search-lead",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill paid-search-lead",
+      "zip": "dist/paid-search-lead.zip"
+    },
+    {
+      "name": "status",
+      "role": "paid-search-lead",
+      "stage": "status",
+      "description": "Every step as done / needs you / waiting on data / not set up, and the next skill to run.",
+      "needs": [
+        "Account access or a description of what exists",
+        "whether intake, plan and tracking were done"
+      ],
+      "path": "skills/status",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill status",
+      "zip": "dist/status.zip"
+    },
+    {
+      "name": "ad-copy",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "RSAs and assets written from the customer's own words, 15 headlines and 4 descriptions, limits checked.",
+      "needs": [
+        "Ad group themes and landing pages",
+        "voice of customer quotes",
+        "differentiators and proof",
+        "approved copy and words to avoid"
+      ],
+      "path": "skills/ad-copy",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill ad-copy",
+      "zip": "dist/ad-copy.zip"
+    },
+    {
+      "name": "build",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Plan -> check -> Google dry run -> paused build -> read-back -> parity, with a yes before any write.",
+      "needs": [
+        "The plan (campaigns, ad groups, keywords, negatives, ads, assets, budgets, bidding)",
+        "the account",
+        "the person's explicit yes before the live build"
+      ],
+      "path": "skills/build",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill build",
+      "zip": "dist/build.zip"
+    },
+    {
+      "name": "campaign-structure",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Brand / Non-brand / Competitor, one ad group per theme, portfolios per type, names that split cleanly in SQL.",
+      "needs": [
+        "Offerings, brand terms, competitors",
+        "locations and languages",
+        "anything with its own budget, target or goal"
+      ],
+      "path": "skills/campaign-structure",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill campaign-structure",
+      "zip": "dist/campaign-structure.zip"
+    },
+    {
+      "name": "forecast-and-budget",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Funnel forecast, starting budget split and spend scenarios; a directional guide, never a verdict.",
+      "needs": [
+        "Monthly budget (or a pipeline goal and pipeline per dollar)",
+        "keywords with volume and CPC (or placeholders)",
+        "conversion points with values",
+        "goals"
+      ],
+      "path": "skills/forecast-and-budget",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill forecast-and-budget",
+      "zip": "dist/forecast-and-budget.zip"
+    },
+    {
+      "name": "intake",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "The questions to answer and sign off before any build or audit recommendation.",
+      "needs": [
+        "Someone who knows the business (or its website, positioning doc and analytics)"
+      ],
+      "path": "skills/intake",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill intake",
+      "zip": "dist/intake.zip"
+    },
+    {
+      "name": "keyword-research",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Keywords chosen on sense from the offerings, brand and competitors; volume and CPC are context, never the decider.",
+      "needs": [
+        "Offerings with the words customers use",
+        "brand terms",
+        "competitors",
+        "target locations and language"
+      ],
+      "path": "skills/keyword-research",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill keyword-research",
+      "zip": "dist/keyword-research.zip"
+    },
+    {
+      "name": "launch-check",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Go/no-go checks, client approval, enable on a yes, read back, set read dates, watch week one.",
+      "needs": [
+        "The built (paused) campaigns",
+        "proof a test conversion landed on both platforms",
+        "client approval",
+        "the goals and budget"
+      ],
+      "path": "skills/launch-check",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill launch-check",
+      "zip": "dist/launch-check.zip"
+    },
+    {
+      "name": "negatives-and-fencing",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Shared negative lists, campaign and ad-group fencing, login/support negatives, no broad negatives.",
+      "needs": [
+        "Brand terms",
+        "competitors (and which names are common words)",
+        "campaigns with their ad groups' keywords",
+        "product terms that must never be negated"
+      ],
+      "path": "skills/negatives-and-fencing",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill negatives-and-fencing",
+      "zip": "dist/negatives-and-fencing.zip"
+    },
+    {
+      "name": "pmax-and-ai-max",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "PMax and AI Max set up fenced and measured on the real goal; AI Max proven by experiment, never switched on blind.",
+      "needs": [
+        "Search themes and their top keywords",
+        "the primary conversion",
+        "brand terms",
+        "ICP (industries, sizes, roles)",
+        "customer lists or site visitor audiences",
+        "for reviews, 4+ weeks of data"
+      ],
+      "path": "skills/pmax-and-ai-max",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill pmax-and-ai-max",
+      "zip": "dist/pmax-and-ai-max.zip"
+    },
+    {
+      "name": "target-math",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "Target CPA or ROAS backed out from LTV, CAC ratio and stage rates; stage values; when and how to add a target.",
+      "needs": [
+        "LTV or ACV",
+        "target LTV:CAC",
+        "stage rates from the bid-on conversion to opportunity and won",
+        "current CPA or ROAS and last-30-day conversions for timing"
+      ],
+      "path": "skills/target-math",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill target-math",
+      "zip": "dist/target-math.zip"
+    },
+    {
+      "name": "tracking-plan",
+      "role": "paid-search-lead",
+      "stage": "set-up",
+      "description": "One primary conversion, every stage back by click ID with a value, a fallback, and a test lead read back on both platforms.",
+      "needs": [
+        "The conversion points (stage, value, where tracked)",
+        "the CRM",
+        "the measurement tier",
+        "account access or a conversions list"
+      ],
+      "path": "skills/tracking-plan",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill tracking-plan",
+      "zip": "dist/tracking-plan.zip"
+    },
+    {
+      "name": "budget-rebalance",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Budget moves per campaign on performance vs target and recoverable impression share, within the step limit.",
+      "needs": [
+        "Daily cost, conversions (and value or funnel stages) per campaign",
+        "current daily budgets",
+        "impression share and share lost to budget",
+        "target per campaign",
+        "last budget change dates",
+        "the step limit"
+      ],
+      "path": "skills/budget-rebalance",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill budget-rebalance",
+      "zip": "dist/budget-rebalance.zip"
+    },
+    {
+      "name": "change-safety",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Every change classified, approved, dry run, applied on a yes, read back and logged.",
+      "needs": [
+        "The proposed change with its reason and evidence",
+        "the client's step limit",
+        "who can approve for the client"
+      ],
+      "path": "skills/change-safety",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill change-safety",
+      "zip": "dist/change-safety.zip"
+    },
+    {
+      "name": "expansion-finder",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Micro adds from your own data; macro proposals when a theme outgrows its home, launched as tests.",
+      "needs": [
+        "Ad group and search term performance (13 weeks is best)",
+        "impression share lost to budget and rank",
+        "goals",
+        "new products or markets planned"
+      ],
+      "path": "skills/expansion-finder",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill expansion-finder",
+      "zip": "dist/expansion-finder.zip"
+    },
+    {
+      "name": "pacing-and-alerts",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Pacing vs budget and paced goals, plus alerts that say what broke, where, how bad and the fix.",
+      "needs": [
+        "Month-to-date spend and results by campaign type",
+        "monthly budget",
+        "goals",
+        "daily clicks and conversions for the last ~3 weeks"
+      ],
+      "path": "skills/pacing-and-alerts",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill pacing-and-alerts",
+      "zip": "dist/pacing-and-alerts.zip"
+    },
+    {
+      "name": "parity-check",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Google vs Microsoft drift flagged entity by entity; budgets and targets deliberately not compared.",
+      "needs": [
+        "Structure from both accounts (or exports)",
+        "which differences are intentional"
+      ],
+      "path": "skills/parity-check",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill parity-check",
+      "zip": "dist/parity-check.zip"
+    },
+    {
+      "name": "prune-promote",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Every lever judged the same way against goal; cuts and promotes become a change list for approval.",
+      "needs": [
+        "Daily or weekly performance by lever (clicks, conversions, cost, value)",
+        "goal conversion rate and target CPA or ROAS per segment"
+      ],
+      "path": "skills/prune-promote",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill prune-promote",
+      "zip": "dist/prune-promote.zip"
+    },
+    {
+      "name": "search-term-review",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Cut or promote search terms against goal, with the volume gate deciding when there's enough data.",
+      "needs": [
+        "Search terms with clicks, conversions and cost (whole weeks, 7+ days)",
+        "goal conversion rate per segment",
+        "target CPA or target ROAS per segment (or a conversions or value goal)"
+      ],
+      "path": "skills/search-term-review",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill search-term-review",
+      "zip": "dist/search-term-review.zip"
+    },
+    {
+      "name": "test-design",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Ranked idea bank, hypothesis card, clicks per arm and a read date, 50/50 with one variable.",
+      "needs": [
+        "Test ideas (or use the standard library)",
+        "the goal metric",
+        "baseline conversion rate and weekly clicks for the campaign tested"
+      ],
+      "path": "skills/test-design",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill test-design",
+      "zip": "dist/test-design.zip"
+    },
+    {
+      "name": "test-read",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "Win at 95% confidence on the goal metric or it's learning; roll out, keep control, or log.",
+      "needs": [
+        "Control and test arms' clicks and conversions (goal metric) over the full test",
+        "the hypothesis and read date"
+      ],
+      "path": "skills/test-read",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill test-read",
+      "zip": "dist/test-read.zip"
+    },
+    {
+      "name": "volume-gate",
+      "role": "paid-search-lead",
+      "stage": "run",
+      "description": "How many clicks before calling a keyword, term or any other lever: cut, promote, flag or watch.",
+      "needs": [
+        "Clicks, conversions and cost for the item (whole weeks)",
+        "the goal conversion rate",
+        "the target CPA or target ROAS if there is one"
+      ],
+      "path": "skills/volume-gate",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill volume-gate",
+      "zip": "dist/volume-gate.zip"
+    },
+    {
+      "name": "audit",
+      "role": "paid-search-lead",
+      "stage": "review",
+      "description": "Performance vs goals, one setup health score, ranked findings each tied to its fix.",
+      "needs": [
+        "Read access to the account (or exports)",
+        "goals and targets",
+        "90 days of performance",
+        "the conversion setup"
+      ],
+      "path": "skills/audit",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill audit",
+      "zip": "dist/audit.zip"
+    },
+    {
+      "name": "diagnose",
+      "role": "paid-search-lead",
+      "stage": "review",
+      "description": "Why a KPI moved: tracking first, mix vs rate, then a fair lever split and the one lever to pull.",
+      "needs": [
+        "Totals for the period and the comparison (goal or prior period): impressions, clicks, cost, conversions, value, and funnel stage counts if diagnosing past the platform",
+        "the same by segment for the mix check"
+      ],
+      "path": "skills/diagnose",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill diagnose",
+      "zip": "dist/diagnose.zip"
+    },
+    {
+      "name": "exec-report",
+      "role": "paid-search-lead",
+      "stage": "review",
+      "description": "Pipeline first, brand and non-brand apart, every number vs goal with the reason behind it.",
+      "needs": [
+        "Daily performance by campaign for the period and comparison",
+        "goals per row",
+        "CRM stages and pipeline if available",
+        "what was done and what's next"
+      ],
+      "path": "skills/exec-report",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill exec-report",
+      "zip": "dist/exec-report.zip"
+    },
+    {
+      "name": "handoff",
+      "role": "paid-search-lead",
+      "stage": "review",
+      "description": "Everything the next owner needs: state, settings, tracking, history, open work and access.",
+      "needs": [
+        "Read access to the accounts (or exports)",
+        "the change log",
+        "the test log",
+        "open initiatives"
+      ],
+      "path": "skills/handoff",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill handoff",
+      "zip": "dist/handoff.zip"
+    },
+    {
+      "name": "qbr",
+      "role": "paid-search-lead",
+      "stage": "review",
+      "description": "Quarter vs goals and last quarter, tests and learning, scenarios, and the next-quarter plan for sign-off.",
+      "needs": [
+        "The quarter's and last quarter's performance (and pipeline)",
+        "goals",
+        "the test log",
+        "last quarter's audit",
+        "next quarter's goal or budget"
+      ],
+      "path": "skills/qbr",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill qbr",
+      "zip": "dist/qbr.zip"
+    },
+    {
+      "name": "daily",
+      "role": "paid-search-lead",
+      "stage": "cadence",
+      "description": "Every morning: pacing, alerts, hygiene and flagrant spend. Look, don't act.",
+      "needs": [
+        "Account access or yesterday's data",
+        "monthly budget and goals"
+      ],
+      "path": "skills/daily",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill daily",
+      "zip": "dist/daily.zip"
+    },
+    {
+      "name": "monthly",
+      "role": "paid-search-lead",
+      "stage": "cadence",
+      "description": "Once a month: diagnose every gap, the monthly report, rebalance budget.",
+      "needs": [
+        "The month's and prior month's data",
+        "goals",
+        "budgets, impression share and the step limit"
+      ],
+      "path": "skills/monthly",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill monthly",
+      "zip": "dist/monthly.zip"
+    },
+    {
+      "name": "quarterly",
+      "role": "paid-search-lead",
+      "stage": "cadence",
+      "description": "Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates.",
+      "needs": [
+        "Account access",
+        "this and last quarter's data and pipeline",
+        "the test log",
+        "next quarter's goals or budget"
+      ],
+      "path": "skills/quarterly",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill quarterly",
+      "zip": "dist/quarterly.zip"
+    },
+    {
+      "name": "weekly",
+      "role": "paid-search-lead",
+      "stage": "cadence",
+      "description": "Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report.",
+      "needs": [
+        "Account access or the last weeks of data",
+        "goals per segment",
+        "the test log"
+      ],
+      "path": "skills/weekly",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill weekly",
+      "zip": "dist/weekly.zip"
+    }
+  ]
+}

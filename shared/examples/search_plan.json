@@ -1,0 +1,193 @@
+{
+  "home_url": "https://www.example.com",
+  "locations": [
+    2840
+  ],
+  "protected_terms": [
+    "crm pricing",
+    "agency crm"
+  ],
+  "shared_negative_lists": [
+    {
+      "name": "negatives|brand_terms",
+      "negatives": [
+        [
+          "example co",
+          "PHRASE"
+        ],
+        [
+          "exampleco",
+          "PHRASE"
+        ]
+      ]
+    },
+    {
+      "name": "negatives|junk",
+      "negatives": [
+        [
+          "jobs",
+          "PHRASE"
+        ],
+        [
+          "careers",
+          "PHRASE"
+        ],
+        [
+          "salary",
+          "PHRASE"
+        ]
+      ]
+    }
+  ],
+  "account_assets": {
+    "sitelinks": [
+      {
+        "text": "Pricing",
+        "description1": "Plans for every team size",
+        "description2": "Start free for 14 days",
+        "url": "https://www.example.com/pricing"
+      },
+      {
+        "text": "Book a Demo",
+        "description1": "15 minutes with our team",
+        "description2": "See it on your data",
+        "url": "https://www.example.com/demo"
+      }
+    ],
+    "callouts": [
+      "Free 14-Day Trial",
+      "No Credit Card Needed",
+      "Setup in One Day",
+      "Cancel Anytime"
+    ],
+    "snippet": {
+      "header": "Types",
+      "values": [
+        "Pipeline",
+        "Reporting",
+        "Client Portal"
+      ]
+    }
+  },
+  "campaigns": [
+    {
+      "name": "search|nonbrand|agency_crm|us|en",
+      "daily_budget": 60,
+      "bidding": "max_conversions",
+      "portfolio": "portfolio|nonbrand",
+      "shared_negative_lists": [
+        "negatives|brand_terms",
+        "negatives|junk"
+      ],
+      "ad_groups": [
+        {
+          "name": "agency_crm",
+          "keywords": [
+            [
+              "agency crm",
+              "EXACT"
+            ],
+            [
+              "agency crm",
+              "PHRASE"
+            ],
+            [
+              "agency crm",
+              "BROAD"
+            ]
+          ],
+          "negatives": [
+            [
+              "crm pricing",
+              "EXACT"
+            ]
+          ],
+          "final_url": "https://www.example.com/agencies",
+          "headlines": [
+            "Example CRM for Agencies",
+            "CRM Built for Agencies",
+            "Track Every Client Deal",
+            "Agency Pipeline in One View",
+            "Set Up in One Afternoon",
+            "Client Reporting Built In",
+            "Free 14-Day Trial",
+            "No Credit Card Needed",
+            "Trusted by 2,000 Agencies",
+            "Cancel Anytime",
+            "Example Co",
+            "See Pricing",
+            "Book a 15-Minute Demo",
+            "Move Off Spreadsheets",
+            "Rated 4.8 on G2"
+          ],
+          "descriptions": [
+            "One CRM for every client: pipeline, reporting and tasks in one place.",
+            "Set up in an afternoon. Import from spreadsheets in minutes.",
+            "Agencies cut reporting time by half. See how in a 15-minute demo.",
+            "Start a free 14-day trial. No credit card needed."
+          ],
+          "path1": "agencies",
+          "path2": "crm"
+        }
+      ]
+    },
+    {
+      "name": "search|nonbrand|agency_crm_aimax|us|en",
+      "daily_budget": 10,
+      "bidding": "max_conversions",
+      "portfolio": "portfolio|nonbrand_aimax",
+      "ai_max": true,
+      "url_exclusions": [
+        "/careers",
+        "/blog",
+        "/support",
+        "/login",
+        "/legal"
+      ],
+      "shared_negative_lists": [
+        "negatives|brand_terms",
+        "negatives|junk"
+      ],
+      "ad_groups": [
+        {
+          "name": "agency_crm",
+          "keywords": [
+            [
+              "agency crm",
+              "EXACT"
+            ],
+            [
+              "agency crm",
+              "PHRASE"
+            ]
+          ],
+          "final_url": "https://www.example.com/agencies",
+          "headlines": [
+            "Example CRM for Agencies",
+            "CRM Built for Agencies",
+            "Track Every Client Deal",
+            "Agency Pipeline in One View",
+            "Set Up in One Afternoon",
+            "Client Reporting Built In",
+            "Free 14-Day Trial",
+            "No Credit Card Needed",
+            "Trusted by 2,000 Agencies",
+            "Cancel Anytime",
+            "Example Co",
+            "See Pricing",
+            "Book a 15-Minute Demo",
+            "Move Off Spreadsheets",
+            "Rated 4.8 on G2"
+          ],
+          "descriptions": [
+            "One CRM for every client: pipeline, reporting and tasks in one place.",
+            "Set up in an afternoon. Import from spreadsheets in minutes.",
+            "Agencies cut reporting time by half. See how in a 15-minute demo.",
+            "Start a free 14-day trial. No credit card needed."
+          ],
+          "path1": "agencies"
+        }
+      ]
+    }
+  ]
+}
