@@ -4,7 +4,7 @@ description: Prepare a quarterly business review and re-plan for a Google Ads an
 license: MIT
 compatibility: Any Agent Skills client. Math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: review
   summary: Quarter vs goals and last quarter, tests and learning, scenarios, and the next-quarter plan for sign-off.
   needs: The quarter's and last quarter's performance (and pipeline); goals; the test log; last quarter's audit; next quarter's goal or budget

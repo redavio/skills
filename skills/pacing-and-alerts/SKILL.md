@@ -4,7 +4,7 @@ description: Daily paid search health check for Google Ads and Microsoft Ads - s
 license: MIT
 compatibility: Any Agent Skills client. Checks need Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Pacing vs budget and paced goals, plus alerts that say what broke, where, how bad and the fix.
   needs: Month-to-date spend and results by campaign type; monthly budget; goals; daily clicks and conversions for the last ~3 weeks

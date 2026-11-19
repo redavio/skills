@@ -4,7 +4,7 @@ description: Write and check responsive search ads and assets for Google Ads and
 license: MIT
 compatibility: Any Agent Skills client. Limits check needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: RSAs and assets written from the customer's own words, 15 headlines and 4 descriptions, limits checked.
   needs: Ad group themes and landing pages; voice of customer quotes; differentiators and proof; approved copy and words to avoid

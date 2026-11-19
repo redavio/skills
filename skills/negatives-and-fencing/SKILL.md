@@ -4,7 +4,7 @@ description: Build and check negative keywords for Google Ads and Microsoft Ads 
 license: MIT
 compatibility: Any Agent Skills client. Fencing helper needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: Shared negative lists, campaign and ad-group fencing, login/support negatives, no broad negatives.
   needs: Brand terms; competitors (and which names are common words); campaigns with their ad groups' keywords; product terms that must never be negated

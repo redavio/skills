@@ -4,7 +4,7 @@ description: Recommend daily budget changes for Google Ads and Microsoft Ads cam
 license: MIT
 compatibility: Any Agent Skills client. Math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Budget moves per campaign on performance vs target and recoverable impression share, within the step limit.
   needs: Daily cost, conversions (and value or funnel stages) per campaign; current daily budgets; impression share and share lost to budget; target per campaign; last budget change dates; the step limit

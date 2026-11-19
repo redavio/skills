@@ -4,7 +4,7 @@ description: Audit a Google Ads or Microsoft Ads account (inherited, new client 
 license: MIT
 compatibility: Any Agent Skills client. Scoring needs Python 3.10+; reading the account yourself needs google-ads / bingads and your own access.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: review
   summary: Performance vs goals, one setup health score, ranked findings each tied to its fix.
   needs: Read access to the account (or exports); goals and targets; 90 days of performance; the conversion setup

@@ -4,7 +4,7 @@ description: Show where a Google Ads and Microsoft Ads account stands across the
 license: MIT
 compatibility: Any Agent Skills client. Reading the account yourself needs google-ads / bingads and your own access.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: status
   summary: Every step as done / needs you / waiting on data / not set up, and the next skill to run.
   needs: Account access or a description of what exists; whether intake, plan and tracking were done

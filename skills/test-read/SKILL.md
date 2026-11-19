@@ -4,7 +4,7 @@ description: Read a finished Google Ads or Microsoft Ads experiment (A/B test, c
 license: MIT
 compatibility: Any Agent Skills client. Math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Win at 95% confidence on the goal metric or it's learning; roll out, keep control, or log.
   needs: Control and test arms' clicks and conversions (goal metric) over the full test; the hypothesis and read date

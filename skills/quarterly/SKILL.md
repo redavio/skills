@@ -4,7 +4,7 @@ description: The quarterly paid search loop for Google Ads and Microsoft Ads - r
 license: MIT
 compatibility: Any Agent Skills client. Uses the job skills it calls.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: cadence
   summary: Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates.
   needs: Account access; this and last quarter's data and pipeline; the test log; next quarter's goals or budget

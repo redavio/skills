@@ -4,7 +4,7 @@ description: Explain why a paid search result moved versus goal or a prior perio
 license: MIT
 compatibility: Any Agent Skills client. Math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: review
   summary: Why a KPI moved: tracking first, mix vs rate, then a fair lever split and the one lever to pull.
   needs: Totals for the period and the comparison (goal or prior period): impressions, clicks, cost, conversions, value, and funnel stage counts if diagnosing past the platform; the same by segment for the mix check

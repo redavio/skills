@@ -4,7 +4,7 @@ description: Run a paid search client or account intake before anything is built
 license: MIT
 compatibility: Any Agent Skills client. No scripts; the output is a structured intake document.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: The questions to answer and sign off before any build or audit recommendation.
   needs: Someone who knows the business (or its website, positioning doc and analytics)

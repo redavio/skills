@@ -4,7 +4,7 @@ description: Decide whether a paid search keyword, search term, audience, locati
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: How many clicks before calling a keyword, term or any other lever: cut, promote, flag or watch.
   needs: Clicks, conversions and cost for the item (whole weeks); the goal conversion rate; the target CPA or target ROAS if there is one

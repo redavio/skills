@@ -4,7 +4,7 @@ description: Build Google Ads Search campaigns (and mirror them on Microsoft Ads
 license: MIT
 compatibility: Plan check needs Python 3.10+ only. Building needs google-ads, your own Google Ads API access (developer token) and Standard or Admin access on the account; or the Redavio connector.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: Plan -> check -> Google dry run -> paused build -> read-back -> parity, with a yes before any write.
   needs: The plan (campaigns, ad groups, keywords, negatives, ads, assets, budgets, bidding); the account; the person's explicit yes before the live build

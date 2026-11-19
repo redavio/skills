@@ -4,7 +4,7 @@ description: Apply paid search changes safely on Google Ads and Microsoft Ads - 
 license: MIT
 compatibility: Any Agent Skills client. Applying changes yourself needs google-ads / bingads and your own access; classification needs Python 3.10+.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Every change classified, approved, dry run, applied on a yes, read back and logged.
   needs: The proposed change with its reason and evidence; the client's step limit; who can approve for the client

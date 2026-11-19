@@ -4,7 +4,7 @@ description: The daily paid search check for Google Ads and Microsoft Ads - runs
 license: MIT
 compatibility: Any Agent Skills client. Uses the job skills it calls.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: cadence
   summary: Every morning: pacing, alerts, hygiene and flagrant spend. Look, don't act.
   needs: Account access or yesterday's data; monthly budget and goals

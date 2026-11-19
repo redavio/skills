@@ -4,7 +4,7 @@ description: Review a Google Ads or Microsoft Ads search terms report and propos
 license: MIT
 compatibility: Any Agent Skills client (Claude.ai, Claude Code, others). Scripts need Python 3.10+, standard library only; pulling data yourself needs google-ads or bingads and your own API access.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Cut or promote search terms against goal, with the volume gate deciding when there's enough data.
   needs: Search terms with clicks, conversions and cost (whole weeks, 7+ days); goal conversion rate per segment; target CPA or target ROAS per segment (or a conversions or value goal)

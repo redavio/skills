@@ -4,7 +4,7 @@ description: Judge every paid search lever against goal with the volume gate - k
 license: MIT
 compatibility: Any Agent Skills client. Math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Every lever judged the same way against goal; cuts and promotes become a change list for approval.
   needs: Daily or weekly performance by lever (clicks, conversions, cost, value); goal conversion rate and target CPA or ROAS per segment

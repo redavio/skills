@@ -4,7 +4,7 @@ description: Design paid search experiments for Google Ads and Microsoft Ads - p
 license: MIT
 compatibility: Any Agent Skills client. Sizing and ICE math need Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Ranked idea bank, hypothesis card, clicks per arm and a read date, 50/50 with one variable.
   needs: Test ideas (or use the standard library); the goal metric; baseline conversion rate and weekly clicks for the campaign tested

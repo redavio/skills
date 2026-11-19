@@ -4,7 +4,7 @@ description: The weekly paid search loop for Google Ads and Microsoft Ads - runs
 license: MIT
 compatibility: Any Agent Skills client. Uses the job skills it calls.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: cadence
   summary: Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report.
   needs: Account access or the last weeks of data; goals per segment; the test log

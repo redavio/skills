@@ -4,7 +4,7 @@ description: The monthly paid search loop for Google Ads and Microsoft Ads - run
 license: MIT
 compatibility: Any Agent Skills client. Uses the job skills it calls.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: cadence
   summary: Once a month: diagnose every gap, the monthly report, rebalance budget.
   needs: The month's and prior month's data; goals; budgets, impression share and the step limit

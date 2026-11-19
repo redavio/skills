@@ -5,7 +5,7 @@ Every Redavio Library skill in one repo, one folder per skill. Each folder follo
 optional `scripts/` and `references/`. They work in Claude (Claude.ai, Claude Code), and any client
 that reads Agent Skills.
 
-The first role is **paid search lead**: demand capture on Google Ads and Microsoft Ads (Search,
+The first role is **paid search manager**: demand capture on Google Ads and Microsoft Ads (Search,
 AI Max, Performance Max), from intake to audit. Every job skill works on its own; no earlier step
 is required. Supports all four campaign objectives, one per campaign: conversions, CPA,
 conversion value, ROAS.
@@ -46,7 +46,7 @@ Claude Code: copy a folder into `.claude/skills/` (keep the repo's `shared/` fol
 
 | Skill | What it does |
 |---|---|
-| [`paid-search-lead`](skills/paid-search-lead/SKILL.md) | The role: what each skill does and which one to use, with the principles they share. |
+| [`paid-search-manager`](skills/paid-search-manager/SKILL.md) | The role: what each skill does and which one to use, with the principles they share. |
 
 ### Status
 

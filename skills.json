@@ -3,7 +3,7 @@
   "standard": "https://agentskills.io",
   "license": "MIT",
   "roles": {
-    "paid-search-lead": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max."
+    "paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max."
   },
   "stages": [
     "role",
@@ -15,21 +15,21 @@
   ],
   "skills": [
     {
-      "name": "paid-search-lead",
-      "role": "paid-search-lead",
+      "name": "paid-search-manager",
+      "role": "paid-search-manager",
       "stage": "role",
       "description": "The role: what each skill does and which one to use, with the principles they share.",
       "needs": [
         "A paid search question or goal"
       ],
-      "path": "skills/paid-search-lead",
+      "path": "skills/paid-search-manager",
       "has_scripts": false,
-      "install": "npx skills add redavio/skills --skill paid-search-lead",
-      "zip": "dist/paid-search-lead.zip"
+      "install": "npx skills add redavio/skills --skill paid-search-manager",
+      "zip": "dist/paid-search-manager.zip"
     },
     {
       "name": "status",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "status",
       "description": "Every step as done / needs you / waiting on data / not set up, and the next skill to run.",
       "needs": [
@@ -43,7 +43,7 @@
     },
     {
       "name": "ad-copy",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "RSAs and assets written from the customer's own words, 15 headlines and 4 descriptions, limits checked.",
       "needs": [
@@ -59,7 +59,7 @@
     },
     {
       "name": "build",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Plan -> check -> Google dry run -> paused build -> read-back -> parity, with a yes before any write.",
       "needs": [
@@ -74,7 +74,7 @@
     },
     {
       "name": "campaign-structure",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Brand / Non-brand / Competitor, one ad group per theme, portfolios per type, names that split cleanly in SQL.",
       "needs": [
@@ -89,7 +89,7 @@
     },
     {
       "name": "forecast-and-budget",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Funnel forecast, starting budget split and spend scenarios; a directional guide, never a verdict.",
       "needs": [
@@ -105,7 +105,7 @@
     },
     {
       "name": "intake",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "The questions to answer and sign off before any build or audit recommendation.",
       "needs": [
@@ -118,7 +118,7 @@
     },
     {
       "name": "keyword-research",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Keywords chosen on sense from the offerings, brand and competitors; volume and CPC are context, never the decider.",
       "needs": [
@@ -134,7 +134,7 @@
     },
     {
       "name": "launch-check",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Go/no-go checks, client approval, enable on a yes, read back, set read dates, watch week one.",
       "needs": [
@@ -150,7 +150,7 @@
     },
     {
       "name": "negatives-and-fencing",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Shared negative lists, campaign and ad-group fencing, login/support negatives, no broad negatives.",
       "needs": [
@@ -166,7 +166,7 @@
     },
     {
       "name": "pmax-and-ai-max",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "PMax and AI Max set up fenced and measured on the real goal; AI Max proven by experiment, never switched on blind.",
       "needs": [
@@ -184,7 +184,7 @@
     },
     {
       "name": "target-math",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "Target CPA or ROAS backed out from LTV, CAC ratio and stage rates; stage values; when and how to add a target.",
       "needs": [
@@ -200,7 +200,7 @@
     },
     {
       "name": "tracking-plan",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "set-up",
       "description": "One primary conversion, every stage back by click ID with a value, a fallback, and a test lead read back on both platforms.",
       "needs": [
@@ -216,7 +216,7 @@
     },
     {
       "name": "budget-rebalance",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Budget moves per campaign on performance vs target and recoverable impression share, within the step limit.",
       "needs": [
@@ -234,7 +234,7 @@
     },
     {
       "name": "change-safety",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Every change classified, approved, dry run, applied on a yes, read back and logged.",
       "needs": [
@@ -249,7 +249,7 @@
     },
     {
       "name": "expansion-finder",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Micro adds from your own data; macro proposals when a theme outgrows its home, launched as tests.",
       "needs": [
@@ -265,7 +265,7 @@
     },
     {
       "name": "pacing-and-alerts",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Pacing vs budget and paced goals, plus alerts that say what broke, where, how bad and the fix.",
       "needs": [
@@ -281,7 +281,7 @@
     },
     {
       "name": "parity-check",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Google vs Microsoft drift flagged entity by entity; budgets and targets deliberately not compared.",
       "needs": [
@@ -295,7 +295,7 @@
     },
     {
       "name": "prune-promote",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Every lever judged the same way against goal; cuts and promotes become a change list for approval.",
       "needs": [
@@ -309,7 +309,7 @@
     },
     {
       "name": "search-term-review",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Cut or promote search terms against goal, with the volume gate deciding when there's enough data.",
       "needs": [
@@ -324,7 +324,7 @@
     },
     {
       "name": "test-design",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Ranked idea bank, hypothesis card, clicks per arm and a read date, 50/50 with one variable.",
       "needs": [
@@ -339,7 +339,7 @@
     },
     {
       "name": "test-read",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "Win at 95% confidence on the goal metric or it's learning; roll out, keep control, or log.",
       "needs": [
@@ -353,7 +353,7 @@
     },
     {
       "name": "volume-gate",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "run",
       "description": "How many clicks before calling a keyword, term or any other lever: cut, promote, flag or watch.",
       "needs": [
@@ -368,7 +368,7 @@
     },
     {
       "name": "audit",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "review",
       "description": "Performance vs goals, one setup health score, ranked findings each tied to its fix.",
       "needs": [
@@ -384,7 +384,7 @@
     },
     {
       "name": "diagnose",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "review",
       "description": "Why a KPI moved: tracking first, mix vs rate, then a fair lever split and the one lever to pull.",
       "needs": [
@@ -398,7 +398,7 @@
     },
     {
       "name": "exec-report",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "review",
       "description": "Pipeline first, brand and non-brand apart, every number vs goal with the reason behind it.",
       "needs": [
@@ -414,7 +414,7 @@
     },
     {
       "name": "handoff",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "review",
       "description": "Everything the next owner needs: state, settings, tracking, history, open work and access.",
       "needs": [
@@ -430,7 +430,7 @@
     },
     {
       "name": "qbr",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "review",
       "description": "Quarter vs goals and last quarter, tests and learning, scenarios, and the next-quarter plan for sign-off.",
       "needs": [
@@ -447,7 +447,7 @@
     },
     {
       "name": "daily",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "cadence",
       "description": "Every morning: pacing, alerts, hygiene and flagrant spend. Look, don't act.",
       "needs": [
@@ -461,7 +461,7 @@
     },
     {
       "name": "monthly",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "cadence",
       "description": "Once a month: diagnose every gap, the monthly report, rebalance budget.",
       "needs": [
@@ -476,7 +476,7 @@
     },
     {
       "name": "quarterly",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "cadence",
       "description": "Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates.",
       "needs": [
@@ -492,7 +492,7 @@
     },
     {
       "name": "weekly",
-      "role": "paid-search-lead",
+      "role": "paid-search-manager",
       "stage": "cadence",
       "description": "Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report.",
       "needs": [

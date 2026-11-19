@@ -4,7 +4,7 @@ description: Build the keyword list for Google Ads and Microsoft Ads Search camp
 license: MIT
 compatibility: Any Agent Skills client. Keyword Planner pulls need Python 3.10+, google-ads and your own API access (developer token); otherwise uses Redavio or exported data.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: Keywords chosen on sense from the offerings, brand and competitors; volume and CPC are context, never the decider.
   needs: Offerings with the words customers use; brand terms; competitors; target locations and language

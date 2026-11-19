@@ -4,7 +4,7 @@ description: Package a Google Ads and Microsoft Ads account for a clean handoff 
 license: MIT
 compatibility: Any Agent Skills client. Reading the account yourself needs google-ads / bingads and your own access.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: review
   summary: Everything the next owner needs: state, settings, tracking, history, open work and access.
   needs: Read access to the accounts (or exports); the change log; the test log; open initiatives

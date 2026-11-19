@@ -1,16 +1,16 @@
 ---
-name: paid-search-lead
-description: The paid search lead role for B2B demand capture on Google Ads and Microsoft Ads (Search, AI Max, Performance Max) - explains the full skill set from intake to audit and routes any paid search request to the right skill, applying the playbook's principles (judge on business goals, let the data decide through the volume gate, every change approved by a person). Use for any Google Ads, Microsoft Ads, Bing Ads, PPC or paid search question when no more specific skill is obviously right, or when someone asks what these skills can do.
+name: paid-search-manager
+description: The paid search manager role for B2B demand capture on Google Ads and Microsoft Ads (Search, AI Max, Performance Max) - explains the full skill set from intake to audit and routes any paid search request to the right skill, applying the playbook's principles (judge on business goals, let the data decide through the volume gate, every change approved by a person). Use for any Google Ads, Microsoft Ads, Bing Ads, PPC or paid search question when no more specific skill is obviously right, or when someone asks what these skills can do.
 license: MIT
 compatibility: Any Agent Skills client. Routes to the other skills in this repo; install them alongside.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: role
   summary: The role: what each skill does and which one to use, with the principles they share.
   needs: A paid search question or goal
 ---
 
-# Paid search lead
+# Paid search manager
 
 Demand capture on Google and Microsoft: Search, AI Max, Performance Max. Every job skill works on its own; this one picks the right one.
 

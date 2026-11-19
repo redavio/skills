@@ -4,7 +4,7 @@ description: Final go/no-go before switching on paused Google Ads or Microsoft A
 license: MIT
 compatibility: Any Agent Skills client. Enabling via your own API needs google-ads / bingads and your own access; checks need Python 3.10+.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: Go/no-go checks, client approval, enable on a yes, read back, set read dates, watch week one.
   needs: The built (paused) campaigns; proof a test conversion landed on both platforms; client approval; the goals and budget

@@ -4,7 +4,7 @@ description: Plan and check conversion tracking for Google Ads and Microsoft Ads
 license: MIT
 compatibility: Any Agent Skills client. Snapshot and tracking-break checks need Python 3.10+; reading the account yourself needs google-ads and a developer token.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: One primary conversion, every stage back by click ID with a value, a fallback, and a test lead read back on both platforms.
   needs: The conversion points (stage, value, where tracked); the CRM; the measurement tier; account access or a conversions list

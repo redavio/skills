@@ -4,7 +4,7 @@ description: Work out what target CPA or target ROAS a Google Ads or Microsoft A
 license: MIT
 compatibility: Any Agent Skills client. The math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: set-up
   summary: Target CPA or ROAS backed out from LTV, CAC ratio and stage rates; stage values; when and how to add a target.
   needs: LTV or ACV; target LTV:CAC; stage rates from the bid-on conversion to opportunity and won; current CPA or ROAS and last-30-day conversions for timing

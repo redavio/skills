@@ -4,7 +4,7 @@ description: Find where to grow a Google Ads or Microsoft Ads account - micro ex
 license: MIT
 compatibility: Any Agent Skills client. Math needs Python 3.10+, standard library only.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Micro adds from your own data; macro proposals when a theme outgrows its home, launched as tests.
   needs: Ad group and search term performance (13 weeks is best); impression share lost to budget and rank; goals; new products or markets planned

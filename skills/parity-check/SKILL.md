@@ -4,7 +4,7 @@ description: Compare Google Ads and Microsoft Ads Search accounts for drift - ca
 license: MIT
 compatibility: Any Agent Skills client. Comparison needs Python 3.10+; exporting yourself needs google-ads and bingads with your own access.
 metadata:
-  role: paid-search-lead
+  role: paid-search-manager
   stage: run
   summary: Google vs Microsoft drift flagged entity by entity; budgets and targets deliberately not compared.
   needs: Structure from both accounts (or exports); which differences are intentional
