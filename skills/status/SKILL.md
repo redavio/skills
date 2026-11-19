@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Reading the account yourself needs googl
 metadata:
   role: paid-search-manager
   stage: status
+  cadence: Any time
   summary: Every step as done / needs you / waiting on data / not set up, and the next skill to run.
   needs: Account access or a description of what exists; whether intake, plan and tracking were done
 ---

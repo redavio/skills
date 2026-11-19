@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Keyword Planner pulls need Python 3.10+,
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup
   summary: Keywords chosen on sense from the offerings, brand and competitors; volume and CPC are context, never the decider.
   needs: Offerings with the words customers use; brand terms; competitors; target locations and language
 ---

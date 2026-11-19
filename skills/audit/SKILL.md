@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Scoring needs Python 3.10+; reading the 
 metadata:
   role: paid-search-manager
   stage: review
+  cadence: Quarterly, and when you inherit an account
   summary: Performance vs goals, one setup health score, ranked findings each tied to its fix.
   needs: Read access to the account (or exports); goals and targets; 90 days of performance; the conversion setup
 ---

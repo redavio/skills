@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Math needs Python 3.10+, standard librar
 metadata:
   role: paid-search-manager
   stage: review
+  cadence: Quarterly
   summary: Quarter vs goals and last quarter, tests and learning, scenarios, and the next-quarter plan for sign-off.
   needs: The quarter's and last quarter's performance (and pipeline); goals; the test log; last quarter's audit; next quarter's goal or budget
 ---

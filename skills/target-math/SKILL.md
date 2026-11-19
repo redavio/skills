@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. The math needs Python 3.10+, standard li
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup, then quarterly
   summary: Target CPA or ROAS backed out from LTV, CAC ratio and stage rates; stage values; when and how to add a target.
   needs: LTV or ACV; target LTV:CAC; stage rates from the bid-on conversion to opportunity and won; current CPA or ROAS and last-30-day conversions for timing
 ---

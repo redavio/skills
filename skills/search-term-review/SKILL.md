@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client (Claude.ai, Claude Code, others). Scripts
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Weekly
   summary: Cut or promote search terms against goal, with the volume gate deciding when there's enough data.
   needs: Search terms with clicks, conversions and cost (whole weeks, 7+ days); goal conversion rate per segment; target CPA or target ROAS per segment (or a conversions or value goal)
 ---

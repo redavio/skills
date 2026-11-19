@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Enabling via your own API needs google-a
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once, before launch
   summary: Go/no-go checks, client approval, enable on a yes, read back, set read dates, watch week one.
   needs: The built (paused) campaigns; proof a test conversion landed on both platforms; client approval; the goals and budget
 ---

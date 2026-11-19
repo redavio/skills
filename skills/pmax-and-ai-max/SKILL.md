@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Reports and math need Python 3.10+; pull
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup, then weekly
   summary: PMax and AI Max set up fenced and measured on the real goal; AI Max proven by experiment, never switched on blind.
   needs: Search themes and their top keywords; the primary conversion; brand terms; ICP (industries, sizes, roles); customer lists or site visitor audiences; for reviews, 4+ weeks of data
 ---

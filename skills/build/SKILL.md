@@ -6,6 +6,7 @@ compatibility: Plan check needs Python 3.10+ only. Building needs google-ads, yo
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup
   summary: Plan -> check -> Google dry run -> paused build -> read-back -> parity, with a yes before any write.
   needs: The plan (campaigns, ad groups, keywords, negatives, ads, assets, budgets, bidding); the account; the person's explicit yes before the live build
 ---

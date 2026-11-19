@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Comparison needs Python 3.10+; exporting
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Weekly, and after every build or big change
   summary: Google vs Microsoft drift flagged entity by entity; budgets and targets deliberately not compared.
   needs: Structure from both accounts (or exports); which differences are intentional
 ---

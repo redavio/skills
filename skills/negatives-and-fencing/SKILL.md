@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Fencing helper needs Python 3.10+, stand
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup
   summary: Shared negative lists, campaign and ad-group fencing, login/support negatives, no broad negatives.
   needs: Brand terms; competitors (and which names are common words); campaigns with their ad groups' keywords; product terms that must never be negated
 ---

@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. The math needs Python 3.10+, standard li
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup, then quarterly
   summary: Funnel forecast, starting budget split and spend scenarios; a directional guide, never a verdict.
   needs: Monthly budget (or a pipeline goal and pipeline per dollar); keywords with volume and CPC (or placeholders); conversion points with values; goals
 ---

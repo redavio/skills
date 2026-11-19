@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Checks need Python 3.10+, standard libra
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Daily
   summary: Pacing vs budget and paced goals, plus alerts that say what broke, where, how bad and the fix.
   needs: Month-to-date spend and results by campaign type; monthly budget; goals; daily clicks and conversions for the last ~3 weeks
 ---

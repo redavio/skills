@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Math needs Python 3.10+, standard librar
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Weekly
   summary: Win at 95% confidence on the goal metric or it's learning; roll out, keep control, or log.
   needs: Control and test arms' clicks and conversions (goal metric) over the full test; the hypothesis and read date
 ---

@@ -18,6 +18,7 @@
       "name": "paid-search-manager",
       "role": "paid-search-manager",
       "stage": "role",
+      "cadence": "Any time",
       "description": "The role: what each skill does and which one to use, with the principles they share.",
       "needs": [
         "A paid search question or goal"
@@ -31,6 +32,7 @@
       "name": "status",
       "role": "paid-search-manager",
       "stage": "status",
+      "cadence": "Any time",
       "description": "Every step as done / needs you / waiting on data / not set up, and the next skill to run.",
       "needs": [
         "Account access or a description of what exists",
@@ -45,6 +47,7 @@
       "name": "ad-copy",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "RSAs and assets written from the customer's own words, 15 headlines and 4 descriptions, limits checked.",
       "needs": [
         "Ad group themes and landing pages",
@@ -61,6 +64,7 @@
       "name": "build",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "Plan -> check -> Google dry run -> paused build -> read-back -> parity, with a yes before any write.",
       "needs": [
         "The plan (campaigns, ad groups, keywords, negatives, ads, assets, budgets, bidding)",
@@ -76,6 +80,7 @@
       "name": "campaign-structure",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "Brand / Non-brand / Competitor, one ad group per theme, portfolios per type, names that split cleanly in SQL.",
       "needs": [
         "Offerings, brand terms, competitors",
@@ -91,6 +96,7 @@
       "name": "forecast-and-budget",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup, then quarterly",
       "description": "Funnel forecast, starting budget split and spend scenarios; a directional guide, never a verdict.",
       "needs": [
         "Monthly budget (or a pipeline goal and pipeline per dollar)",
@@ -107,6 +113,7 @@
       "name": "intake",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "The questions to answer and sign off before any build or audit recommendation.",
       "needs": [
         "Someone who knows the business (or its website, positioning doc and analytics)"
@@ -120,6 +127,7 @@
       "name": "keyword-research",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "Keywords chosen on sense from the offerings, brand and competitors; volume and CPC are context, never the decider.",
       "needs": [
         "Offerings with the words customers use",
@@ -136,6 +144,7 @@
       "name": "launch-check",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once, before launch",
       "description": "Go/no-go checks, client approval, enable on a yes, read back, set read dates, watch week one.",
       "needs": [
         "The built (paused) campaigns",
@@ -152,6 +161,7 @@
       "name": "negatives-and-fencing",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "Shared negative lists, campaign and ad-group fencing, login/support negatives, no broad negatives.",
       "needs": [
         "Brand terms",
@@ -168,6 +178,7 @@
       "name": "pmax-and-ai-max",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup, then weekly",
       "description": "PMax and AI Max set up fenced and measured on the real goal; AI Max proven by experiment, never switched on blind.",
       "needs": [
         "Search themes and their top keywords",
@@ -186,6 +197,7 @@
       "name": "target-math",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup, then quarterly",
       "description": "Target CPA or ROAS backed out from LTV, CAC ratio and stage rates; stage values; when and how to add a target.",
       "needs": [
         "LTV or ACV",
@@ -202,6 +214,7 @@
       "name": "tracking-plan",
       "role": "paid-search-manager",
       "stage": "set-up",
+      "cadence": "Once at setup",
       "description": "One primary conversion, every stage back by click ID with a value, a fallback, and a test lead read back on both platforms.",
       "needs": [
         "The conversion points (stage, value, where tracked)",
@@ -218,6 +231,7 @@
       "name": "budget-rebalance",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Monthly",
       "description": "Budget moves per campaign on performance vs target and recoverable impression share, within the step limit.",
       "needs": [
         "Daily cost, conversions (and value or funnel stages) per campaign",
@@ -236,6 +250,7 @@
       "name": "change-safety",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Before every change",
       "description": "Every change classified, approved, dry run, applied on a yes, read back and logged.",
       "needs": [
         "The proposed change with its reason and evidence",
@@ -251,6 +266,7 @@
       "name": "expansion-finder",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Weekly from your own data, quarterly for new campaigns",
       "description": "Micro adds from your own data; macro proposals when a theme outgrows its home, launched as tests.",
       "needs": [
         "Ad group and search term performance (13 weeks is best)",
@@ -267,6 +283,7 @@
       "name": "pacing-and-alerts",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Daily",
       "description": "Pacing vs budget and paced goals, plus alerts that say what broke, where, how bad and the fix.",
       "needs": [
         "Month-to-date spend and results by campaign type",
@@ -283,6 +300,7 @@
       "name": "parity-check",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Weekly, and after every build or big change",
       "description": "Google vs Microsoft drift flagged entity by entity; budgets and targets deliberately not compared.",
       "needs": [
         "Structure from both accounts (or exports)",
@@ -297,6 +315,7 @@
       "name": "prune-promote",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Weekly",
       "description": "Every lever judged the same way against goal; cuts and promotes become a change list for approval.",
       "needs": [
         "Daily or weekly performance by lever (clicks, conversions, cost, value)",
@@ -311,6 +330,7 @@
       "name": "search-term-review",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Weekly",
       "description": "Cut or promote search terms against goal, with the volume gate deciding when there's enough data.",
       "needs": [
         "Search terms with clicks, conversions and cost (whole weeks, 7+ days)",
@@ -326,6 +346,7 @@
       "name": "test-design",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Weekly",
       "description": "Ranked idea bank, hypothesis card, clicks per arm and a read date, 50/50 with one variable.",
       "needs": [
         "Test ideas (or use the standard library)",
@@ -341,6 +362,7 @@
       "name": "test-read",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Weekly",
       "description": "Win at 95% confidence on the goal metric or it's learning; roll out, keep control, or log.",
       "needs": [
         "Control and test arms' clicks and conversions (goal metric) over the full test",
@@ -355,6 +377,7 @@
       "name": "volume-gate",
       "role": "paid-search-manager",
       "stage": "run",
+      "cadence": "Whenever you cut or promote something",
       "description": "How many clicks before calling a keyword, term or any other lever: cut, promote, flag or watch.",
       "needs": [
         "Clicks, conversions and cost for the item (whole weeks)",
@@ -370,6 +393,7 @@
       "name": "audit",
       "role": "paid-search-manager",
       "stage": "review",
+      "cadence": "Quarterly, and when you inherit an account",
       "description": "Performance vs goals, one setup health score, ranked findings each tied to its fix.",
       "needs": [
         "Read access to the account (or exports)",
@@ -386,6 +410,7 @@
       "name": "diagnose",
       "role": "paid-search-manager",
       "stage": "review",
+      "cadence": "Weekly on the biggest movers, monthly on every gap to goal",
       "description": "Why a KPI moved: tracking first, mix vs rate, then a fair lever split and the one lever to pull.",
       "needs": [
         "Totals for the period and the comparison (goal or prior period): impressions, clicks, cost, conversions, value, and funnel stage counts if diagnosing past the platform",
@@ -400,6 +425,7 @@
       "name": "exec-report",
       "role": "paid-search-manager",
       "stage": "review",
+      "cadence": "Weekly and monthly",
       "description": "Pipeline first, brand and non-brand apart, every number vs goal with the reason behind it.",
       "needs": [
         "Daily performance by campaign for the period and comparison",
@@ -416,6 +442,7 @@
       "name": "handoff",
       "role": "paid-search-manager",
       "stage": "review",
+      "cadence": "When an engagement ends",
       "description": "Everything the next owner needs: state, settings, tracking, history, open work and access.",
       "needs": [
         "Read access to the accounts (or exports)",
@@ -432,6 +459,7 @@
       "name": "qbr",
       "role": "paid-search-manager",
       "stage": "review",
+      "cadence": "Quarterly",
       "description": "Quarter vs goals and last quarter, tests and learning, scenarios, and the next-quarter plan for sign-off.",
       "needs": [
         "The quarter's and last quarter's performance (and pipeline)",
@@ -449,6 +477,7 @@
       "name": "daily",
       "role": "paid-search-manager",
       "stage": "cadence",
+      "cadence": "Daily",
       "description": "Every morning: pacing, alerts, hygiene and flagrant spend. Look, don't act.",
       "needs": [
         "Account access or yesterday's data",
@@ -463,6 +492,7 @@
       "name": "monthly",
       "role": "paid-search-manager",
       "stage": "cadence",
+      "cadence": "Monthly",
       "description": "Once a month: diagnose every gap, the monthly report, rebalance budget.",
       "needs": [
         "The month's and prior month's data",
@@ -478,6 +508,7 @@
       "name": "quarterly",
       "role": "paid-search-manager",
       "stage": "cadence",
+      "cadence": "Quarterly",
       "description": "Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates.",
       "needs": [
         "Account access",
@@ -494,6 +525,7 @@
       "name": "weekly",
       "role": "paid-search-manager",
       "stage": "cadence",
+      "cadence": "Weekly",
       "description": "Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report.",
       "needs": [
         "Account access or the last weeks of data",

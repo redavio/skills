@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Snapshot and tracking-break checks need 
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup
   summary: One primary conversion, every stage back by click ID with a value, a fallback, and a test lead read back on both platforms.
   needs: The conversion points (stage, value, where tracked); the CRM; the measurement tier; account access or a conversions list
 ---

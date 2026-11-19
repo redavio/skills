@@ -4,7 +4,7 @@
   python3 scripts/build_index.py          write skills.json
   python3 scripts/build_index.py --check  fail if skills.json is stale or a skill breaks the standard
 Standard checks: name matches the folder, lowercase letters/digits/hyphens, <= 64 chars;
-description present and <= 1024 chars; metadata has role, stage, summary, needs.
+description present and <= 1024 chars; metadata has role, stage, cadence (recommended, never enforced), summary, needs.
 """
 import json
 import re
@@ -53,12 +53,12 @@ def build() -> tuple[list, list]:
             errs.append(f"{d}: name must be lowercase letters, digits and single hyphens, <= 64 chars")
         if not desc or len(desc) > 1024:
             errs.append(f"{d}: description missing or over 1024 characters ({len(desc)})")
-        for k in ("role", "stage", "summary", "needs"):
+        for k in ("role", "stage", "cadence", "summary", "needs"):
             if not meta.get(k):
                 errs.append(f"{d}: metadata.{k} missing")
         if meta.get("stage") and meta["stage"] not in STAGES:
             errs.append(f"{d}: stage must be one of {STAGES}")
-        skills.append({"name": name, "role": meta.get("role"), "stage": meta.get("stage"),
+        skills.append({"name": name, "role": meta.get("role"), "stage": meta.get("stage"), "cadence": meta.get("cadence"),
                        "description": meta.get("summary"), "needs": [n.strip() for n in meta.get("needs", "").split(";") if n.strip()],
                        "path": f"skills/{d}", "has_scripts": (f.parent / "scripts").is_dir(),
                        "install": f"npx skills add redavio/skills --skill {name}",

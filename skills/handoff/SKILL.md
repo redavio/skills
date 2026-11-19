@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Reading the account yourself needs googl
 metadata:
   role: paid-search-manager
   stage: review
+  cadence: When an engagement ends
   summary: Everything the next owner needs: state, settings, tracking, history, open work and access.
   needs: Read access to the accounts (or exports); the change log; the test log; open initiatives
 ---

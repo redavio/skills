@@ -104,6 +104,8 @@ Claude Code: copy a folder into `.claude/skills/` (keep the repo's `shared/` fol
 | [`quarterly`](skills/quarterly/SKILL.md) | Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates. |
 | [`weekly`](skills/weekly/SKILL.md) | Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report. |
 
+Every skill lists a recommended cadence (`metadata.cadence`). It's a recommendation: any skill can run any time.
+
 ## What's inside
 
 | Path | What |
@@ -112,7 +114,7 @@ Claude Code: copy a folder into `.claude/skills/` (keep the repo's `shared/` fol
 | `skills/<name>/scripts/run.py` | Runs the math (`run.py perfos ...`) or an API script (`run.py ads ...`) |
 | `shared/perfos/` | The deterministic math, standard library only: volume gate, Shapley diagnosis, mix vs rate, budget rebalance, target math, forecast and budget split, test sizing and reading, ICE, change safety, pacing and alerts, fencing, copy limits, audit scoring, naming, parity, report |
 | `shared/ads_scripts/` | Google Ads and Microsoft Advertising scripts using your own credentials: snapshot, reports, keyword ideas, entity exports, paused build with read-back, one-change apply |
-| `skills.json` | Machine-readable index (name, role, stage, description, needs, path), built from the SKILL.md files |
+| `skills.json` | Machine-readable index (name, role, stage, cadence, description, needs, path), built from the SKILL.md files |
 | `scripts/` | `build_index.py`, `zip_skills.sh`, `sync_run.sh` |
 
 Tests: `cd shared && python3 -m pytest`.

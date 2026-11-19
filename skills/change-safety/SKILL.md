@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Applying changes yourself needs google-a
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Before every change
   summary: Every change classified, approved, dry run, applied on a yes, read back and logged.
   needs: The proposed change with its reason and evidence; the client's step limit; who can approve for the client
 ---

@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Sizing and ICE math need Python 3.10+, s
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Weekly
   summary: Ranked idea bank, hypothesis card, clicks per arm and a read date, 50/50 with one variable.
   needs: Test ideas (or use the standard library); the goal metric; baseline conversion rate and weekly clicks for the campaign tested
 ---

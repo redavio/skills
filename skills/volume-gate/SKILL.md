@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard libr
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Whenever you cut or promote something
   summary: How many clicks before calling a keyword, term or any other lever: cut, promote, flag or watch.
   needs: Clicks, conversions and cost for the item (whole weeks); the goal conversion rate; the target CPA or target ROAS if there is one
 ---

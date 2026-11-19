@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Report math needs Python 3.10+, standard
 metadata:
   role: paid-search-manager
   stage: review
+  cadence: Weekly and monthly
   summary: Pipeline first, brand and non-brand apart, every number vs goal with the reason behind it.
   needs: Daily performance by campaign for the period and comparison; goals per row; CRM stages and pipeline if available; what was done and what's next
 ---

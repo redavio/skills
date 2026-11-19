@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Math needs Python 3.10+, standard librar
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Weekly
   summary: Every lever judged the same way against goal; cuts and promotes become a change list for approval.
   needs: Daily or weekly performance by lever (clicks, conversions, cost, value); goal conversion rate and target CPA or ROAS per segment
 ---

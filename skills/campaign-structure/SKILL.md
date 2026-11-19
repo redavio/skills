@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Name helper needs Python 3.10+.
 metadata:
   role: paid-search-manager
   stage: set-up
+  cadence: Once at setup
   summary: Brand / Non-brand / Competitor, one ad group per theme, portfolios per type, names that split cleanly in SQL.
   needs: Offerings, brand terms, competitors; locations and languages; anything with its own budget, target or goal
 ---

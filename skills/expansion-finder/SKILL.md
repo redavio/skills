@@ -6,6 +6,7 @@ compatibility: Any Agent Skills client. Math needs Python 3.10+, standard librar
 metadata:
   role: paid-search-manager
   stage: run
+  cadence: Weekly from your own data, quarterly for new campaigns
   summary: Micro adds from your own data; macro proposals when a theme outgrows its home, launched as tests.
   needs: Ad group and search term performance (13 weeks is best); impression share lost to budget and rank; goals; new products or markets planned
 ---
