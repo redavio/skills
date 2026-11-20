@@ -1,0 +1,10 @@
+{
+ "id": 1,
+ "note": "Inherited account",
+ "created_at": "2026-09-24T14:00:00+00:00",
+ "fix_plan_signed_by": null,
+ "fix_plan_signed_at": null,
+ "rows": [],
+ "setup_health": 41.2,
+ "findings": []
+}

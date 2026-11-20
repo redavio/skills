@@ -116,10 +116,45 @@ Every skill lists a recommended cadence (`metadata.cadence`). It's a recommendat
 | `shared/ads_scripts/` | Google Ads and Microsoft Advertising scripts using your own credentials: snapshot, reports, keyword ideas, entity exports, paused build with read-back, one-change apply |
 | `skills.json` | Machine-readable index (name, role, stage, cadence, description, needs, path), built from the SKILL.md files |
 | `scripts/` | `build_index.py`, `zip_skills.sh`, `sync_run.sh` |
+| `dashboard/` | A React app showing one client's Status, Plan, Audit, Build and Changes from a `results.json` (below) |
 
 Tests: `cd shared && python3 -m pytest`.
 
 The rules come from the open playbook at [github.com/redavio/performance-os](https://github.com/redavio/performance-os).
+
+## Dashboard
+
+`dashboard/` is a small React app (Vite + Tailwind) for one client's paid search: Status, Plan (forecast,
+budget split, scenarios), Audit (setup health and ranked findings), Build (the plan tree) and Changes (the
+log). It reads `results.json`; "Open results file" opens another. `public/results.json` is a made-up
+example (Northwind Analytics, a fictional company).
+
+```bash
+cd dashboard && npm install && npm run dev
+```
+
+**Making results.json.** `scripts/from_portal.mjs` builds it from the Redavio Client Portal's API answers
+for one client (status, planning, plan, changes, and optionally the latest audit), saved as JSON in a
+folder; `demo/portal/` shows each file. The shape is `src/types.ts` (`Results`), so any source works if
+you fill those fields.
+
+```bash
+node scripts/from_portal.mjs demo/portal results.json --client "Northwind Analytics" --as-of 2026-11-18
+```
+
+### Make it yours
+
+- **Brand the dashboard.** It ships unbranded. Set your name and logo in `dashboard/src/brand.ts` and
+  your brand color (one CSS variable, `--brand`) at the top of `dashboard/src/index.css`. It's styled
+  with Tailwind and follows the system's light or dark mode.
+- **Reuse the screens in your own app.** The screens in `dashboard/src/components/` take the result as
+  props and load nothing themselves; `dashboard/src/App.tsx` is the only part that reads `results.json`.
+  Copy the components and types into any React + Tailwind app (add a `brand` color to your Tailwind
+  config). They are the same components the Redavio Client Portal uses, without its write controls,
+  and are copied here from it, so change them there rather than here if you contribute back.
+- **Fork it:** add views, plug in your own data source, or schedule the export.
+
+Tests: `cd dashboard && npm test`.
 
 ## Other roles
 

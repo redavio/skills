@@ -1,0 +1,116 @@
+{
+ "id": 2,
+ "note": null,
+ "created_at": "2026-10-30T14:00:00+00:00",
+ "fix_plan_signed_by": "Dana Reyes (Northwind)",
+ "fix_plan_signed_at": "2026-10-31T16:20:00+00:00",
+ "rows": [
+  {
+   "code": "A1",
+   "part": "setup",
+   "title": "Measurement",
+   "summary": "",
+   "doc_ref": "context/build.md#a1",
+   "weight": 2,
+   "platform": "bing_ads",
+   "result": "partial",
+   "evidence": "Offline conversions upload weekly, not daily",
+   "impact": "high",
+   "effort": "low"
+  },
+  {
+   "code": "A4",
+   "part": "setup",
+   "title": "Targeting",
+   "summary": "",
+   "doc_ref": "context/build.md#a4",
+   "weight": 1,
+   "platform": "google_ads",
+   "result": "fail",
+   "evidence": "No search term review ticked in the last 7 days",
+   "impact": "high",
+   "effort": "low"
+  },
+  {
+   "code": "A5",
+   "part": "setup",
+   "title": "Creative and extensions",
+   "summary": "",
+   "doc_ref": "context/build.md#a5",
+   "weight": 1,
+   "platform": "google_ads",
+   "result": "partial",
+   "evidence": "2 ad groups have 9 of 15 headlines",
+   "impact": "medium",
+   "effort": "medium"
+  },
+  {
+   "code": "A11",
+   "part": "setup",
+   "title": "Google vs Microsoft",
+   "summary": "",
+   "doc_ref": "context/build.md#a11",
+   "weight": 1,
+   "platform": "bing_ads",
+   "result": "partial",
+   "evidence": "Competitor campaign not mirrored on Microsoft",
+   "impact": "low",
+   "effort": "medium"
+  }
+ ],
+ "setup_health": 78.6,
+ "findings": [
+  {
+   "code": "A1",
+   "part": "setup",
+   "title": "Measurement",
+   "summary": "",
+   "doc_ref": "context/build.md#a1",
+   "weight": 2,
+   "platform": "bing_ads",
+   "result": "partial",
+   "evidence": "Offline conversions upload weekly, not daily",
+   "impact": "high",
+   "effort": "low"
+  },
+  {
+   "code": "A4",
+   "part": "setup",
+   "title": "Targeting",
+   "summary": "",
+   "doc_ref": "context/build.md#a4",
+   "weight": 1,
+   "platform": "google_ads",
+   "result": "fail",
+   "evidence": "No search term review ticked in the last 7 days",
+   "impact": "high",
+   "effort": "low"
+  },
+  {
+   "code": "A5",
+   "part": "setup",
+   "title": "Creative and extensions",
+   "summary": "",
+   "doc_ref": "context/build.md#a5",
+   "weight": 1,
+   "platform": "google_ads",
+   "result": "partial",
+   "evidence": "2 ad groups have 9 of 15 headlines",
+   "impact": "medium",
+   "effort": "medium"
+  },
+  {
+   "code": "A11",
+   "part": "setup",
+   "title": "Google vs Microsoft",
+   "summary": "",
+   "doc_ref": "context/build.md#a11",
+   "weight": 1,
+   "platform": "bing_ads",
+   "result": "partial",
+   "evidence": "Competitor campaign not mirrored on Microsoft",
+   "impact": "low",
+   "effort": "medium"
+  }
+ ]
+}

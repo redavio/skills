@@ -6,3 +6,4 @@ dist/
 google-ads.yaml
 .msads_refresh_token
 *.env
+node_modules/

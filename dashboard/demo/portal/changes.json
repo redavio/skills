@@ -1,0 +1,144 @@
+{
+ "outside": [
+  {
+   "day": "2026-11-12",
+   "platform": "bing_ads",
+   "platform_label": "Microsoft",
+   "category": "Settings",
+   "item": "Campaign",
+   "operation": "CHANGED",
+   "made_by": "outside",
+   "changes": 2,
+   "changed_by": null,
+   "why": null
+  }
+ ],
+ "recent": [
+  {
+   "day": "2026-11-17",
+   "platform": "redavio",
+   "platform_label": "Redavio",
+   "category": "Keywords",
+   "item": "Negative keyword",
+   "operation": "ADDED",
+   "made_by": "redavio",
+   "changes": 3,
+   "changed_by": null,
+   "why": "Search term review: cut 3 junk terms"
+  },
+  {
+   "day": "2026-11-14",
+   "platform": "google_ads",
+   "platform_label": "Google",
+   "category": "Budget",
+   "item": "Campaign budget",
+   "operation": "CHANGED",
+   "made_by": "redavio",
+   "changes": 1,
+   "changed_by": null,
+   "why": "Monthly rebalance toward Non-brand"
+  },
+  {
+   "day": "2026-11-12",
+   "platform": "bing_ads",
+   "platform_label": "Microsoft",
+   "category": "Settings",
+   "item": "Campaign",
+   "operation": "CHANGED",
+   "made_by": "outside",
+   "changes": 2,
+   "changed_by": null,
+   "why": null
+  },
+  {
+   "day": "2026-11-10",
+   "platform": "redavio",
+   "platform_label": "Redavio",
+   "category": "Keywords",
+   "item": "Exact keyword",
+   "operation": "ADDED",
+   "made_by": "redavio",
+   "changes": 2,
+   "changed_by": null,
+   "why": "Promoted 2 converting search terms"
+  },
+  {
+   "day": "2026-11-07",
+   "platform": "google_ads",
+   "platform_label": "Google",
+   "category": "Ads and assets",
+   "item": "Responsive search ad",
+   "operation": "ADDED",
+   "made_by": "redavio",
+   "changes": 1,
+   "changed_by": null,
+   "why": "Copy test: proof headline"
+  },
+  {
+   "day": "2026-11-05",
+   "platform": "google_ads",
+   "platform_label": "Google",
+   "category": "Bidding",
+   "item": "Bid strategy",
+   "operation": "CHANGED",
+   "made_by": "platform",
+   "changes": 1,
+   "changed_by": null,
+   "why": "Google applied a recommendation"
+  },
+  {
+   "day": "2026-11-03",
+   "platform": "bing_ads",
+   "platform_label": "Microsoft",
+   "category": "Budget",
+   "item": "Campaign budget",
+   "operation": "CHANGED",
+   "made_by": "redavio",
+   "changes": 1,
+   "changed_by": null,
+   "why": "Pacing 12% behind"
+  },
+  {
+   "day": "2026-10-31",
+   "platform": "google_ads",
+   "platform_label": "Google",
+   "category": "Ads and assets",
+   "item": "Sitelink",
+   "operation": "ADDED",
+   "made_by": "redavio",
+   "changes": 2,
+   "changed_by": null,
+   "why": "Audit fix A5"
+  },
+  {
+   "day": "2026-10-28",
+   "platform": "google_ads",
+   "platform_label": "Google",
+   "category": "Keywords",
+   "item": "Negative keyword",
+   "operation": "ADDED",
+   "made_by": "redavio",
+   "changes": 5,
+   "changed_by": null,
+   "why": "Weekly search term review"
+  },
+  {
+   "day": "2026-10-09",
+   "platform": "google_ads",
+   "platform_label": "Google",
+   "category": "Status",
+   "item": "Campaign",
+   "operation": "ENABLED",
+   "made_by": "redavio",
+   "changes": 3,
+   "changed_by": null,
+   "why": "Launch approved by Dana Reyes"
+  }
+ ],
+ "total": 186,
+ "lookback": {
+  "window_days": 14,
+  "min_conversions": 10,
+  "categories": []
+ }
+}

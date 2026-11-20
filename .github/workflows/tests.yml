@@ -10,3 +10,8 @@ jobs:
           python-version: "3.12"
       - run: python scripts/build_index.py
       - run: git diff --exit-code
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm ci && npm test && npm run build
+        working-directory: dashboard

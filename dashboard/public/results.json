@@ -1,0 +1,1179 @@
+{
+ "tool": "Paid Search Manager",
+ "version": 1,
+ "client": "Northwind Analytics",
+ "as_of": "2026-11-18",
+ "status": {
+  "done": true,
+  "gating_done": 13,
+  "gating_total": 13,
+  "items": [
+   {
+    "step": "Outside changes explained",
+    "tab": "changes",
+    "state": "todo",
+    "detail": "2 changes made outside Redavio need a why",
+    "gating": false
+   },
+   {
+    "step": "Alerts",
+    "tab": "optimize",
+    "state": "todo",
+    "detail": "1 open: budget pacing 12% ahead",
+    "gating": false
+   },
+   {
+    "step": "Channels picked",
+    "tab": "onboard",
+    "state": "done",
+    "detail": "4 on",
+    "gating": true
+   },
+   {
+    "step": "Link ad accounts",
+    "tab": "onboard",
+    "state": "done",
+    "detail": "2 account(s) linked",
+    "gating": true
+   },
+   {
+    "step": "Intake signed off",
+    "tab": "onboard",
+    "state": "done",
+    "detail": "Signed off Sep 29",
+    "gating": true
+   },
+   {
+    "step": "Plan agreed",
+    "tab": "plan",
+    "state": "done",
+    "detail": "Agreed Oct 2",
+    "gating": true
+   },
+   {
+    "step": "Conversion tracking",
+    "tab": "tracking",
+    "state": "done",
+    "detail": "Set up on both platforms",
+    "gating": true
+   },
+   {
+    "step": "Ad data pulling daily",
+    "tab": "data",
+    "state": "done",
+    "detail": "Last pull Nov 18, 06:10",
+    "gating": true
+   },
+   {
+    "step": "Build plan ready",
+    "tab": "build",
+    "state": "done",
+    "detail": "142 items",
+    "gating": true
+   },
+   {
+    "step": "Built on Google",
+    "tab": "build",
+    "state": "done",
+    "detail": "Built paused Oct 6, read back",
+    "gating": true
+   },
+   {
+    "step": "Built on Microsoft",
+    "tab": "build",
+    "state": "done",
+    "detail": "Built paused Oct 7, read back",
+    "gating": true
+   },
+   {
+    "step": "Live on Google",
+    "tab": "launch",
+    "state": "done",
+    "detail": "Live since Oct 9",
+    "gating": true
+   },
+   {
+    "step": "Live on Microsoft",
+    "tab": "launch",
+    "state": "done",
+    "detail": "Live since Oct 9",
+    "gating": true
+   },
+   {
+    "step": "CRM connected",
+    "tab": "onboard",
+    "state": "not_set_up",
+    "detail": "Pipeline and closed-won fill in once a CRM is connected",
+    "gating": false
+   },
+   {
+    "step": "First audit",
+    "tab": "audit",
+    "state": "done",
+    "detail": "Scored Oct 30",
+    "gating": true
+   },
+   {
+    "step": "Test ideas loaded",
+    "tab": "optimize",
+    "state": "done",
+    "detail": "9 in the bank",
+    "gating": false
+   }
+  ]
+ },
+ "plan": {
+  "forecast": {
+   "rows": [
+    {
+     "platform": "google_ads",
+     "campaign_type": "brand",
+     "searches": 2400,
+     "clicks": 312,
+     "cpc": 1.85,
+     "cpc_source": "Keyword Planner",
+     "cost": 577.2,
+     "steps": [
+      {
+       "name": "MQL",
+       "volume": 31.2,
+       "cpa": 18.5,
+       "roas": null
+      },
+      {
+       "name": "SQL",
+       "volume": 12.5,
+       "cpa": 46.18,
+       "roas": null
+      },
+      {
+       "name": "Opportunity",
+       "volume": 7.5,
+       "cpa": 76.96,
+       "roas": 389.81
+      },
+      {
+       "name": "Closed won",
+       "used": false,
+       "volume": null,
+       "cpa": null,
+       "roas": null
+      }
+     ]
+    },
+    {
+     "platform": "google_ads",
+     "campaign_type": "nonbrand",
+     "searches": 18500,
+     "clicks": 333,
+     "cpc": 9.4,
+     "cpc_source": "Keyword Planner",
+     "cost": 3130.2,
+     "steps": [
+      {
+       "name": "MQL",
+       "volume": 20,
+       "cpa": 156.51,
+       "roas": null
+      },
+      {
+       "name": "SQL",
+       "volume": 6,
+       "cpa": 521.7,
+       "roas": null
+      },
+      {
+       "name": "Opportunity",
+       "volume": 3,
+       "cpa": 1043.4,
+       "roas": 28.75
+      },
+      {
+       "name": "Closed won",
+       "used": false,
+       "volume": null,
+       "cpa": null,
+       "roas": null
+      }
+     ]
+    },
+    {
+     "platform": "google_ads",
+     "campaign_type": "competitor",
+     "searches": 6200,
+     "clicks": 99.2,
+     "cpc": 12.1,
+     "cpc_source": "Keyword Planner",
+     "cost": 1200.3,
+     "steps": [
+      {
+       "name": "MQL",
+       "volume": 4,
+       "cpa": 300.07,
+       "roas": null
+      },
+      {
+       "name": "SQL",
+       "volume": 1.2,
+       "cpa": 1000.25,
+       "roas": null
+      },
+      {
+       "name": "Opportunity",
+       "volume": 0.5,
+       "cpa": 2400.6,
+       "roas": 12.5
+      },
+      {
+       "name": "Closed won",
+       "used": false,
+       "volume": null,
+       "cpa": null,
+       "roas": null
+      }
+     ]
+    },
+    {
+     "platform": "bing_ads",
+     "campaign_type": "brand",
+     "searches": 380,
+     "clicks": 49.4,
+     "cpc": 1.4,
+     "cpc_source": "Microsoft Ad Insight",
+     "cost": 69.2,
+     "steps": [
+      {
+       "name": "MQL",
+       "volume": 4.9,
+       "cpa": 14.12,
+       "roas": null
+      },
+      {
+       "name": "SQL",
+       "volume": 2,
+       "cpa": 34.6,
+       "roas": null
+      },
+      {
+       "name": "Opportunity",
+       "volume": 1.2,
+       "cpa": 57.67,
+       "roas": 520.23
+      },
+      {
+       "name": "Closed won",
+       "used": false,
+       "volume": null,
+       "cpa": null,
+       "roas": null
+      }
+     ]
+    },
+    {
+     "platform": "bing_ads",
+     "campaign_type": "nonbrand",
+     "searches": 2900,
+     "clicks": 52.2,
+     "cpc": 6.8,
+     "cpc_source": "Microsoft Ad Insight",
+     "cost": 355,
+     "steps": [
+      {
+       "name": "MQL",
+       "volume": 3.1,
+       "cpa": 114.52,
+       "roas": null
+      },
+      {
+       "name": "SQL",
+       "volume": 0.9,
+       "cpa": 394.44,
+       "roas": null
+      },
+      {
+       "name": "Opportunity",
+       "volume": 0.5,
+       "cpa": 710,
+       "roas": 42.25
+      },
+      {
+       "name": "Closed won",
+       "used": false,
+       "volume": null,
+       "cpa": null,
+       "roas": null
+      }
+     ]
+    }
+   ],
+   "total": {
+    "searches": 30380,
+    "clicks": 845.8,
+    "cost": 5331.9,
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 63.2,
+      "cpa": 84.37,
+      "roas": null
+     },
+     {
+      "name": "SQL",
+      "volume": 22.6,
+      "cpa": 235.92,
+      "roas": null
+     },
+     {
+      "name": "Opportunity",
+      "volume": 12.7,
+      "cpa": 419.83,
+      "roas": 71.46
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   }
+  },
+  "budget": {
+   "monthly_budget": 8000,
+   "lines": [
+    {
+     "platform": "bing_ads",
+     "campaign_type": "brand",
+     "monthly": 90,
+     "daily": 2.96,
+     "at_minimum": true,
+     "set_by_you": false
+    },
+    {
+     "platform": "bing_ads",
+     "campaign_type": "nonbrand",
+     "monthly": 660,
+     "daily": 21.71,
+     "at_minimum": false,
+     "set_by_you": false
+    },
+    {
+     "platform": "google_ads",
+     "campaign_type": "brand",
+     "monthly": 600,
+     "daily": 19.74,
+     "at_minimum": false,
+     "set_by_you": false
+    },
+    {
+     "platform": "google_ads",
+     "campaign_type": "nonbrand",
+     "monthly": 4650,
+     "daily": 152.96,
+     "at_minimum": false,
+     "set_by_you": false
+    },
+    {
+     "platform": "google_ads",
+     "campaign_type": "competitor",
+     "monthly": 1200,
+     "daily": 39.47,
+     "at_minimum": false,
+     "set_by_you": true
+    },
+    {
+     "platform": "google_ads",
+     "campaign_type": "pmax",
+     "monthly": 800,
+     "daily": 26.32,
+     "at_minimum": false,
+     "set_by_you": false
+    }
+   ]
+  },
+  "scenarios": [
+   {
+    "scenario": "Base",
+    "budget": 8000,
+    "spend_forecast": 5331.9,
+    "spend_not_forecast": 800,
+    "capped_by_demand": [],
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 63.2,
+      "cpa": 84.37,
+      "roas": null,
+      "goal": 60,
+      "vs_goal": 0.053
+     },
+     {
+      "name": "SQL",
+      "volume": 20.6,
+      "cpa": 258.83,
+      "roas": null,
+      "goal": 20,
+      "vs_goal": 0.03
+     },
+     {
+      "name": "Opportunity",
+      "volume": 12.7,
+      "cpa": 419.83,
+      "roas": 71.46,
+      "goal": 12,
+      "vs_goal": 0.058
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   },
+   {
+    "scenario": "+25%",
+    "budget": 10000,
+    "spend_forecast": 6640,
+    "spend_not_forecast": 1000,
+    "capped_by_demand": [],
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 76.5,
+      "cpa": 86.8,
+      "roas": null,
+      "goal": 60,
+      "vs_goal": 0.275
+     },
+     {
+      "name": "SQL",
+      "volume": 24.9,
+      "cpa": 266.67,
+      "roas": null,
+      "goal": 20,
+      "vs_goal": 0.245
+     },
+     {
+      "name": "Opportunity",
+      "volume": 15.4,
+      "cpa": 431.17,
+      "roas": 69.58,
+      "goal": 12,
+      "vs_goal": 0.283
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   },
+   {
+    "scenario": "+50%",
+    "budget": 12000,
+    "spend_forecast": 7480.5,
+    "spend_not_forecast": 1200,
+    "capped_by_demand": [
+     "google_ads brand",
+     "bing_ads brand"
+    ],
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 84.1,
+      "cpa": 88.95,
+      "roas": null,
+      "goal": 60,
+      "vs_goal": 0.402
+     },
+     {
+      "name": "SQL",
+      "volume": 27.4,
+      "cpa": 273.01,
+      "roas": null,
+      "goal": 20,
+      "vs_goal": 0.37
+     },
+     {
+      "name": "Opportunity",
+      "volume": 16.9,
+      "cpa": 442.63,
+      "roas": 67.78,
+      "goal": 12,
+      "vs_goal": 0.408
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   }
+  ]
+ },
+ "audit": {
+  "id": 2,
+  "note": null,
+  "created_at": "2026-10-30T14:00:00+00:00",
+  "fix_plan_signed_by": "Dana Reyes (Northwind)",
+  "fix_plan_signed_at": "2026-10-31T16:20:00+00:00",
+  "rows": [
+   {
+    "code": "A1",
+    "part": "setup",
+    "title": "Measurement",
+    "summary": "",
+    "doc_ref": "context/build.md#a1",
+    "weight": 2,
+    "platform": "bing_ads",
+    "result": "partial",
+    "evidence": "Offline conversions upload weekly, not daily",
+    "impact": "high",
+    "effort": "low"
+   },
+   {
+    "code": "A4",
+    "part": "setup",
+    "title": "Targeting",
+    "summary": "",
+    "doc_ref": "context/build.md#a4",
+    "weight": 1,
+    "platform": "google_ads",
+    "result": "fail",
+    "evidence": "No search term review ticked in the last 7 days",
+    "impact": "high",
+    "effort": "low"
+   },
+   {
+    "code": "A5",
+    "part": "setup",
+    "title": "Creative and extensions",
+    "summary": "",
+    "doc_ref": "context/build.md#a5",
+    "weight": 1,
+    "platform": "google_ads",
+    "result": "partial",
+    "evidence": "2 ad groups have 9 of 15 headlines",
+    "impact": "medium",
+    "effort": "medium"
+   },
+   {
+    "code": "A11",
+    "part": "setup",
+    "title": "Google vs Microsoft",
+    "summary": "",
+    "doc_ref": "context/build.md#a11",
+    "weight": 1,
+    "platform": "bing_ads",
+    "result": "partial",
+    "evidence": "Competitor campaign not mirrored on Microsoft",
+    "impact": "low",
+    "effort": "medium"
+   }
+  ],
+  "setup_health": 78.6,
+  "findings": [
+   {
+    "code": "A1",
+    "part": "setup",
+    "title": "Measurement",
+    "summary": "",
+    "doc_ref": "context/build.md#a1",
+    "weight": 2,
+    "platform": "bing_ads",
+    "result": "partial",
+    "evidence": "Offline conversions upload weekly, not daily",
+    "impact": "high",
+    "effort": "low"
+   },
+   {
+    "code": "A4",
+    "part": "setup",
+    "title": "Targeting",
+    "summary": "",
+    "doc_ref": "context/build.md#a4",
+    "weight": 1,
+    "platform": "google_ads",
+    "result": "fail",
+    "evidence": "No search term review ticked in the last 7 days",
+    "impact": "high",
+    "effort": "low"
+   },
+   {
+    "code": "A5",
+    "part": "setup",
+    "title": "Creative and extensions",
+    "summary": "",
+    "doc_ref": "context/build.md#a5",
+    "weight": 1,
+    "platform": "google_ads",
+    "result": "partial",
+    "evidence": "2 ad groups have 9 of 15 headlines",
+    "impact": "medium",
+    "effort": "medium"
+   },
+   {
+    "code": "A11",
+    "part": "setup",
+    "title": "Google vs Microsoft",
+    "summary": "",
+    "doc_ref": "context/build.md#a11",
+    "weight": 1,
+    "platform": "bing_ads",
+    "result": "partial",
+    "evidence": "Competitor campaign not mirrored on Microsoft",
+    "impact": "low",
+    "effort": "medium"
+   }
+  ]
+ },
+ "previous_audit": {
+  "created_at": "2026-09-24T14:00:00+00:00",
+  "setup_health": 41.2
+ },
+ "build": {
+  "plan": [
+   {
+    "id": 6,
+    "parent_id": null,
+    "item_type": "campaign",
+    "name": "search|brand|core|us|en",
+    "match_type": null,
+    "final_url": null,
+    "details": {
+     "daily_budget": 19.74,
+     "bidding": "max_conversions",
+     "locations": [
+      "2840"
+     ],
+     "languages": [
+      "1000"
+     ],
+     "ai_max": false
+    },
+    "problems": [],
+    "children": [
+     {
+      "id": 5,
+      "parent_id": null,
+      "item_type": "ad_group",
+      "name": "brand",
+      "match_type": null,
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": [
+       {
+        "id": 1,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "northwind analytics",
+        "match_type": "exact",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 2,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "northwind analytics pricing",
+        "match_type": "phrase",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 3,
+        "parent_id": null,
+        "item_type": "negative",
+        "name": "login",
+        "match_type": "phrase",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 4,
+        "parent_id": null,
+        "item_type": "ad",
+        "name": "RSA 1",
+        "match_type": null,
+        "final_url": "https://northwind.example/",
+        "details": {
+         "headlines": [
+          "Northwind Analytics",
+          "Official Site",
+          "B2B Marketing Analytics"
+         ],
+         "descriptions": [
+          "Plan spend, pacing and pipeline in one place.",
+          "Built for B2B marketing teams. Free 14-day trial."
+         ]
+        },
+        "problems": [],
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 17,
+    "parent_id": null,
+    "item_type": "campaign",
+    "name": "search|nonbrand|marketing_analytics|us|en",
+    "match_type": null,
+    "final_url": null,
+    "details": {
+     "daily_budget": 152.96,
+     "bidding": "max_conversions",
+     "locations": [
+      "2840"
+     ],
+     "languages": [
+      "1000"
+     ],
+     "ai_max": false
+    },
+    "problems": [],
+    "children": [
+     {
+      "id": 10,
+      "parent_id": null,
+      "item_type": "ad_group",
+      "name": "marketing analytics software",
+      "match_type": null,
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": [
+       {
+        "id": 7,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "marketing analytics software",
+        "match_type": "exact",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 8,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "b2b marketing analytics",
+        "match_type": "phrase",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 9,
+        "parent_id": null,
+        "item_type": "ad",
+        "name": "RSA 1",
+        "match_type": null,
+        "final_url": "https://northwind.example/analytics",
+        "details": {
+         "headlines": [
+          "Marketing Analytics Software",
+          "See Pipeline by Channel",
+          "Start a Free Trial"
+         ],
+         "descriptions": [
+          "Plan spend, pacing and pipeline in one place.",
+          "Built for B2B marketing teams. Free 14-day trial."
+         ]
+        },
+        "problems": [],
+        "children": []
+       }
+      ]
+     },
+     {
+      "id": 14,
+      "parent_id": null,
+      "item_type": "ad_group",
+      "name": "attribution tool",
+      "match_type": null,
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": [
+       {
+        "id": 11,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "b2b attribution tool",
+        "match_type": "exact",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 12,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "multi touch attribution",
+        "match_type": "phrase",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 13,
+        "parent_id": null,
+        "item_type": "ad",
+        "name": "RSA 1",
+        "match_type": null,
+        "final_url": "https://northwind.example/attribution",
+        "details": {
+         "headlines": [
+          "B2B Attribution Tool",
+          "Credit Every Touch",
+          "Book a Demo"
+         ],
+         "descriptions": [
+          "Plan spend, pacing and pipeline in one place.",
+          "Built for B2B marketing teams. Free 14-day trial."
+         ]
+        },
+        "problems": [],
+        "children": []
+       }
+      ]
+     },
+     {
+      "id": 15,
+      "parent_id": null,
+      "item_type": "negative",
+      "name": "jobs",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 16,
+      "parent_id": null,
+      "item_type": "negative",
+      "name": "free template",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     }
+    ]
+   },
+   {
+    "id": 21,
+    "parent_id": null,
+    "item_type": "campaign",
+    "name": "search|competitor|core|us|en",
+    "match_type": null,
+    "final_url": null,
+    "details": {
+     "daily_budget": 39.47,
+     "bidding": "max_conversions",
+     "locations": [
+      "2840"
+     ],
+     "languages": [
+      "1000"
+     ],
+     "ai_max": false
+    },
+    "problems": [],
+    "children": [
+     {
+      "id": 20,
+      "parent_id": null,
+      "item_type": "ad_group",
+      "name": "competitors",
+      "match_type": null,
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": [
+       {
+        "id": 18,
+        "parent_id": null,
+        "item_type": "keyword",
+        "name": "fabrikam analytics alternative",
+        "match_type": "phrase",
+        "final_url": null,
+        "details": null,
+        "problems": [],
+        "children": []
+       },
+       {
+        "id": 19,
+        "parent_id": null,
+        "item_type": "ad",
+        "name": "RSA 1",
+        "match_type": null,
+        "final_url": "https://northwind.example/compare",
+        "details": {
+         "headlines": [
+          "A Fabrikam Alternative",
+          "Pipeline, Not Just Clicks"
+         ],
+         "descriptions": [
+          "Plan spend, pacing and pipeline in one place.",
+          "Built for B2B marketing teams. Free 14-day trial."
+         ]
+        },
+        "problems": [],
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 25,
+    "parent_id": null,
+    "item_type": "negative_list",
+    "name": "negatives|junk",
+    "match_type": null,
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": [
+     {
+      "id": 22,
+      "parent_id": null,
+      "item_type": "negative",
+      "name": "jobs",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 23,
+      "parent_id": null,
+      "item_type": "negative",
+      "name": "course",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 24,
+      "parent_id": null,
+      "item_type": "negative",
+      "name": "salary",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     }
+    ]
+   },
+   {
+    "id": 26,
+    "parent_id": null,
+    "item_type": "sitelink",
+    "name": "Pricing",
+    "match_type": null,
+    "final_url": "https://northwind.example/pricing",
+    "details": {
+     "description1": "Plans for every team",
+     "description2": "Start free for 14 days"
+    },
+    "problems": [],
+    "children": []
+   },
+   {
+    "id": 27,
+    "parent_id": null,
+    "item_type": "sitelink",
+    "name": "Customer stories",
+    "match_type": null,
+    "final_url": "https://northwind.example/customers",
+    "details": {
+     "description1": "How B2B teams use it",
+     "description2": "Read the case studies"
+    },
+    "problems": [],
+    "children": []
+   },
+   {
+    "id": 28,
+    "parent_id": null,
+    "item_type": "callout",
+    "name": "SOC 2 Type II",
+    "match_type": null,
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": []
+   },
+   {
+    "id": 29,
+    "parent_id": null,
+    "item_type": "snippet",
+    "name": "Features",
+    "match_type": null,
+    "final_url": null,
+    "details": {
+     "values": [
+      "Attribution",
+      "Pacing",
+      "Forecasts",
+      "Reports"
+     ]
+    },
+    "problems": [],
+    "children": []
+   }
+  ]
+ },
+ "changes": {
+  "recent": [
+   {
+    "day": "2026-11-17",
+    "platform": "redavio",
+    "platform_label": "Redavio",
+    "category": "Keywords",
+    "item": "Negative keyword",
+    "operation": "ADDED",
+    "made_by": "redavio",
+    "changes": 3,
+    "changed_by": null,
+    "why": "Search term review: cut 3 junk terms"
+   },
+   {
+    "day": "2026-11-14",
+    "platform": "google_ads",
+    "platform_label": "Google",
+    "category": "Budget",
+    "item": "Campaign budget",
+    "operation": "CHANGED",
+    "made_by": "redavio",
+    "changes": 1,
+    "changed_by": null,
+    "why": "Monthly rebalance toward Non-brand"
+   },
+   {
+    "day": "2026-11-12",
+    "platform": "bing_ads",
+    "platform_label": "Microsoft",
+    "category": "Settings",
+    "item": "Campaign",
+    "operation": "CHANGED",
+    "made_by": "outside",
+    "changes": 2,
+    "changed_by": null,
+    "why": null
+   },
+   {
+    "day": "2026-11-10",
+    "platform": "redavio",
+    "platform_label": "Redavio",
+    "category": "Keywords",
+    "item": "Exact keyword",
+    "operation": "ADDED",
+    "made_by": "redavio",
+    "changes": 2,
+    "changed_by": null,
+    "why": "Promoted 2 converting search terms"
+   },
+   {
+    "day": "2026-11-07",
+    "platform": "google_ads",
+    "platform_label": "Google",
+    "category": "Ads and assets",
+    "item": "Responsive search ad",
+    "operation": "ADDED",
+    "made_by": "redavio",
+    "changes": 1,
+    "changed_by": null,
+    "why": "Copy test: proof headline"
+   },
+   {
+    "day": "2026-11-05",
+    "platform": "google_ads",
+    "platform_label": "Google",
+    "category": "Bidding",
+    "item": "Bid strategy",
+    "operation": "CHANGED",
+    "made_by": "platform",
+    "changes": 1,
+    "changed_by": null,
+    "why": "Google applied a recommendation"
+   },
+   {
+    "day": "2026-11-03",
+    "platform": "bing_ads",
+    "platform_label": "Microsoft",
+    "category": "Budget",
+    "item": "Campaign budget",
+    "operation": "CHANGED",
+    "made_by": "redavio",
+    "changes": 1,
+    "changed_by": null,
+    "why": "Pacing 12% behind"
+   },
+   {
+    "day": "2026-10-31",
+    "platform": "google_ads",
+    "platform_label": "Google",
+    "category": "Ads and assets",
+    "item": "Sitelink",
+    "operation": "ADDED",
+    "made_by": "redavio",
+    "changes": 2,
+    "changed_by": null,
+    "why": "Audit fix A5"
+   },
+   {
+    "day": "2026-10-28",
+    "platform": "google_ads",
+    "platform_label": "Google",
+    "category": "Keywords",
+    "item": "Negative keyword",
+    "operation": "ADDED",
+    "made_by": "redavio",
+    "changes": 5,
+    "changed_by": null,
+    "why": "Weekly search term review"
+   },
+   {
+    "day": "2026-10-09",
+    "platform": "google_ads",
+    "platform_label": "Google",
+    "category": "Status",
+    "item": "Campaign",
+    "operation": "ENABLED",
+    "made_by": "redavio",
+    "changes": 3,
+    "changed_by": null,
+    "why": "Launch approved by Dana Reyes"
+   }
+  ],
+  "total": 186
+ }
+}

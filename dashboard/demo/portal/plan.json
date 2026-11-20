@@ -1,0 +1,411 @@
+[
+ {
+  "id": 6,
+  "parent_id": null,
+  "item_type": "campaign",
+  "name": "search|brand|core|us|en",
+  "match_type": null,
+  "final_url": null,
+  "details": {
+   "daily_budget": 19.74,
+   "bidding": "max_conversions",
+   "locations": [
+    "2840"
+   ],
+   "languages": [
+    "1000"
+   ],
+   "ai_max": false
+  },
+  "problems": [],
+  "children": [
+   {
+    "id": 5,
+    "parent_id": null,
+    "item_type": "ad_group",
+    "name": "brand",
+    "match_type": null,
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": [
+     {
+      "id": 1,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "northwind analytics",
+      "match_type": "exact",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 2,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "northwind analytics pricing",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 3,
+      "parent_id": null,
+      "item_type": "negative",
+      "name": "login",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 4,
+      "parent_id": null,
+      "item_type": "ad",
+      "name": "RSA 1",
+      "match_type": null,
+      "final_url": "https://northwind.example/",
+      "details": {
+       "headlines": [
+        "Northwind Analytics",
+        "Official Site",
+        "B2B Marketing Analytics"
+       ],
+       "descriptions": [
+        "Plan spend, pacing and pipeline in one place.",
+        "Built for B2B marketing teams. Free 14-day trial."
+       ]
+      },
+      "problems": [],
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "parent_id": null,
+  "item_type": "campaign",
+  "name": "search|nonbrand|marketing_analytics|us|en",
+  "match_type": null,
+  "final_url": null,
+  "details": {
+   "daily_budget": 152.96,
+   "bidding": "max_conversions",
+   "locations": [
+    "2840"
+   ],
+   "languages": [
+    "1000"
+   ],
+   "ai_max": false
+  },
+  "problems": [],
+  "children": [
+   {
+    "id": 10,
+    "parent_id": null,
+    "item_type": "ad_group",
+    "name": "marketing analytics software",
+    "match_type": null,
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": [
+     {
+      "id": 7,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "marketing analytics software",
+      "match_type": "exact",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 8,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "b2b marketing analytics",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 9,
+      "parent_id": null,
+      "item_type": "ad",
+      "name": "RSA 1",
+      "match_type": null,
+      "final_url": "https://northwind.example/analytics",
+      "details": {
+       "headlines": [
+        "Marketing Analytics Software",
+        "See Pipeline by Channel",
+        "Start a Free Trial"
+       ],
+       "descriptions": [
+        "Plan spend, pacing and pipeline in one place.",
+        "Built for B2B marketing teams. Free 14-day trial."
+       ]
+      },
+      "problems": [],
+      "children": []
+     }
+    ]
+   },
+   {
+    "id": 14,
+    "parent_id": null,
+    "item_type": "ad_group",
+    "name": "attribution tool",
+    "match_type": null,
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": [
+     {
+      "id": 11,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "b2b attribution tool",
+      "match_type": "exact",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 12,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "multi touch attribution",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 13,
+      "parent_id": null,
+      "item_type": "ad",
+      "name": "RSA 1",
+      "match_type": null,
+      "final_url": "https://northwind.example/attribution",
+      "details": {
+       "headlines": [
+        "B2B Attribution Tool",
+        "Credit Every Touch",
+        "Book a Demo"
+       ],
+       "descriptions": [
+        "Plan spend, pacing and pipeline in one place.",
+        "Built for B2B marketing teams. Free 14-day trial."
+       ]
+      },
+      "problems": [],
+      "children": []
+     }
+    ]
+   },
+   {
+    "id": 15,
+    "parent_id": null,
+    "item_type": "negative",
+    "name": "jobs",
+    "match_type": "phrase",
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": []
+   },
+   {
+    "id": 16,
+    "parent_id": null,
+    "item_type": "negative",
+    "name": "free template",
+    "match_type": "phrase",
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "parent_id": null,
+  "item_type": "campaign",
+  "name": "search|competitor|core|us|en",
+  "match_type": null,
+  "final_url": null,
+  "details": {
+   "daily_budget": 39.47,
+   "bidding": "max_conversions",
+   "locations": [
+    "2840"
+   ],
+   "languages": [
+    "1000"
+   ],
+   "ai_max": false
+  },
+  "problems": [],
+  "children": [
+   {
+    "id": 20,
+    "parent_id": null,
+    "item_type": "ad_group",
+    "name": "competitors",
+    "match_type": null,
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": [
+     {
+      "id": 18,
+      "parent_id": null,
+      "item_type": "keyword",
+      "name": "fabrikam analytics alternative",
+      "match_type": "phrase",
+      "final_url": null,
+      "details": null,
+      "problems": [],
+      "children": []
+     },
+     {
+      "id": 19,
+      "parent_id": null,
+      "item_type": "ad",
+      "name": "RSA 1",
+      "match_type": null,
+      "final_url": "https://northwind.example/compare",
+      "details": {
+       "headlines": [
+        "A Fabrikam Alternative",
+        "Pipeline, Not Just Clicks"
+       ],
+       "descriptions": [
+        "Plan spend, pacing and pipeline in one place.",
+        "Built for B2B marketing teams. Free 14-day trial."
+       ]
+      },
+      "problems": [],
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "parent_id": null,
+  "item_type": "negative_list",
+  "name": "negatives|junk",
+  "match_type": null,
+  "final_url": null,
+  "details": null,
+  "problems": [],
+  "children": [
+   {
+    "id": 22,
+    "parent_id": null,
+    "item_type": "negative",
+    "name": "jobs",
+    "match_type": "phrase",
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": []
+   },
+   {
+    "id": 23,
+    "parent_id": null,
+    "item_type": "negative",
+    "name": "course",
+    "match_type": "phrase",
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": []
+   },
+   {
+    "id": 24,
+    "parent_id": null,
+    "item_type": "negative",
+    "name": "salary",
+    "match_type": "phrase",
+    "final_url": null,
+    "details": null,
+    "problems": [],
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "parent_id": null,
+  "item_type": "sitelink",
+  "name": "Pricing",
+  "match_type": null,
+  "final_url": "https://northwind.example/pricing",
+  "details": {
+   "description1": "Plans for every team",
+   "description2": "Start free for 14 days"
+  },
+  "problems": [],
+  "children": []
+ },
+ {
+  "id": 27,
+  "parent_id": null,
+  "item_type": "sitelink",
+  "name": "Customer stories",
+  "match_type": null,
+  "final_url": "https://northwind.example/customers",
+  "details": {
+   "description1": "How B2B teams use it",
+   "description2": "Read the case studies"
+  },
+  "problems": [],
+  "children": []
+ },
+ {
+  "id": 28,
+  "parent_id": null,
+  "item_type": "callout",
+  "name": "SOC 2 Type II",
+  "match_type": null,
+  "final_url": null,
+  "details": null,
+  "problems": [],
+  "children": []
+ },
+ {
+  "id": 29,
+  "parent_id": null,
+  "item_type": "snippet",
+  "name": "Features",
+  "match_type": null,
+  "final_url": null,
+  "details": {
+   "values": [
+    "Attribution",
+    "Pacing",
+    "Forecasts",
+    "Reports"
+   ]
+  },
+  "problems": [],
+  "children": []
+ }
+]

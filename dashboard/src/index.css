@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your brand color, as R G B. Change it to rebrand the dashboard (name and logo: src/brand.ts). */
+:root {
+  --brand: 74 155 71;
+}

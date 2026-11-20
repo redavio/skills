@@ -1,0 +1,119 @@
+{
+ "done": true,
+ "gating_done": 13,
+ "gating_total": 13,
+ "items": [
+  {
+   "step": "Outside changes explained",
+   "tab": "changes",
+   "state": "todo",
+   "detail": "2 changes made outside Redavio need a why",
+   "gating": false
+  },
+  {
+   "step": "Alerts",
+   "tab": "optimize",
+   "state": "todo",
+   "detail": "1 open: budget pacing 12% ahead",
+   "gating": false
+  },
+  {
+   "step": "Channels picked",
+   "tab": "onboard",
+   "state": "done",
+   "detail": "4 on",
+   "gating": true
+  },
+  {
+   "step": "Link ad accounts",
+   "tab": "onboard",
+   "state": "done",
+   "detail": "2 account(s) linked",
+   "gating": true
+  },
+  {
+   "step": "Intake signed off",
+   "tab": "onboard",
+   "state": "done",
+   "detail": "Signed off Sep 29",
+   "gating": true
+  },
+  {
+   "step": "Plan agreed",
+   "tab": "plan",
+   "state": "done",
+   "detail": "Agreed Oct 2",
+   "gating": true
+  },
+  {
+   "step": "Conversion tracking",
+   "tab": "tracking",
+   "state": "done",
+   "detail": "Set up on both platforms",
+   "gating": true
+  },
+  {
+   "step": "Ad data pulling daily",
+   "tab": "data",
+   "state": "done",
+   "detail": "Last pull Nov 18, 06:10",
+   "gating": true
+  },
+  {
+   "step": "Build plan ready",
+   "tab": "build",
+   "state": "done",
+   "detail": "142 items",
+   "gating": true
+  },
+  {
+   "step": "Built on Google",
+   "tab": "build",
+   "state": "done",
+   "detail": "Built paused Oct 6, read back",
+   "gating": true
+  },
+  {
+   "step": "Built on Microsoft",
+   "tab": "build",
+   "state": "done",
+   "detail": "Built paused Oct 7, read back",
+   "gating": true
+  },
+  {
+   "step": "Live on Google",
+   "tab": "launch",
+   "state": "done",
+   "detail": "Live since Oct 9",
+   "gating": true
+  },
+  {
+   "step": "Live on Microsoft",
+   "tab": "launch",
+   "state": "done",
+   "detail": "Live since Oct 9",
+   "gating": true
+  },
+  {
+   "step": "CRM connected",
+   "tab": "onboard",
+   "state": "not_set_up",
+   "detail": "Pipeline and closed-won fill in once a CRM is connected",
+   "gating": false
+  },
+  {
+   "step": "First audit",
+   "tab": "audit",
+   "state": "done",
+   "detail": "Scored Oct 30",
+   "gating": true
+  },
+  {
+   "step": "Test ideas loaded",
+   "tab": "optimize",
+   "state": "done",
+   "detail": "9 in the bank",
+   "gating": false
+  }
+ ]
+}

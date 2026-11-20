@@ -1,0 +1,402 @@
+{
+ "keywords": [],
+ "forecast": {
+  "rows": [
+   {
+    "platform": "google_ads",
+    "campaign_type": "brand",
+    "searches": 2400,
+    "clicks": 312.0,
+    "cpc": 1.85,
+    "cpc_source": "Keyword Planner",
+    "cost": 577.2,
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 31.2,
+      "cpa": 18.5,
+      "roas": null
+     },
+     {
+      "name": "SQL",
+      "volume": 12.5,
+      "cpa": 46.18,
+      "roas": null
+     },
+     {
+      "name": "Opportunity",
+      "volume": 7.5,
+      "cpa": 76.96,
+      "roas": 389.81
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   },
+   {
+    "platform": "google_ads",
+    "campaign_type": "nonbrand",
+    "searches": 18500,
+    "clicks": 333.0,
+    "cpc": 9.4,
+    "cpc_source": "Keyword Planner",
+    "cost": 3130.2,
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 20.0,
+      "cpa": 156.51,
+      "roas": null
+     },
+     {
+      "name": "SQL",
+      "volume": 6.0,
+      "cpa": 521.7,
+      "roas": null
+     },
+     {
+      "name": "Opportunity",
+      "volume": 3.0,
+      "cpa": 1043.4,
+      "roas": 28.75
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   },
+   {
+    "platform": "google_ads",
+    "campaign_type": "competitor",
+    "searches": 6200,
+    "clicks": 99.2,
+    "cpc": 12.1,
+    "cpc_source": "Keyword Planner",
+    "cost": 1200.3,
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 4.0,
+      "cpa": 300.07,
+      "roas": null
+     },
+     {
+      "name": "SQL",
+      "volume": 1.2,
+      "cpa": 1000.25,
+      "roas": null
+     },
+     {
+      "name": "Opportunity",
+      "volume": 0.5,
+      "cpa": 2400.6,
+      "roas": 12.5
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   },
+   {
+    "platform": "bing_ads",
+    "campaign_type": "brand",
+    "searches": 380,
+    "clicks": 49.4,
+    "cpc": 1.4,
+    "cpc_source": "Microsoft Ad Insight",
+    "cost": 69.2,
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 4.9,
+      "cpa": 14.12,
+      "roas": null
+     },
+     {
+      "name": "SQL",
+      "volume": 2.0,
+      "cpa": 34.6,
+      "roas": null
+     },
+     {
+      "name": "Opportunity",
+      "volume": 1.2,
+      "cpa": 57.67,
+      "roas": 520.23
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   },
+   {
+    "platform": "bing_ads",
+    "campaign_type": "nonbrand",
+    "searches": 2900,
+    "clicks": 52.2,
+    "cpc": 6.8,
+    "cpc_source": "Microsoft Ad Insight",
+    "cost": 355.0,
+    "steps": [
+     {
+      "name": "MQL",
+      "volume": 3.1,
+      "cpa": 114.52,
+      "roas": null
+     },
+     {
+      "name": "SQL",
+      "volume": 0.9,
+      "cpa": 394.44,
+      "roas": null
+     },
+     {
+      "name": "Opportunity",
+      "volume": 0.5,
+      "cpa": 710.0,
+      "roas": 42.25
+     },
+     {
+      "name": "Closed won",
+      "used": false,
+      "volume": null,
+      "cpa": null,
+      "roas": null
+     }
+    ]
+   }
+  ],
+  "total": {
+   "searches": 30380,
+   "clicks": 845.8,
+   "cost": 5331.9,
+   "steps": [
+    {
+     "name": "MQL",
+     "volume": 63.2,
+     "cpa": 84.37,
+     "roas": null
+    },
+    {
+     "name": "SQL",
+     "volume": 22.6,
+     "cpa": 235.92,
+     "roas": null
+    },
+    {
+     "name": "Opportunity",
+     "volume": 12.7,
+     "cpa": 419.83,
+     "roas": 71.46
+    },
+    {
+     "name": "Closed won",
+     "used": false,
+     "volume": null,
+     "cpa": null,
+     "roas": null
+    }
+   ]
+  }
+ },
+ "budget": {
+  "monthly_budget": 8000.0,
+  "lines": [
+   {
+    "platform": "bing_ads",
+    "campaign_type": "brand",
+    "monthly": 90.0,
+    "daily": 2.96,
+    "at_minimum": true,
+    "set_by_you": false
+   },
+   {
+    "platform": "bing_ads",
+    "campaign_type": "nonbrand",
+    "monthly": 660.0,
+    "daily": 21.71,
+    "at_minimum": false,
+    "set_by_you": false
+   },
+   {
+    "platform": "google_ads",
+    "campaign_type": "brand",
+    "monthly": 600.0,
+    "daily": 19.74,
+    "at_minimum": false,
+    "set_by_you": false
+   },
+   {
+    "platform": "google_ads",
+    "campaign_type": "nonbrand",
+    "monthly": 4650.0,
+    "daily": 152.96,
+    "at_minimum": false,
+    "set_by_you": false
+   },
+   {
+    "platform": "google_ads",
+    "campaign_type": "competitor",
+    "monthly": 1200.0,
+    "daily": 39.47,
+    "at_minimum": false,
+    "set_by_you": true
+   },
+   {
+    "platform": "google_ads",
+    "campaign_type": "pmax",
+    "monthly": 800.0,
+    "daily": 26.32,
+    "at_minimum": false,
+    "set_by_you": false
+   }
+  ]
+ },
+ "scenarios": [
+  {
+   "scenario": "Base",
+   "budget": 8000,
+   "spend_forecast": 5331.9,
+   "spend_not_forecast": 800,
+   "capped_by_demand": [],
+   "steps": [
+    {
+     "name": "MQL",
+     "volume": 63.2,
+     "cpa": 84.37,
+     "roas": null,
+     "goal": 60,
+     "vs_goal": 0.053
+    },
+    {
+     "name": "SQL",
+     "volume": 20.6,
+     "cpa": 258.83,
+     "roas": null,
+     "goal": 20,
+     "vs_goal": 0.03
+    },
+    {
+     "name": "Opportunity",
+     "volume": 12.7,
+     "cpa": 419.83,
+     "roas": 71.46,
+     "goal": 12,
+     "vs_goal": 0.058
+    },
+    {
+     "name": "Closed won",
+     "used": false,
+     "volume": null,
+     "cpa": null,
+     "roas": null
+    }
+   ]
+  },
+  {
+   "scenario": "+25%",
+   "budget": 10000,
+   "spend_forecast": 6640.0,
+   "spend_not_forecast": 1000,
+   "capped_by_demand": [],
+   "steps": [
+    {
+     "name": "MQL",
+     "volume": 76.5,
+     "cpa": 86.8,
+     "roas": null,
+     "goal": 60,
+     "vs_goal": 0.275
+    },
+    {
+     "name": "SQL",
+     "volume": 24.9,
+     "cpa": 266.67,
+     "roas": null,
+     "goal": 20,
+     "vs_goal": 0.245
+    },
+    {
+     "name": "Opportunity",
+     "volume": 15.4,
+     "cpa": 431.17,
+     "roas": 69.58,
+     "goal": 12,
+     "vs_goal": 0.283
+    },
+    {
+     "name": "Closed won",
+     "used": false,
+     "volume": null,
+     "cpa": null,
+     "roas": null
+    }
+   ]
+  },
+  {
+   "scenario": "+50%",
+   "budget": 12000,
+   "spend_forecast": 7480.5,
+   "spend_not_forecast": 1200,
+   "capped_by_demand": [
+    "google_ads brand",
+    "bing_ads brand"
+   ],
+   "steps": [
+    {
+     "name": "MQL",
+     "volume": 84.1,
+     "cpa": 88.95,
+     "roas": null,
+     "goal": 60,
+     "vs_goal": 0.402
+    },
+    {
+     "name": "SQL",
+     "volume": 27.4,
+     "cpa": 273.01,
+     "roas": null,
+     "goal": 20,
+     "vs_goal": 0.37
+    },
+    {
+     "name": "Opportunity",
+     "volume": 16.9,
+     "cpa": 442.63,
+     "roas": 67.78,
+     "goal": 12,
+     "vs_goal": 0.408
+    },
+    {
+     "name": "Closed won",
+     "used": false,
+     "volume": null,
+     "cpa": null,
+     "roas": null
+    }
+   ]
+  }
+ ],
+ "assumptions": [],
+ "agreed": {
+  "agreed_by": "operator",
+  "created_at": "2026-10-02T15:00:00+00:00"
+ }
+}
