@@ -39,7 +39,7 @@ COLUMNS = {
     "audience_placements": ("PublisherUsagePerformanceReportRequest", "AccountThroughAdGroupReportScope",
                             ["PublisherUrl", "CampaignName", "AdGroupName", "Impressions", "Clicks", "Spend", "Conversions", "Revenue"]),
     "professional_demographics": ("ProfessionalDemographicsAudienceReportRequest", "AccountThroughAdGroupReportScope",
-                                  ["CompanyName", "IndustryName", "JobFunctionName", "CampaignName", "AdGroupName",
+                                  ["AccountName", "CompanyName", "IndustryName", "JobFunctionName", "CampaignName", "AdGroupName",
                                    "Impressions", "Clicks", "Spend", "Conversions", "Revenue"]),
 }
 
