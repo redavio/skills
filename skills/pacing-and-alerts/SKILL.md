@@ -33,6 +33,7 @@ Ask for the monthly budget and the goal for each segment. No goal for a segment:
    - Google vs Microsoft parity drift (parity-check).
    - Flagrant spend: an item spent 2x the target CPA with zero conversions (ROAS goal: 2x value per conversion / target ROAS). Review now, even mid-week.
 4. **First week after launch**: watch only; learning lasts up to 7 days.
+5. **Display**: the same spend pacing on Demand Gen and Audience campaigns; frequency over the cap is an alert.
 
 ## Output
 Top line: on pace / off pace and the one thing to look at. Then a pacing table (segment, platform, spend

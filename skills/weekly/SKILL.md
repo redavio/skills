@@ -23,6 +23,7 @@ Account access or the last 4-13 weeks of data, goals per segment, the test log. 
 4. **parity-check**: Google vs Microsoft drift.
 5. **test-read** for tests at their read date; **test-design** to keep the pipeline full (an ad copy test in every main ad group; next test by ICE).
 6. **exec-report** (weekly): the table plus what we did, what's next, decisions needed.
+7. Display on? **display-review** (placements, channels, audiences, assets, frequency) and **display-report** (the scorecard).
 
 ## Output
 The approved and rejected changes, the tests read and started, and the weekly report.

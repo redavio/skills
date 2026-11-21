@@ -3,7 +3,8 @@
   "standard": "https://agentskills.io",
   "license": "MIT",
   "roles": {
-    "paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max."
+    "paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max.",
+    "paid-display-manager": "Demand creation on Google Demand Gen (YouTube, Discover, Gmail, Display) and Microsoft Audience ads."
   },
   "stages": [
     "role",
@@ -14,6 +15,87 @@
     "cadence"
   ],
   "skills": [
+    {
+      "name": "paid-display-manager",
+      "role": "paid-display-manager",
+      "stage": "role",
+      "cadence": "Any time",
+      "description": "The role: Demand Gen, YouTube and Microsoft Audience ads, which skill to use, and the one scorecard.",
+      "needs": [
+        "A display or video question or goal"
+      ],
+      "path": "skills/paid-display-manager",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill paid-display-manager",
+      "zip": "dist/paid-display-manager.zip"
+    },
+    {
+      "name": "display-build",
+      "role": "paid-display-manager",
+      "stage": "set-up",
+      "cadence": "Once at setup, then per new campaign",
+      "description": "Demand Gen and Microsoft Audience campaigns planned, creative made for every format, built paused after your yes.",
+      "needs": [
+        "ICP (industries, sizes, roles, target accounts)",
+        "the goal per campaign",
+        "audience size or list sizes",
+        "total monthly spend",
+        "brand assets (logo, colours, product)",
+        "HubSpot for Customer Match"
+      ],
+      "path": "skills/display-build",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill display-build",
+      "zip": "dist/display-build.zip"
+    },
+    {
+      "name": "display-review",
+      "role": "paid-display-manager",
+      "stage": "run",
+      "cadence": "Weekly",
+      "description": "Placements, channels, audiences and assets through the volume gate; exclusions and budget moves to approve.",
+      "needs": [
+        "Connected Google and/or Microsoft accounts with 2+ weeks of display data",
+        "the goal conversion (a qualified stage) and its goal rate"
+      ],
+      "path": "skills/display-review",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill display-review",
+      "zip": "dist/display-review.zip"
+    },
+    {
+      "name": "lift-test",
+      "role": "paid-display-manager",
+      "stage": "run",
+      "cadence": "Before launch, then at the read date",
+      "description": "Holdout sized before launch and read at 95%; honest \"not enough to test\" when it can't be.",
+      "needs": [
+        "14+ days of the lift metric (branded searches, direct visits or pipeline) by region",
+        "the expected lift",
+        "for the read, test and held-back daily values before and during"
+      ],
+      "path": "skills/lift-test",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill lift-test",
+      "zip": "dist/lift-test.zip"
+    },
+    {
+      "name": "display-report",
+      "role": "paid-display-manager",
+      "stage": "review",
+      "cadence": "Weekly and monthly",
+      "description": "One scorecard for every display campaign: cost to reach, brand lift, pipeline.",
+      "needs": [
+        "Weekly display cost, impressions and reach",
+        "weekly branded searches and direct visits",
+        "a CPM benchmark band",
+        "HubSpot (Account Hub) for pipeline"
+      ],
+      "path": "skills/display-report",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill display-report",
+      "zip": "dist/display-report.zip"
+    },
     {
       "name": "paid-search-manager",
       "role": "paid-search-manager",

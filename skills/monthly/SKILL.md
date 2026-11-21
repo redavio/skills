@@ -20,6 +20,7 @@ The month's and prior period's data by segment and platform, goals, current budg
 1. **diagnose** every row that missed goal (brand, non-brand, PMax, Google, Microsoft): tracking first, mix vs rate, lever split, the lever to pull.
 2. **exec-report** (monthly): TL;DR, the table with a driver sentence per row, fix and press actions, initiatives.
 3. **budget-rebalance**: moves on marginal return; within the step limit = routine, over it = client approval (change-safety).
+4. Display on? **display-report** (monthly scorecard) and the search vs display split in **budget-rebalance**.
 
 ## Output
 Every gap with a named cause and next action, the report, and the budget proposals awaiting a yes.

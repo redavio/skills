@@ -1,0 +1,8 @@
+[
+  {"placement": "mobileapp::2-com.puzzle.match3", "network": "Display", "impressions": 600000, "clicks": 900, "conversions": 0, "cost": 3000},
+  {"placement": "youtube.com/channel/b2b-marketing", "network": "YouTube", "impressions": 250000, "clicks": 400, "conversions": 12, "cost": 2500},
+  {"placement": "Discover feed", "network": "Discover", "impressions": 300000, "clicks": 500, "conversions": 9, "cost": 2000},
+  {"placement": "Gmail", "network": "Gmail", "impressions": 150000, "clicks": 300, "conversions": 5, "cost": 1500},
+  {"placement": "saasreviews.example.com", "network": "Display", "impressions": 90000, "clicks": 200, "conversions": 3, "cost": 960},
+  {"placement": "smallblog.example.com", "network": "Display", "impressions": 4000, "clicks": 10, "conversions": 0, "cost": 40}
+]

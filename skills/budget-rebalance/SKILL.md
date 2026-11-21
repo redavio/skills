@@ -31,6 +31,7 @@ No impression share data: no increases can be sized (say so); decreases still wo
 5. **Cut lane**: a campaign spending its full budget for 7+ days at 2x+ the target CPA (or under half the target ROAS), or with zero return, can be cut even below the conversion gate. With medium+ confidence (or zero return) it's cut to 25% of average daily spend, past the normal cap.
 6. Skip shared budgets, paused campaigns, moves under 3%, and anything outside min/max budget guards.
 7. Re-plan quarterly on pipeline ROAS; cost per opportunity is the early signal.
+8. **Search vs display** (monthly, when display is on): display moves on its scorecard (cost to reach in band, brand lift, pipeline), never on platform CPA; retargeting never above its cap.
 
 ## Output
 Table: campaign, segment, current daily, recommended daily, change %, objective actual vs target, window

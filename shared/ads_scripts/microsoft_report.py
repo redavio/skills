@@ -2,6 +2,7 @@
 
   python3 microsoft_report.py campaign_daily --days 28 --out campaigns_ms.csv
   python3 microsoft_report.py search_terms --days 28 [--daily] --out terms_ms.csv
+  python3 microsoft_report.py audience_campaigns | audience_placements | professional_demographics --days 28
 Uses the Reporting service (submit, poll, download). Data runs through yesterday.
 """
 from __future__ import annotations
@@ -32,6 +33,14 @@ COLUMNS = {
                         "Revenue", "ImpressionSharePercent", "ImpressionLostToBudgetPercent", "ImpressionLostToRankAggPercent"]),
     "search_terms": ("SearchQueryPerformanceReportRequest", "AccountThroughAdGroupReportScope",
                      ["SearchQuery", "CampaignName", "AdGroupName", "Impressions", "Clicks", "Spend", "Conversions", "Revenue"]),
+    # Audience ads (Microsoft Audience Network): campaign totals, where ads showed, and who saw them (LinkedIn profile).
+    "audience_campaigns": ("CampaignPerformanceReportRequest", "AccountThroughCampaignReportScope",
+                           ["CampaignId", "CampaignName", "CampaignType", "Impressions", "Clicks", "Spend", "Conversions", "Revenue"]),
+    "audience_placements": ("PublisherUsagePerformanceReportRequest", "AccountThroughAdGroupReportScope",
+                            ["PublisherUrl", "CampaignName", "AdGroupName", "Impressions", "Clicks", "Spend", "Conversions", "Revenue"]),
+    "professional_demographics": ("ProfessionalDemographicsAudienceReportRequest", "AccountThroughAdGroupReportScope",
+                                  ["CompanyName", "IndustryName", "JobFunctionName", "CampaignName", "AdGroupName",
+                                   "Impressions", "Clicks", "Spend", "Conversions", "Revenue"]),
 }
 
 
@@ -87,6 +96,16 @@ def run(a):
                          **base, "impression_share": share or "",
                          "lost_is_budget": _num(r.get("ImpressionLostToBudgetPercent")) / 100 or "",
                          "lost_is_rank": _num(r.get("ImpressionLostToRankAggPercent")) / 100 or "", "segment": segment})
+        elif a.report == "audience_campaigns":
+            if "audience" not in (r.get("CampaignType") or "").lower():
+                continue
+            rows.append({"campaign": camp, "campaign_id": r["CampaignId"], "channel_type": r.get("CampaignType"), **base})
+        elif a.report == "audience_placements":
+            rows.append({"placement": r.get("PublisherUrl", ""), "network": "Microsoft Audience Network",
+                         "campaign": camp, "ad_group": r.get("AdGroupName", ""), **base})
+        elif a.report == "professional_demographics":
+            rows.append({"company": r.get("CompanyName", ""), "industry": r.get("IndustryName", ""),
+                         "job_function": r.get("JobFunctionName", ""), "campaign": camp, **base})
         else:
             row = {"term": r["SearchQuery"], "campaign": camp, "ad_group": r.get("AdGroupName", ""), "segment": segment, **base}
             if a.daily:

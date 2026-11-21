@@ -10,6 +10,11 @@ AI Max, Performance Max), from intake to audit. Every job skill works on its own
 is required. Supports all four campaign objectives, one per campaign: conversions, CPA,
 conversion value, ROAS.
 
+The second role is **paid display manager** (Paid Display and Video Manager): demand creation on
+Google Demand Gen (YouTube in-stream, in-feed and Shorts, Discover, Gmail, Display Network) and
+Microsoft Audience ads with LinkedIn profile targeting, for awareness, prospecting and retargeting.
+One scorecard for every display campaign: cost to reach, brand lift, pipeline.
+
 ## How to use it (the Library form factor)
 
 1. **Through the Redavio MCP server** (easiest, no tokens). Add `https://app.redavio.com/mcp` as a
@@ -155,6 +160,16 @@ node scripts/from_portal.mjs demo/portal results.json --client "Northwind Analyt
 - **Fork it:** add views, plug in your own data source, or schedule the export.
 
 Tests: `cd dashboard && npm test`.
+
+## Paid display manager
+
+| Skill | Stage | What it does |
+|---|---|---|
+| [`paid-display-manager`](skills/paid-display-manager/SKILL.md) | Role | Demand Gen, YouTube and Microsoft Audience ads, which skill to use, and the one scorecard. |
+| [`display-build`](skills/display-build/SKILL.md) | Set up | Demand Gen and Microsoft Audience campaigns planned, creative made for every format, built paused after your yes. |
+| [`display-review`](skills/display-review/SKILL.md) | Run | Placements, channels, audiences and assets through the volume gate; exclusions and budget moves to approve. |
+| [`lift-test`](skills/lift-test/SKILL.md) | Run | Holdout sized before launch and read at 95%; honest "not enough to test" when it can't be. |
+| [`display-report`](skills/display-report/SKILL.md) | Review | One scorecard for every display campaign: cost to reach, brand lift, pipeline. |
 
 ## Other roles
 

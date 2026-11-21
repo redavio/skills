@@ -24,6 +24,7 @@ Account access, this and last quarter's data (with pipeline if available), last 
 5. **forecast-and-budget**: re-plan on pipeline ROAS; Brand on impression share and holdout.
 6. **target-math**: replace values agreed as estimates with real data.
 7. Engagement ending? Run **handoff**.
+8. Display on? **lift-test** reads due this quarter, and the display line re-planned in **forecast-and-budget**.
 
 ## Output
 The audit, the QBR deck outline and the signed-off next-quarter plan.

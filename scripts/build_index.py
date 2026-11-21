@@ -73,7 +73,8 @@ def build() -> tuple[list, list]:
 
 def index(skills):
     return {"repo": REPO_URL, "standard": "https://agentskills.io", "license": "MIT",
-            "roles": {"paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max."},
+            "roles": {"paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max.",
+                      "paid-display-manager": "Demand creation on Google Demand Gen (YouTube, Discover, Gmail, Display) and Microsoft Audience ads."},
             "stages": STAGES, "skills": skills}
 
 

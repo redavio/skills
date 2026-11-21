@@ -38,6 +38,7 @@ you used. Missing conversion rates use placeholders (click to first conversion 3
    - Non-brand and Competitor share the rest as one pool (competitor shown as its own line so its cost doesn't hide).
    - No campaign below the minimum daily budget; the pool pays for raising anything up. If the minimums alone don't fit, say so.
    - Daily = monthly / 30.4. A person can type over any daily budget; the pool absorbs the difference.
+2b. **Display line** (when a display channel is on): prospecting from the reach budget (audience x reach share x frequency x CPM, `perfos reach-budget`), retargeting from the list and capped at 1% of total spend (`perfos retargeting-budget`). Display has no keyword demand; it's judged on the display scorecard, not CPA.
 3. **Scenarios**: Base, Medium (+20%), High (+50%). Each line spends only up to its demand ceiling (all its searches); extra budget past that is "capped by demand". PMax has no keyword demand: its spend shows as "not forecast". Extra spend buys results at a higher cost than today's average.
 4. **Template**: goals, demand sizing, budget build, split, scenarios, 30/60/90-day roadmap, risks, sign-off. Re-plan quarterly and when ACV, win rate or stage rates change; then budget shifts on pipeline ROAS (cost per opportunity is the early signal). Brand budget never moves on ROAS alone.
 

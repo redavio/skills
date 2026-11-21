@@ -26,6 +26,13 @@ Commands (one per job; see each skill's SKILL.md for when to use which):
   audit-score   setup health % from checklist statuses
   name          parse or build a campaign name (channel|type|theme|geo|language)
   report        exec report table from daily facts (+ optional CRM leads)
+  placements    display placements (or audiences, channels, assets) through the volume gate -> exclude / keep / hold
+  lift-design   size a holdout before launch -> testable or not enough to test
+  lift-read     read a holdout: test vs held-back regions, before and during
+  display-scorecard  the one display scorecard: cost to reach, brand lift, pipeline
+  reach-budget  monthly budget to reach a share of an audience at a frequency
+  retargeting-budget  retargeting sized from the list, capped at a share of total spend
+  creative-check  display and video assets against each platform's specs
 """
 from __future__ import annotations
 
@@ -35,7 +42,7 @@ import json
 import sys
 from datetime import date, datetime
 
-from . import alerts, audit, budget, expansion, experiments, fencing, gates, limits, naming, parity
+from . import alerts, audit, budget, display, expansion, experiments, fencing, gates, limits, naming, parity
 from . import plan, prune_promote, report, safety, targets
 from .diagnosis import deepdiver
 from .schema import CrmRecord, FactRow
@@ -330,6 +337,37 @@ def c_report(a):
     _out(rep)
 
 
+def c_placements(a):
+    data = _json(a.input) if not str(a.input).endswith(".csv") else _rows(a.input)
+    _out(display.placement_review(data, a.goal_cvr, a.target_cpa))
+
+
+def c_lift_design(a):
+    d = _json(a.input)
+    _out(display.lift_design(d if isinstance(d, list) else d["daily_metric"], a.expected_lift, a.test_days))
+
+
+def c_lift_read(a):
+    d = _json(a.input)
+    _out(display.lift_read(d["test_pre"], d["test_post"], d["control_pre"], d["control_post"]))
+
+
+def c_display_scorecard(a):
+    _out(display.scorecard(_json(a.input), (a.cpm_low, a.cpm_high), _json(a.pipeline) if a.pipeline else None))
+
+
+def c_reach_budget(a):
+    _out(display.reach_budget(a.audience, a.reach_share, a.frequency, a.cpm))
+
+
+def c_retargeting_budget(a):
+    _out(display.retargeting_budget(a.list_size, a.weekly_frequency, a.cpm, a.total_monthly_spend, a.cap_share))
+
+
+def c_creative_check(a):
+    _out(display.creative_check(_json(a.input), a.platform))
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="perfos", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
@@ -444,6 +482,25 @@ def main(argv=None):
     p.add_argument("--start", required=True); p.add_argument("--end", required=True)
     p.add_argument("--goals", help="JSON {row_key: {metric: full-period goal}}"); p.add_argument("--pace", type=float, default=1.0)
     p.add_argument("--driver-kpi", default="cpa"); p.add_argument("--columns"); p.set_defaults(f=c_report)
+
+    p = sp.add_parser("placements"); p.add_argument("--input", required=True, help="JSON list or CSV: placement, cost, clicks, conversions[, impressions, network]")
+    p.add_argument("--goal-cvr", type=float, required=True); p.add_argument("--target-cpa", type=float); p.set_defaults(f=c_placements)
+    p = sp.add_parser("lift-design"); p.add_argument("--input", required=True, help='JSON list of daily values, or {"daily_metric": [...]}')
+    p.add_argument("--expected-lift", type=float, required=True); p.add_argument("--test-days", type=int, default=28); p.set_defaults(f=c_lift_design)
+    p = sp.add_parser("lift-read"); p.add_argument("--input", required=True, help="JSON: test_pre, test_post, control_pre, control_post (daily lists)"); p.set_defaults(f=c_lift_read)
+    p = sp.add_parser("display-scorecard"); p.add_argument("--input", required=True, help="JSON weeks: week, cost, impressions, reach, branded_searches, direct_visits")
+    p.add_argument("--cpm-low", type=float, required=True); p.add_argument("--cpm-high", type=float, required=True)
+    p.add_argument("--pipeline", help="JSON [{account, amount}] from Account Hub"); p.set_defaults(f=c_display_scorecard)
+    p = sp.add_parser("reach-budget")
+    for x in ("audience", "reach-share", "frequency", "cpm"):
+        p.add_argument(f"--{x}", type=float, required=True)
+    p.set_defaults(f=c_reach_budget)
+    p = sp.add_parser("retargeting-budget")
+    for x in ("list-size", "weekly-frequency", "cpm", "total-monthly-spend"):
+        p.add_argument(f"--{x}", type=float, required=True)
+    p.add_argument("--cap-share", type=float, default=0.01); p.set_defaults(f=c_retargeting_budget)
+    p = sp.add_parser("creative-check"); p.add_argument("--input", required=True, help="JSON list: format, width, height, seconds or text")
+    p.add_argument("--platform", choices=["google", "microsoft"], default="google"); p.set_defaults(f=c_creative_check)
 
     a = ap.parse_args(argv)
     a.f(a)

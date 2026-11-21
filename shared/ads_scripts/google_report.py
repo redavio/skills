@@ -7,6 +7,7 @@
   python3 google_report.py pmax_networks
   python3 google_report.py pmax_search_terms --campaign-id 123
   python3 google_report.py change_history --days 28
+  python3 google_report.py dg_placements | dg_channels | dg_audiences | dg_assets | dg_reach   (Demand Gen)
   python3 google_report.py gaql --query "SELECT ..."      (anything else)
 
 Data runs through yesterday. Cost is in account currency (micros converted). The segment column
@@ -144,6 +145,39 @@ def run(a):
                          "operation": e.resource_change_operation.name, "made_by": e.user_email,
                          "via": e.client_type.name, "fields": ",".join(e.changed_fields.paths),
                          "campaign": e.campaign})
+    elif a.report.startswith("dg_"):
+        dg = "campaign.advertising_channel_type = 'DEMAND_GEN'"
+        if a.report == "dg_placements":
+            q = (f"SELECT campaign.name, group_placement_view.display_name, group_placement_view.placement_type, "
+                 f"group_placement_view.target_url, {M} FROM group_placement_view WHERE {when} AND {dg}")
+            for r in G.query(g, cid, q):
+                v = r.group_placement_view
+                rows.append({"campaign": r.campaign.name, "placement": v.target_url or v.display_name,
+                             "network": v.placement_type.name, **base(r)})
+        elif a.report == "dg_channels":
+            q = f"SELECT campaign.name, ad_group.name, segments.ad_network_type, {M} FROM ad_group WHERE {when} AND {dg}"
+            for r in G.query(g, cid, q):
+                rows.append({"campaign": r.campaign.name, "ad_group": r.ad_group.name,
+                             "placement": r.segments.ad_network_type.name, "network": r.segments.ad_network_type.name, **base(r)})
+        elif a.report == "dg_audiences":
+            q = (f"SELECT campaign.name, ad_group.name, ad_group_criterion.display_name, ad_group_criterion.type, {M} "
+                 f"FROM ad_group_audience_view WHERE {when} AND {dg}")
+            for r in G.query(g, cid, q):
+                rows.append({"campaign": r.campaign.name, "ad_group": r.ad_group.name,
+                             "placement": r.ad_group_criterion.display_name, "network": r.ad_group_criterion.type.name, **base(r)})
+        elif a.report == "dg_assets":
+            q = (f"SELECT campaign.name, ad_group.name, asset.name, asset.type, ad_group_ad_asset_view.field_type, {M} "
+                 f"FROM ad_group_ad_asset_view WHERE {when} AND {dg}")
+            for r in G.query(g, cid, q):
+                rows.append({"campaign": r.campaign.name, "ad_group": r.ad_group.name,
+                             "placement": r.asset.name or str(r.asset.type.name),
+                             "network": r.ad_group_ad_asset_view.field_type.name, **base(r)})
+        elif a.report == "dg_reach":
+            q = (f"SELECT campaign.name, metrics.unique_users, metrics.average_impression_frequency_per_user, {M} "
+                 f"FROM campaign WHERE {when} AND {dg}")
+            for r in G.query(g, cid, q):
+                rows.append({"campaign": r.campaign.name, "reach": r.metrics.unique_users,
+                             "frequency": round(r.metrics.average_impression_frequency_per_user, 2), **base(r)})
     elif a.report == "gaql":
         if not a.query:
             sys.exit("--query is required")
@@ -169,7 +203,8 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("report", choices=("campaign_daily", "search_terms", "pmax_search_terms", "keywords", "ad_groups",
                                        "landing_pages", "expanded_landing_pages", "by", "pmax_networks",
-                                       "change_history", "gaql"))
+                                       "change_history", "dg_placements", "dg_channels", "dg_audiences",
+                                       "dg_assets", "dg_reach", "gaql"))
     ap.add_argument("--customer-id"); ap.add_argument("--days", type=int, default=28)
     ap.add_argument("--daily", action="store_true", help="search_terms: one row per day (for whole-week windows)")
     ap.add_argument("--dimension", default="device", choices=("device", "hour", "day_of_week", "network"))
