@@ -4,7 +4,8 @@
   "license": "MIT",
   "roles": {
     "paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max.",
-    "paid-display-manager": "Demand creation on Google Demand Gen (YouTube, Discover, Gmail, Display) and Microsoft Audience ads."
+    "paid-display-manager": "Demand creation on Google Demand Gen (YouTube, Discover, Gmail, Display) and Microsoft Audience ads.",
+    "chatgpt-ads-specialist": "ChatGPT ads (OpenAI's ad platform): context hints, chat card ads, measured against search."
   },
   "stages": [
     "role",
@@ -15,6 +16,147 @@
     "cadence"
   ],
   "skills": [
+    {
+      "name": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-specialist",
+      "stage": "role",
+      "cadence": "Any time",
+      "description": "The role: what each ChatGPT ads skill does and which one to use, with the principles they share.",
+      "needs": [
+        "A ChatGPT ads question or goal"
+      ],
+      "path": "skills/chatgpt-ads-specialist",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill chatgpt-ads-specialist",
+      "zip": "dist/chatgpt-ads-specialist.zip"
+    },
+    {
+      "name": "chatgpt-ad-copy",
+      "role": "chatgpt-ads-specialist",
+      "stage": "set-up",
+      "cadence": "Once at setup, then monthly",
+      "description": "Write chat card ads for each ad group and check every title, body, link and image against OpenAI's limits.",
+      "needs": [
+        "The ad group's topic and hints",
+        "your positioning and proof points",
+        "landing page URLs",
+        "images (640 x 640 or larger)"
+      ],
+      "path": "skills/chatgpt-ad-copy",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-ad-copy",
+      "zip": "dist/chatgpt-ad-copy.zip"
+    },
+    {
+      "name": "chatgpt-build",
+      "role": "chatgpt-ads-specialist",
+      "stage": "set-up",
+      "cadence": "Once at setup, then per new campaign",
+      "description": "Turn the agreed plan, hints and ads into one paused campaign, as a checked bulk request or click-by-click steps for Ads Manager.",
+      "needs": [
+        "The agreed plan (objective, budget, bid)",
+        "hints and ads per ad group, each with its cluster",
+        "landing pages and image URLs"
+      ],
+      "path": "skills/chatgpt-build",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-build",
+      "zip": "dist/chatgpt-build.zip"
+    },
+    {
+      "name": "chatgpt-context-hints",
+      "role": "chatgpt-ads-specialist",
+      "stage": "set-up",
+      "cadence": "Once at setup, then monthly",
+      "description": "Turn keywords and search terms into context hints per ad group, each tagged with its topic cluster.",
+      "needs": [
+        "Keywords or a search terms export with conversions",
+        "the product and ICP",
+        "topic clusters from paid search"
+      ],
+      "path": "skills/chatgpt-context-hints",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-context-hints",
+      "zip": "dist/chatgpt-context-hints.zip"
+    },
+    {
+      "name": "chatgpt-plan",
+      "role": "chatgpt-ads-specialist",
+      "stage": "set-up",
+      "cadence": "Once before testing ChatGPT, then monthly",
+      "description": "Decide whether and how to test ChatGPT ads: objective, bid type, starting budget and a directional forecast, with a gate on conversion bidding.",
+      "needs": [
+        "Monthly budget you can test with",
+        "pipeline goal or target CPA",
+        "expected CTR and conversion rate (or search's as a start)"
+      ],
+      "path": "skills/chatgpt-plan",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-plan",
+      "zip": "dist/chatgpt-plan.zip"
+    },
+    {
+      "name": "chatgpt-tracking",
+      "role": "chatgpt-ads-specialist",
+      "stage": "set-up",
+      "cadence": "Once at setup",
+      "description": "Set up the OpenAI pixel and Conversions API events mapped to CRM stages, with deduplication and the attribution window.",
+      "needs": [
+        "Your CRM stages and which one is the goal",
+        "site access to add a script",
+        "server access for the Conversions API"
+      ],
+      "path": "skills/chatgpt-tracking",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-tracking",
+      "zip": "dist/chatgpt-tracking.zip"
+    },
+    {
+      "name": "chatgpt-test",
+      "role": "chatgpt-ads-specialist",
+      "stage": "run",
+      "cadence": "Before launch, then at the read date",
+      "description": "Prove whether ChatGPT ads add pipeline with a geo or audience holdout: size it before launch, read it at the end.",
+      "needs": [
+        "Daily values of the metric to move (pipeline, demo requests, branded searches) by region for 4+ weeks",
+        "the regions you can hold out"
+      ],
+      "path": "skills/chatgpt-test",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-test",
+      "zip": "dist/chatgpt-test.zip"
+    },
+    {
+      "name": "chatgpt-weekly",
+      "role": "chatgpt-ads-specialist",
+      "stage": "run",
+      "cadence": "Weekly",
+      "description": "Weekly review: each ad group through the volume gate against the account, which hints or ad groups to cut or scale, and every ad's copy checked.",
+      "needs": [
+        "Ad group insights by week (2+ full weeks): ad group, cluster, impressions, clicks, spend, conversions",
+        "optional target CPA",
+        "your ads"
+      ],
+      "path": "skills/chatgpt-weekly",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-weekly",
+      "zip": "dist/chatgpt-weekly.zip"
+    },
+    {
+      "name": "chatgpt-measure",
+      "role": "chatgpt-ads-specialist",
+      "stage": "review",
+      "cadence": "Monthly",
+      "description": "ChatGPT next to Google and Microsoft on CPA and pipeline, with attribution windows lined up, and what ChatGPT added.",
+      "needs": [
+        "Spend, conversions and pipeline per channel for the same dates",
+        "each channel's attribution window"
+      ],
+      "path": "skills/chatgpt-measure",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill chatgpt-measure",
+      "zip": "dist/chatgpt-measure.zip"
+    },
     {
       "name": "paid-display-manager",
       "role": "paid-display-manager",

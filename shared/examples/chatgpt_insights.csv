@@ -1,0 +1,41 @@
+week,campaign,ad_group,cluster,impressions,clicks,spend,conversions
+2026-09-21,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,22714,159,477.0,5
+2026-09-21,chatgpt|clicks|core|us|en,Attribution,attribution,21429,150,450.0,4
+2026-09-21,chatgpt|clicks|core|us|en,Budget planning,budget-planning,22000,154,462.0,5
+2026-09-21,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,21571,151,453.0,4
+2026-09-21,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,22143,155,465.0,1
+2026-09-28,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,22143,155,469.5,4
+2026-09-28,chatgpt|clicks|core|us|en,Attribution,attribution,22429,157,475.5,5
+2026-09-28,chatgpt|clicks|core|us|en,Budget planning,budget-planning,21429,150,454.5,5
+2026-09-28,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,22571,158,478.5,4
+2026-09-28,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,21571,151,457.5,2
+2026-10-05,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,21571,151,462.0,5
+2026-10-05,chatgpt|clicks|core|us|en,Attribution,attribution,21857,153,468.0,4
+2026-10-05,chatgpt|clicks|core|us|en,Budget planning,budget-planning,22429,157,480.0,4
+2026-10-05,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,22000,154,471.0,5
+2026-10-05,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,22571,158,483.0,1
+2026-10-12,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,22571,158,474.0,4
+2026-10-12,chatgpt|clicks|core|us|en,Attribution,attribution,22857,160,480.0,5
+2026-10-12,chatgpt|clicks|core|us|en,Budget planning,budget-planning,21857,153,459.0,4
+2026-10-12,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,21429,150,450.0,5
+2026-10-12,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,22000,154,462.0,1
+2026-10-19,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,22000,154,466.5,5
+2026-10-19,chatgpt|clicks|core|us|en,Attribution,attribution,22286,156,472.5,4
+2026-10-19,chatgpt|clicks|core|us|en,Budget planning,budget-planning,22857,160,484.5,5
+2026-10-19,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,22429,157,475.5,4
+2026-10-19,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,21429,150,454.5,2
+2026-10-26,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,21429,150,459.0,4
+2026-10-26,chatgpt|clicks|core|us|en,Attribution,attribution,21714,152,465.0,5
+2026-10-26,chatgpt|clicks|core|us|en,Budget planning,budget-planning,22286,156,477.0,4
+2026-10-26,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,21857,153,468.0,4
+2026-10-26,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,22429,157,480.0,1
+2026-11-02,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,22429,157,471.0,5
+2026-11-02,chatgpt|clicks|core|us|en,Attribution,attribution,22714,159,477.0,4
+2026-11-02,chatgpt|clicks|core|us|en,Budget planning,budget-planning,21714,152,456.0,5
+2026-11-02,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,22857,160,480.0,5
+2026-11-02,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,21857,153,459.0,1
+2026-11-09,chatgpt|clicks|core|us|en,Pipeline forecasting,forecasting,21857,153,463.5,4
+2026-11-09,chatgpt|clicks|core|us|en,Attribution,attribution,22143,155,469.5,4
+2026-11-09,chatgpt|clicks|core|us|en,Budget planning,budget-planning,22714,159,481.5,4
+2026-11-09,chatgpt|clicks|core|us|en,Competitor alternatives,competitor-alternatives,22286,156,472.5,4
+2026-11-09,chatgpt|clicks|core|us|en,Broad - AI tools,ai-marketing-tools,22857,160,484.5,1

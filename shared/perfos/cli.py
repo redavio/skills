@@ -33,6 +33,12 @@ Commands (one per job; see each skill's SKILL.md for when to use which):
   reach-budget  monthly budget to reach a share of an audience at a frequency
   retargeting-budget  retargeting sized from the list, capped at a share of total spend
   creative-check  display and video assets against each platform's specs
+  chatgpt-plan    ChatGPT ads month: impressions, clicks, conversions, CPA, bid in micros, conversion-bidding gate
+  chatgpt-hints   context hints per ad group: cleaned, deduped, limit and cluster checked
+  chatgpt-card    chat card ads against OpenAI's limits
+  chatgpt-weekly  ad groups through the volume gate vs the account, plus every ad's copy checked
+  chatgpt-bulk    the bulk mutation job (paused, validate_only) for a reviewed build
+  chatgpt-compare ChatGPT next to other channels on CPA and pipeline, with attribution warnings
 """
 from __future__ import annotations
 
@@ -42,7 +48,7 @@ import json
 import sys
 from datetime import date, datetime
 
-from . import alerts, audit, budget, display, expansion, experiments, fencing, gates, limits, naming, parity
+from . import alerts, chatgpt, audit, budget, display, expansion, experiments, fencing, gates, limits, naming, parity
 from . import plan, prune_promote, report, safety, targets
 from .diagnosis import deepdiver
 from .schema import CrmRecord, FactRow
@@ -368,6 +374,32 @@ def c_creative_check(a):
     _out(display.creative_check(_json(a.input), a.platform))
 
 
+def c_chatgpt_plan(a):
+    _out(chatgpt.plan(a.monthly_budget, a.objective, a.ctr, a.cvr, cpm=a.cpm if not a.cpc else None, cpc=a.cpc,
+                      conversions_30d=a.conversions_30d))
+
+
+def c_chatgpt_hints(a):
+    _out(chatgpt.check_hints(_json(a.input)))
+
+
+def c_chatgpt_card(a):
+    data = _rows(a.input) if a.input.endswith(".csv") else _json(a.input)
+    _out([{"ad": c.get("ad") or c.get("name") or c.get("title"), "problems": chatgpt.check_card(c)} for c in data])
+
+
+def c_chatgpt_weekly(a):
+    _out(chatgpt.weekly(_rows(a.csv), ads=_rows(a.ads) if a.ads else None, target_cpa=a.target_cpa, goal_cvr=a.goal_cvr))
+
+
+def c_chatgpt_bulk(a):
+    _out(chatgpt.bulk_job(_json(a.input)))
+
+
+def c_chatgpt_compare(a):
+    _out(chatgpt.compare(_json(a.input)))
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="perfos", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
@@ -501,6 +533,18 @@ def main(argv=None):
     p.add_argument("--cap-share", type=float, default=0.01); p.set_defaults(f=c_retargeting_budget)
     p = sp.add_parser("creative-check"); p.add_argument("--input", required=True, help="JSON list: format, width, height, seconds or text")
     p.add_argument("--platform", choices=["google", "microsoft"], default="google"); p.set_defaults(f=c_creative_check)
+
+    p = sp.add_parser("chatgpt-plan"); p.add_argument("--monthly-budget", type=float, required=True)
+    p.add_argument("--objective", choices=chatgpt.OBJECTIVES, default="clicks"); p.add_argument("--ctr", type=float, required=True)
+    p.add_argument("--cvr", type=float, required=True); p.add_argument("--cpm", type=float, default=chatgpt.DEFAULT_CPM)
+    p.add_argument("--cpc", type=float); p.add_argument("--conversions-30d", type=float, default=0); p.set_defaults(f=c_chatgpt_plan)
+    p = sp.add_parser("chatgpt-hints"); p.add_argument("--input", required=True, help="JSON [{ad_group, cluster, hints}]"); p.set_defaults(f=c_chatgpt_hints)
+    p = sp.add_parser("chatgpt-card"); p.add_argument("--input", required=True, help="CSV or JSON: ad, title, body, target_url[, images]"); p.set_defaults(f=c_chatgpt_card)
+    p = sp.add_parser("chatgpt-weekly"); p.add_argument("--csv", required=True, help="week, campaign, ad_group, cluster, impressions, clicks, spend, conversions")
+    p.add_argument("--ads", help="CSV: ad, ad_group, title, body, target_url"); p.add_argument("--target-cpa", type=float)
+    p.add_argument("--goal-cvr", type=float); p.set_defaults(f=c_chatgpt_weekly)
+    p = sp.add_parser("chatgpt-bulk"); p.add_argument("--input", required=True, help="JSON build: campaign, ad_groups (see chatgpt-build skill)"); p.set_defaults(f=c_chatgpt_bulk)
+    p = sp.add_parser("chatgpt-compare"); p.add_argument("--input", required=True, help="JSON [{channel, spend, conversions, pipeline, click_window_days, view_window_days}]"); p.set_defaults(f=c_chatgpt_compare)
 
     a = ap.parse_args(argv)
     a.f(a)

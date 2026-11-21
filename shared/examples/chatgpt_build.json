@@ -1,0 +1,51 @@
+{
+ "campaign": {
+  "name": "chatgpt|clicks|core|us|en",
+  "objective": "clicks",
+  "daily_budget": 100,
+  "countries": [
+   "US"
+  ]
+ },
+ "ad_groups": [
+  {
+   "name": "Pipeline forecasting",
+   "cluster": "forecasting",
+   "bid_strategy": "fixed_bid",
+   "max_cpc": 3.0,
+   "hints": [
+    "forecast B2B pipeline from ad spend",
+    "pipeline forecasting software",
+    "how to predict marketing pipeline"
+   ],
+   "ads": [
+    {
+     "name": "Forecast card A",
+     "title": "Forecast pipeline from every campaign",
+     "body": "See which campaigns create pipeline, not just leads. Try it free for 14 days.",
+     "target_url": "https://www.example.com/forecasting",
+     "image_url": "https://www.example.com/img/forecast.png"
+    }
+   ]
+  },
+  {
+   "name": "Attribution",
+   "cluster": "attribution",
+   "bid_strategy": "fixed_bid",
+   "max_cpc": 3.0,
+   "hints": [
+    "B2B marketing attribution",
+    "which ads create pipeline"
+   ],
+   "ads": [
+    {
+     "name": "Attribution card",
+     "title": "Know which ads create pipeline",
+     "body": "Multi-touch attribution from your CRM, set up in an afternoon.",
+     "target_url": "https://www.example.com/attribution",
+     "image_url": "https://www.example.com/img/attribution.png"
+    }
+   ]
+  }
+ ]
+}
