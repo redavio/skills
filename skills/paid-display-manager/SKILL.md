@@ -36,5 +36,5 @@ Demand creation on Google and Microsoft. Google: Demand Gen only (standalone Dis
 If the skill isn't installed, apply its rules from this repo: github.com/redavio/skills.
 
 ## Getting the data (all skills)
-1. **Redavio connector** in Claude or any MCP client: add `https://app.redavio.com/mcp`, sign in, connect Google and/or Microsoft. Needs no developer tokens. Tools: `paid_search_accounts`, `paid_display_report`, `paid_display_review`, `paid_display_scorecard`, `paid_display_lift`, `paid_display_budget`, `paid_display_creative_check`, `paid_display_build_plan`.
+1. **Redavio connector** in Claude or any MCP client: add `https://app.redavio.com/mcp`, sign in, connect Google and/or Microsoft. Needs no developer tokens. Tools: `paid_search_accounts`, `paid_display_report`, `paid_display_review`, `paid_display_scorecard`, `paid_display_lift`, `paid_display_budget`, `paid_display_creative_check`.
 2. **Your own API access** (needs a Google Ads developer token and a Microsoft Advertising developer token, plus your own OAuth app credentials; otherwise use mode 1): bundled scripts in each skill (`scripts/run.py ads google_report dg_placements`, `scripts/run.py ads microsoft_report professional_demographics`).

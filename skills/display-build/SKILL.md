@@ -31,14 +31,14 @@ list? Build from the ICP with native audiences and say coverage can't be scored 
 6. **Brand safety**: the account-level placement exclusion list (shared with PMax), junk app categories, standard content suitability.
 7. **Creative, for every format**: Demand Gen images 1.91:1, 1:1, 4:5 and a 1:1 logo; carousels of 2 to 10 cards; video 16:9 (in-stream), 1:1 or 9:16 (in-feed), 9:16 (Shorts, hook in the first 2 seconds); headlines 40, descriptions 90 characters. Microsoft: 1.91:1 and 1:1 images, short headline 30, long headline 90, video. Images from an image model (state the cost first); video from images, voice, captions and music. Check every asset with `creative-check`.
 8. **Holdout at launch** if lift will be tested: run `lift-test` before launch and hold back its regions.
-9. **Build**: propose the plan; after the person's yes the app builds it PAUSED on Google and Microsoft and reads it back.
+9. **Build**: propose the plan; after the person's yes it is built PAUSED on Google and Microsoft and read back.
 
 ## Output
 A plan per campaign: goal, channels, audiences, exclusions, bidding, frequency cap, budget, creative list
 with spec checks, holdout. Then the build proposal for approval.
 
 ## Getting the data
-1. **Redavio connector**: `paid_display_budget` (reach and retargeting), `paid_display_creative_check`, `paid_display_build_plan` (queues the paused build for approval in the app).
+1. **Redavio connector**: `paid_display_budget` (reach and retargeting) and `paid_display_creative_check`. The paused build runs in the Redavio Client Portal after your approval.
 2. **Your own API access**:
    ```
    python3 scripts/run.py perfos reach-budget --audience 200000 --reach-share 0.5 --frequency 4 --cpm 10
