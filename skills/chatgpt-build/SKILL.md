@@ -4,7 +4,7 @@ description: "Build a ChatGPT ads campaign from the agreed plan, context hints a
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: set-up
   cadence: Once at setup, then per new campaign
   summary: Turn the agreed plan, hints and ads into one paused campaign, as a checked bulk request or click-by-click steps for Ads Manager.

@@ -1,17 +1,17 @@
 ---
-name: chatgpt-ads-specialist
-description: The ChatGPT ads specialist role for B2B SaaS on OpenAI's ad platform (ads in ChatGPT answers) - explains the skill set from plan to measurement and routes any ChatGPT ads request to the right skill, applying the same principles as paid search (judge on pipeline, let the data decide, every change approved by a person). Use for any ChatGPT ads, OpenAI ads, Ads Manager, context hints or chat card question when no more specific skill is obviously right, or when someone asks what these skills can do.
+name: chatgpt-ads-manager
+description: The ChatGPT ads manager role for B2B SaaS on OpenAI's ad platform (ads in ChatGPT answers) - explains the skill set from plan to measurement and routes any ChatGPT ads request to the right skill, applying the same principles as paid search (judge on pipeline, let the data decide, every change approved by a person). Use for any ChatGPT ads, OpenAI ads, Ads Manager, context hints or chat card question when no more specific skill is obviously right, or when someone asks what these skills can do.
 license: MIT
 compatibility: Any Agent Skills client. Routes to the other chatgpt-* skills in this repo; install them alongside.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: role
   cadence: Any time
   summary: "The role: what each ChatGPT ads skill does and which one to use, with the principles they share."
   needs: A ChatGPT ads question or goal
 ---
 
-# ChatGPT ads specialist
+# ChatGPT ads manager
 
 Ads in ChatGPT answers, bought in OpenAI's Ads Manager. Every job skill works on its own; this one picks the right one.
 

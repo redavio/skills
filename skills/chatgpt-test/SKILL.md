@@ -4,7 +4,7 @@ description: "Design and read a holdout test for ChatGPT ads: hold some regions 
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: run
   cadence: Before launch, then at the read date
   summary: "Prove whether ChatGPT ads add pipeline with a geo or audience holdout: size it before launch, read it at the end."

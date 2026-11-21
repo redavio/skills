@@ -1,4 +1,4 @@
-# ChatGPT Ads Specialist spec
+# ChatGPT Ads Manager spec
 
 Agreed 2026-11-21. Source for OpenAI's platform: https://developers.openai.com/ads/llms.txt (read 2026-11-21).
 
@@ -16,7 +16,7 @@ A paid search or performance marketer adding ChatGPT as a channel: deciding whet
 - Tracking: pixel and Conversions API; 30-day click and 1-day view by default; billing and optimization on clicks only.
 
 ## Skills
-- Plan: chatgpt-ads-specialist (role guide), chatgpt-plan.
+- Plan: chatgpt-ads-manager (role guide), chatgpt-plan.
 - Build: chatgpt-context-hints, chatgpt-ad-copy, chatgpt-tracking, chatgpt-build.
 - Optimize: chatgpt-weekly. Test: chatgpt-test. Measure: chatgpt-measure.
 

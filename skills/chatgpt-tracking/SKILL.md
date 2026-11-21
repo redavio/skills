@@ -4,7 +4,7 @@ description: "Plan ChatGPT ads conversion tracking for B2B SaaS: the OpenAI pixe
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: set-up
   cadence: Once at setup
   summary: Set up the OpenAI pixel and Conversions API events mapped to CRM stages, with deduplication and the attribution window.

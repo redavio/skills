@@ -4,7 +4,7 @@ description: "Plan a ChatGPT ads test for a B2B SaaS company: pick the objective
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: set-up
   cadence: Once before testing ChatGPT, then monthly
   summary: "Decide whether and how to test ChatGPT ads: objective, bid type, starting budget and a directional forecast, with a gate on conversion bidding."

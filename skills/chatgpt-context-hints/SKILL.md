@@ -4,7 +4,7 @@ description: "Build ChatGPT ads targeting: turn a keyword list or a search terms
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: set-up
   cadence: Once at setup, then monthly
   summary: Turn keywords and search terms into context hints per ad group, each tagged with its topic cluster.

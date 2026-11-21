@@ -4,7 +4,7 @@ description: "Write ChatGPT chat card ads for B2B SaaS: titles of 3-50 character
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: set-up
   cadence: Once at setup, then monthly
   summary: Write chat card ads for each ad group and check every title, body, link and image against OpenAI's limits.

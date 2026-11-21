@@ -5,7 +5,7 @@
   "roles": {
     "paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max.",
     "paid-display-manager": "Demand creation on Google Demand Gen (YouTube, Discover, Gmail, Display) and Microsoft Audience ads.",
-    "chatgpt-ads-specialist": "ChatGPT ads (OpenAI's ad platform): context hints, chat card ads, measured against search."
+    "chatgpt-ads-manager": "ChatGPT ads (OpenAI's ad platform): context hints, chat card ads, measured against search."
   },
   "stages": [
     "role",
@@ -17,22 +17,22 @@
   ],
   "skills": [
     {
-      "name": "chatgpt-ads-specialist",
-      "role": "chatgpt-ads-specialist",
+      "name": "chatgpt-ads-manager",
+      "role": "chatgpt-ads-manager",
       "stage": "role",
       "cadence": "Any time",
       "description": "The role: what each ChatGPT ads skill does and which one to use, with the principles they share.",
       "needs": [
         "A ChatGPT ads question or goal"
       ],
-      "path": "skills/chatgpt-ads-specialist",
+      "path": "skills/chatgpt-ads-manager",
       "has_scripts": false,
-      "install": "npx skills add redavio/skills --skill chatgpt-ads-specialist",
-      "zip": "dist/chatgpt-ads-specialist.zip"
+      "install": "npx skills add redavio/skills --skill chatgpt-ads-manager",
+      "zip": "dist/chatgpt-ads-manager.zip"
     },
     {
       "name": "chatgpt-ad-copy",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "set-up",
       "cadence": "Once at setup, then monthly",
       "description": "Write chat card ads for each ad group and check every title, body, link and image against OpenAI's limits.",
@@ -49,7 +49,7 @@
     },
     {
       "name": "chatgpt-build",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "set-up",
       "cadence": "Once at setup, then per new campaign",
       "description": "Turn the agreed plan, hints and ads into one paused campaign, as a checked bulk request or click-by-click steps for Ads Manager.",
@@ -65,7 +65,7 @@
     },
     {
       "name": "chatgpt-context-hints",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "set-up",
       "cadence": "Once at setup, then monthly",
       "description": "Turn keywords and search terms into context hints per ad group, each tagged with its topic cluster.",
@@ -81,7 +81,7 @@
     },
     {
       "name": "chatgpt-plan",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "set-up",
       "cadence": "Once before testing ChatGPT, then monthly",
       "description": "Decide whether and how to test ChatGPT ads: objective, bid type, starting budget and a directional forecast, with a gate on conversion bidding.",
@@ -97,7 +97,7 @@
     },
     {
       "name": "chatgpt-tracking",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "set-up",
       "cadence": "Once at setup",
       "description": "Set up the OpenAI pixel and Conversions API events mapped to CRM stages, with deduplication and the attribution window.",
@@ -113,7 +113,7 @@
     },
     {
       "name": "chatgpt-test",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "run",
       "cadence": "Before launch, then at the read date",
       "description": "Prove whether ChatGPT ads add pipeline with a geo or audience holdout: size it before launch, read it at the end.",
@@ -128,7 +128,7 @@
     },
     {
       "name": "chatgpt-weekly",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "run",
       "cadence": "Weekly",
       "description": "Each week: which ad groups to cut or scale against your account, and every ad checked against OpenAI's limits.",
@@ -144,7 +144,7 @@
     },
     {
       "name": "chatgpt-measure",
-      "role": "chatgpt-ads-specialist",
+      "role": "chatgpt-ads-manager",
       "stage": "review",
       "cadence": "Monthly",
       "description": "ChatGPT next to Google and Microsoft on CPA and pipeline, with attribution windows lined up, and what ChatGPT added.",

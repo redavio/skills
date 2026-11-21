@@ -4,7 +4,7 @@ description: "Measure ChatGPT ads against Google Ads and Microsoft Ads for B2B S
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: review
   cadence: Monthly
   summary: ChatGPT next to Google and Microsoft on CPA and pipeline, with attribution windows lined up, and what ChatGPT added.

@@ -4,7 +4,7 @@ description: "Review ChatGPT ads weekly for B2B SaaS: put every ad group through
 license: MIT
 compatibility: Any Agent Skills client. Scripts need Python 3.10+, standard library only; pulling data needs your own OpenAI Ads API key.
 metadata:
-  role: chatgpt-ads-specialist
+  role: chatgpt-ads-manager
   stage: run
   cadence: Weekly
   summary: "Each week: which ad groups to cut or scale against your account, and every ad checked against OpenAI's limits."
