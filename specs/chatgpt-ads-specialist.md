@@ -27,7 +27,7 @@ A paid search or performance marketer adding ChatGPT as a channel: deciding whet
 - One topic key across channels: every ad group carries a topic cluster name, the same one its paid search ad group, SEO and AEO cluster use, so channels can be joined by topic later.
 
 ## Planted signal
-In `shared/examples/chatgpt_insights.csv`, the ad group with broad hints ("Broad - AI tools") runs at 3x the account's CPA, and in `chatgpt_ads.csv` one title is 54 characters. `chatgpt-weekly` flags both and nothing else.
+In `shared/examples/chatgpt_insights.csv`, the ad group with broad hints ("AI tools (broad)") runs at 3x the account's CPA, and in `chatgpt_ads.csv` one title is 54 characters. `chatgpt-weekly` flags both and nothing else.
 
 ## Done when
 - The planted signal is found and the noise is not; bad input gives a plain-English error; empty data says so.

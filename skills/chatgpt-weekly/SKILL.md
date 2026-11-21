@@ -7,7 +7,7 @@ metadata:
   role: chatgpt-ads-specialist
   stage: run
   cadence: Weekly
-  summary: "Weekly review: each ad group through the volume gate against the account, which hints or ad groups to cut or scale, and every ad's copy checked."
+  summary: "Each week: which ad groups to cut or scale against your account, and every ad checked against OpenAI's limits."
   needs: "Ad group insights by week (2+ full weeks): ad group, cluster, impressions, clicks, spend, conversions; optional target CPA; your ads"
 ---
 

@@ -124,12 +124,12 @@ def test_plan_bad_input_is_plain_english(kw, words):
 def test_weekly_finds_the_planted_signal_and_nothing_else():
     out = chatgpt.weekly(rows("chatgpt_insights.csv"), ads=rows("chatgpt_ads.csv"))
     acting = [g for g in out["ad_groups"] if g["action"] in ("cut", "flag")]
-    assert [g["ad_group"] for g in acting] == ["Broad - AI tools"]
+    assert [g["ad_group"] for g in acting] == ["AI tools (broad)"]
     assert acting[0]["cpa_vs_account"] >= 2.5
     assert acting[0]["cluster"] == "ai-marketing-tools"
     assert [a["ad"] for a in out["ad_problems"]] == ["Forecast card B"]
     assert "54" in out["ad_problems"][0]["problems"][0]
-    assert out["account"]["conversions"] == 152
+    assert out["account"]["conversions"] == 147
 
 
 def test_weekly_every_group_carries_its_cluster():
