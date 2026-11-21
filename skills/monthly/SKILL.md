@@ -7,7 +7,7 @@ metadata:
   role: paid-search-manager
   stage: cadence
   cadence: Monthly
-  summary: Once a month: diagnose every gap, the monthly report, rebalance budget.
+  summary: "Once a month: diagnose every gap, the monthly report, rebalance budget."
   needs: The month's and prior month's data; goals; budgets, impression share and the step limit
 ---
 

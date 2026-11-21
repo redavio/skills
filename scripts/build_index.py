@@ -25,6 +25,10 @@ def frontmatter(path: Path) -> dict:
     for line in m.group(1).splitlines():
         if not line.strip():
             continue
+        # Real YAML parsers (GitHub, Agent Skills clients) reject an unquoted value with ": " in it.
+        value = line.split(":", 1)[1].strip() if ":" in line else ""
+        if ": " in value and not (value.startswith('"') and value.endswith('"')):
+            raise ValueError(f"{path}: quote this value, it has ': ' in it: {line.strip()}")
         if line.startswith("  ") and sub is not None:
             k, v = line.strip().split(":", 1)
             out[sub][k.strip()] = v.strip().strip('"')

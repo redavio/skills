@@ -7,7 +7,7 @@ metadata:
   role: paid-search-manager
   stage: cadence
   cadence: Daily
-  summary: Every morning: pacing, alerts, hygiene and flagrant spend. Look, don't act.
+  summary: "Every morning: pacing, alerts, hygiene and flagrant spend. Look, don't act."
   needs: Account access or yesterday's data; monthly budget and goals
 ---
 

@@ -7,7 +7,7 @@ metadata:
   role: paid-search-manager
   stage: cadence
   cadence: Quarterly
-  summary: Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates.
+  summary: "Once a quarter: audit, QBR, expansion, back-test, re-plan, refresh estimates."
   needs: Account access; this and last quarter's data and pipeline; the test log; next quarter's goals or budget
 ---
 

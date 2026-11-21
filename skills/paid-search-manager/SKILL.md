@@ -7,7 +7,7 @@ metadata:
   role: paid-search-manager
   stage: role
   cadence: Any time
-  summary: The role: what each skill does and which one to use, with the principles they share.
+  summary: "The role: what each skill does and which one to use, with the principles they share."
   needs: A paid search question or goal
 ---
 

@@ -7,8 +7,8 @@ metadata:
   role: paid-search-manager
   stage: review
   cadence: Weekly on the biggest movers, monthly on every gap to goal
-  summary: Why a KPI moved: tracking first, mix vs rate, then a fair lever split and the one lever to pull.
-  needs: Totals for the period and the comparison (goal or prior period): impressions, clicks, cost, conversions, value, and funnel stage counts if diagnosing past the platform; the same by segment for the mix check
+  summary: "Why a KPI moved: tracking first, mix vs rate, then a fair lever split and the one lever to pull."
+  needs: "Totals for the period and the comparison (goal or prior period): impressions, clicks, cost, conversions, value, and funnel stage counts if diagnosing past the platform; the same by segment for the mix check"
 ---
 
 # Diagnose

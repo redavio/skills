@@ -7,7 +7,7 @@ metadata:
   role: paid-search-manager
   stage: cadence
   cadence: Weekly
-  summary: Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report.
+  summary: "Once a week: the queue, search terms, AI Max and PMax, parity, tests, the weekly report."
   needs: Account access or the last weeks of data; goals per segment; the test log
 ---
 
