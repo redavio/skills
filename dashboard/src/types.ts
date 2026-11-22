@@ -162,6 +162,13 @@ export interface PsChangeGroup {
 }
 
 // ── The public app's results.json: one client's five views in one file ───────
+/** YouTube video ads (Paid Display): the connected channel and each cut's YouTube id. */
+export interface PdVideoAds {
+  connected: boolean
+  channel_id: string | null
+  videos: Record<string, { youtube_id: string | null; url?: string | null }>
+}
+
 export interface Results {
   tool: string
   version: number
@@ -173,4 +180,5 @@ export interface Results {
   previous_audit: { created_at: string; setup_health: number | null } | null
   build: { plan: PsPlanItem[] }
   changes: { recent: PsChangeGroup[]; total: number }
+  video?: PdVideoAds | null
 }

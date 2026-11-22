@@ -8,9 +8,10 @@ import ForecastTable from './ForecastTable'
 import PlanTree from './PlanTree'
 import ScenariosTable from './ScenariosTable'
 import StatusList from './StatusList'
+import VideoAds from './VideoAds'
 import { NOTE } from './ui'
 
-export const VIEWS = { status: 'Status', plan: 'Plan', audit: 'Audit', build: 'Build', changes: 'Changes' } as const
+export const VIEWS = { status: 'Status', plan: 'Plan', audit: 'Audit', build: 'Build', changes: 'Changes', video: 'Video' } as const
 export type View = keyof typeof VIEWS
 
 const CARD = 'flex flex-col gap-3 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900'
@@ -38,7 +39,7 @@ export default function PaidSearchManager({ res, initialView = 'status' }: { res
     <div>
       <p className="text-sm text-zinc-500 dark:text-zinc-400">{res.client}. Data as of {res.as_of}.</p>
       <nav className="mb-4 mt-4 flex flex-wrap gap-1.5">
-        {(Object.keys(VIEWS) as View[]).map(v => (
+        {(Object.keys(VIEWS) as View[]).filter(v => v !== 'video' || res.video).map(v => (
           <button key={v} type="button" onClick={() => setView(v)}
             className={`rounded-full border px-3.5 py-1.5 text-sm ${view === v
               ? 'border-brand bg-brand text-white'
@@ -47,6 +48,10 @@ export default function PaidSearchManager({ res, initialView = 'status' }: { res
           </button>
         ))}
       </nav>
+
+      {view === 'video' && res.video && (
+        <section className={CARD}><VideoAds video={res.video} /></section>
+      )}
 
       {view === 'status' && <div data-shot="1"><StatusList status={res.status} /></div>}
 

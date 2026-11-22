@@ -1175,5 +1175,20 @@
    }
   ],
   "total": 186
+ },
+ "video": {
+  "connected": true,
+  "channel_id": "UCnorthwind-demo-000000",
+  "videos": {
+   "video_horizontal": {
+    "youtube_id": "demo16x9000"
+   },
+   "video_vertical": {
+    "youtube_id": "demo9x16000"
+   },
+   "video_square": {
+    "youtube_id": null
+   }
+  }
  }
 }

@@ -10,6 +10,8 @@
  *   changes.json         /portal/paid-search/changes?client_id=…
  *   audit.json           /portal/paid-search/audits/<id>?client_id=…   (optional: no audit yet)
  *   previous_audit.json  the audit before that one                     (optional)
+ *   video.json           YouTube video ads: the paid_display_youtube MCP answer, or what
+ *                        shared/ads_scripts/youtube_upload.py writes with --out (optional)
  * Only the read-only views are kept: no keyword research, assumptions, approvals or outside-change
  * notes. The shape is src/types.ts `Results`; demo/portal/ is a made-up example.
  */
@@ -53,5 +55,7 @@ const results = {
   build: { plan: load("plan.json") },
   changes: { recent: changes.recent, total: changes.total },
 };
+const video = load("video.json", true);
+if (video) results.video = { connected: !!video.connected, channel_id: video.channel_id ?? null, videos: video.videos ?? {} };
 writeFileSync(out, JSON.stringify(results, null, 1) + "\n");
 console.log(`Wrote ${out}`);

@@ -10,6 +10,8 @@ Your own Google Ads and Microsoft Advertising API access, no Redavio account nee
 | `google_entities.py` / `microsoft_entities.py` | Structure lists for the Google vs Microsoft parity check | No |
 | `microsoft_report.py` | Campaign daily and search terms | No |
 | `google_build.py` | Search build from a plan file: offline check, Google dry run, then PAUSED build and read-back | Only with `--live` |
+| `youtube_upload.py` | Your video ads to your own YouTube channel as unlisted videos, read back; `--out video.json` for the dashboard. Own OAuth client in Testing mode, no Google review (setup at the top of `_youtube.py`) | Only with `--live` |
+| `google_video_ad.py` | One Demand Gen video ad (in-stream, in-feed, Shorts) in an existing ad group, from YouTube video ids, then read-back | Only with `--live` |
 | `google_apply.py` / `microsoft_apply.py` | One change (negative, keyword, pause, budget, target, campaign status), then read-back | Only with `--live` |
 
 Rules every write script follows: dry run by default; `--live` only after the person says yes to
