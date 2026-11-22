@@ -31,7 +31,7 @@ per geo/language until something says otherwise.
 4. **Shells**: AI Max copies of Non-brand, Brand and Competitor built and left paused (tested later as experiments). PMax: asset groups mirror the Non-brand themes; a new PMax campaign only when budget, target, geo or goal differ.
 5. **Portfolios**: one bid portfolio per campaign type (Brand, Non-brand, Competitor); test copies (AI Max) get their own so tests aren't pooled. Volume matters at portfolio level.
 6. **Fencing** between campaign types and between ad groups (negatives-and-fencing skill).
-7. **Naming**: `channel|type|theme|geo|language`, lowercase snake_case values, "|" never inside a value. Examples: `search|brand|core|us|en`, `search|nonbrand|agency_crm|us|en`, `search|nonbrand|agency_crm_aimax|us|en`, `pmax|nonbrand|agency_crm|us|en`. Portfolios `portfolio|nonbrand`, shared lists `negatives|brand_terms`. Join on IDs, never names, so renames never break history.
+7. **Naming** (the standard: `shared/NAMING.md`): `channel|segment|theme|geo|language`, lowercase snake_case values, "|" never inside a value. Examples: `search|brand|core|us|en`, `search|nonbrand|agency_crm|us|en`, `search|nonbrand|agency_crm_aimax|us|en`, `pmax|nonbrand|agency_crm|us|en`. Portfolios `portfolio|nonbrand`, shared lists `negatives|brand_terms`. Join on IDs, never names, so renames never break history.
 8. **Hero campaigns** (graduating winners to exact) are an optimization move later, not a structure rule: every split thins smart-bidding data.
 
 ## Output

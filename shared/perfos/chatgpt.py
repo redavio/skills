@@ -6,10 +6,12 @@ calls OpenAI: reading reports lives in ads_scripts/_chatgpt.py (GET only), and n
 """
 from __future__ import annotations
 
+
 import hashlib
 import re
 
 from . import gates, targets
+from .naming import with_utms
 
 CARD = {"title": (3, 50), "body": 100, "url": 2048, "image_min_px": 640, "multi_images": (4, 6)}
 HINTS_PER_GROUP = 2000
@@ -284,7 +286,8 @@ def bulk_job(build: dict) -> dict:
                         "idempotency_key": _key(c["name"], g["name"], a.get("name") or a["title"]),
                         "input": {"campaign_idempotency_key": ck, "ad_group_idempotency_key": gk,
                                   "name": a.get("name") or a["title"], "status": "paused", "title": a["title"],
-                                  "body": a["body"], "target_url": a["target_url"], "source_image_url": a["image_url"]}})
+                                  "body": a["body"], "source_image_url": a["image_url"],
+                                  "target_url": with_utms(a["target_url"], c["name"], "chatgpt", g["name"])}})
     if len(ops) > 1000:
         raise ValueError(f"{len(ops)} operations; one job takes 1,000. Split the build.")
     return {"validate_only": True, "partial_failure": False, "operations": ops, "clusters": clusters,

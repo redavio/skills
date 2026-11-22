@@ -34,7 +34,7 @@ If values aren't agreed, use ACV x chance of becoming a deal per stage and mark 
 6. **Turn on**: auto-tagging, MSCLKID, enhanced conversions for leads (UI only: pick a method, then Save), Microsoft UET and goals built natively (imports never carry tracking; Microsoft Max Conversions needs a goal first, an offline goal works).
 7. **The pipe**: Tier 1 daily automatic import; Tier 2 scheduled upload (click ID + stage + value + time), no more than a couple of days' lag.
 8. **Fallback (break glass)**: with click IDs primary, keep a form-fill conversion with enhanced conversions as a secondary. If uploads stop: promote the form fill, switch to the volume ladder, log it; switch back when fixed (expect a learning reset both ways).
-9. **Clean up**: remove dead or duplicate primaries; UTMs through the account-level final URL suffix (`utm_source=google&utm_medium=cpc&utm_campaign={_cmp}&utm_content={adgroupid}&utm_term={keyword}&matchtype={matchtype}&device={device}`).
+9. **Clean up**: remove dead or duplicate primaries; UTMs exactly as in `shared/NAMING.md`: the account-level final URL suffix for search and PMax (`utm_campaign={_cmp}`, `campaignid={campaignid}`), a campaign-level suffix on display and video campaigns, UTMs on the target URL for ChatGPT ads.
 10. **Test end to end**: a test lead reaches the CRM with its click ID and the conversion shows on both platforms, confirmed by reading the account back.
 11. **Health**: alert when conversions drop to near zero while clicks continue (3 days of 20+ clicks and no conversions after 14 days that had 2+), or uploads fail. Match rate (click ID, then UTM) is a health metric.
 

@@ -52,9 +52,10 @@ class CrmRecord:
     click_id: str | None = None          # GCLID / MSCLKID
     utm_source: str | None = None
     utm_medium: str | None = None
-    utm_campaign: str | None = None      # campaign ID via tracking template
+    utm_campaign: str | None = None      # campaign name slug (NAMING.md: name with | -> -)
     utm_content: str | None = None       # ad group ID
     utm_term: str | None = None          # keyword
+    campaignid: str | None = None        # campaign ID from the suffix's campaignid parameter
     mql_date: date | None = None
     sql_date: date | None = None         # meeting booked
     s2_date: date | None = None          # qualified opportunity

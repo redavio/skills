@@ -24,8 +24,8 @@ Ask for it; never fill a gap with a made-up bid, URL or image.
 
 ## Method
 1. **Write the build file** (`build.json`):
-   `{"campaign": {"name": "chatgpt|clicks|core|us|en", "objective": "clicks", "daily_budget": 100, "countries": ["US"]}, "ad_groups": [{"name": "Pipeline forecasting", "cluster": "forecasting", "max_cpc": 3.0, "hints": [...], "ads": [{"name": "...", "title": "...", "body": "...", "target_url": "https://...", "image_url": "https://..."}]}]}`
-   Campaign names follow `channel|objective|theme|geo|language`.
+   `{"campaign": {"name": "chatgpt|nonbrand|core|us|en", "objective": "clicks", "daily_budget": 100, "countries": ["US"]}, "ad_groups": [{"name": "Pipeline forecasting", "cluster": "forecasting", "max_cpc": 3.0, "hints": [...], "ads": [{"name": "...", "title": "...", "body": "...", "target_url": "https://...", "image_url": "https://..."}]}]}`
+   Campaign names follow the standard in `shared/NAMING.md` (`chatgpt|nonbrand|core|us|en`); the build adds the standard UTMs to every target URL.
 2. **Check and build the request** (refuses anything that would bounce):
    ```
    python3 scripts/run.py perfos chatgpt-bulk --input build.json > job.json

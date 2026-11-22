@@ -180,3 +180,7 @@ unique across roles.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Naming and UTMs
+
+One standard for every campaign and UTM, used by every skill, script and the Redavio app: [shared/NAMING.md](shared/NAMING.md).
