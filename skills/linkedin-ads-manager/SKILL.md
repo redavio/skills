@@ -28,7 +28,7 @@ Settings on every ad set: classic campaigns (not Accelerate), Audience Expansion
 - **Judge LinkedIn on pipeline at accounts**: open opportunities and win rate at target accounts it reached in the last 90 days versus ones it didn't. LinkedIn's own 7-day click attribution is shown, never used to judge the channel.
 - **Target companies are named in targeting** (looked up on LinkedIn by name); campaign 2 always excludes them, so the two campaigns never bid against each other.
 - **Optional pieces are added only when present**: a Thought Leader post adds a Thought Leader ad set to each awareness campaign; a contact list adds a contact-list ad set to the target-accounts campaign. No post or list, no ad set: the build works either way.
-- **Everything is built PAUSED, then read back.** A person approves the build; launching is a separate yes.
+- **Everything is built paused (ads as drafts until LinkedIn reviews them), then read back.** A person approves the build; launching is a separate yes.
 
 ## How to run it (Redavio connector)
 1. Add `https://app.redavio.com/mcp` in Claude (or any MCP client) and sign in.
