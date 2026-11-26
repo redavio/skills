@@ -40,4 +40,5 @@ Settings on every ad set: classic campaigns (not Accelerate), Audience Expansion
 ## If something is missing
 - No target accounts: ask for the list (company names are enough). Until then campaign 1 can't be built.
 - No creative: the images, video and copy come from the client's display creative; the document ad is a 3-page PDF made from the same copy.
+- LinkedIn says the app isn't allowed on the ad account: while Redavio's app is on LinkedIn's Development tier, each ad account is added by hand (Developer Portal > app > Products > Advertising API > View Ad Accounts > Add Ad Account). Standard tier removes this step.
 - Retargeting audiences and contact-list uploads need LinkedIn's Matched Audiences permission on the app. Until it's granted, the engaged campaign uses company and title targeting and says so.
