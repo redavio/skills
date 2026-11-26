@@ -15,6 +15,10 @@ Google Demand Gen (YouTube in-stream, in-feed and Shorts, Discover, Gmail, Displ
 Microsoft Audience ads with LinkedIn profile targeting, for awareness, prospecting and retargeting.
 One scorecard for every display campaign: cost to reach, brand lift, pipeline.
 
+The **LinkedIn Ads manager** role builds one ABM-aware LinkedIn structure per client: target accounts,
+ICP reach and engaged retargeting, one ad set per format, built paused through the Redavio connector
+and judged on pipeline at target accounts.
+
 ## How to use it (the Library form factor)
 
 1. **Through the Redavio MCP server** (easiest, no tokens). Add `https://app.redavio.com/mcp` as a

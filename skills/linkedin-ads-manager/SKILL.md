@@ -30,7 +30,8 @@ Settings on every ad set: classic campaigns (not Accelerate), Audience Expansion
 - **Optional pieces are added only when present**: a Thought Leader post adds a Thought Leader ad set to each awareness campaign; a contact list adds a contact-list ad set to the target-accounts campaign. No post or list, no ad set: the build works either way.
 - **Everything is built paused (ads as drafts until LinkedIn reviews them), then read back.** A person approves the build; launching is a separate yes.
 
-## How to run it (Redavio connector)
+## Getting the data
+Everything reads and builds through the Redavio connector (LinkedIn's Marketing API behind it); nothing to install and no LinkedIn developer app of your own.
 1. Add `https://app.redavio.com/mcp` in Claude (or any MCP client) and sign in.
 2. `paid_linkedin_plan`: the plan, the target accounts LinkedIn found, and what blocks a build. If LinkedIn isn't connected it returns a `connect_url`: open it and click Allow with a login that has a role on the ad account.
 3. `paid_linkedin_target_accounts`: set the target-account list from company names (it replaces the list; it says which names LinkedIn couldn't find and which matched loosely, so check those).
@@ -41,4 +42,5 @@ Settings on every ad set: classic campaigns (not Accelerate), Audience Expansion
 - No target accounts: ask for the list (company names are enough). Until then campaign 1 can't be built.
 - No creative: the images, video and copy come from the client's display creative; the document ad is a 3-page PDF made from the same copy.
 - LinkedIn says the app isn't allowed on the ad account: while Redavio's app is on LinkedIn's Development tier, each ad account is added by hand (Developer Portal > app > Products > Advertising API > View Ad Accounts > Add Ad Account). Standard tier removes this step.
-- Retargeting audiences and contact-list uploads need LinkedIn's Matched Audiences permission on the app. Until it's granted, the engaged campaign uses company and title targeting and says so.
+- Contact-level targeting: sync a HubSpot list to LinkedIn with HubSpot's own LinkedIn Ads integration (HubSpot > Marketing > Ads > Audiences), then put that audience's `urn:li:adSegment:` in Build > LinkedIn > Contact list. That adds the contact-list ad set.
+- Retargeting audiences and contact-list uploads made by Redavio itself need LinkedIn's Matched Audiences permission on the app. Until it's granted, the engaged campaign uses company and title targeting and says so.

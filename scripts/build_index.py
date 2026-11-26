@@ -75,7 +75,8 @@ def index(skills):
     return {"repo": REPO_URL, "standard": "https://agentskills.io", "license": "MIT",
             "roles": {"paid-search-manager": "Demand capture on Google and Microsoft Ads: Search, AI Max, Performance Max.",
                       "paid-display-manager": "Demand creation on Google Demand Gen (YouTube, Discover, Gmail, Display) and Microsoft Audience ads.",
-                      "chatgpt-ads-manager": "ChatGPT ads (OpenAI's ad platform): context hints, chat card ads, measured against search."},
+                      "chatgpt-ads-manager": "ChatGPT ads (OpenAI's ad platform): context hints, chat card ads, measured against search.",
+                      "linkedin-ads-manager": "LinkedIn Ads: target accounts, ICP reach and engaged retargeting, built paused, judged on pipeline at accounts."},
             "stages": STAGES, "skills": skills}
 
 
