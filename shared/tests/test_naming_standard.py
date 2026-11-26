@@ -21,6 +21,9 @@ def test_with_utms_adds_once_and_picks_medium():
                  "&utm_content=pipeline_forecasting")
     assert naming.with_utms(u, "chatgpt|nonbrand|core|us|en", "chatgpt") == u
     assert "utm_medium=video" in naming.with_utms("https://x.com", "youtube|prospecting|core|us|en", "google")
+    # LinkedIn: same tags the app's LinkedIn build puts on every ad (paid_linkedin.landing_url).
+    assert naming.with_utms("https://x.com", "linkedin|aware|icp|us|en", "linkedin", "video") == (
+        "https://x.com?utm_source=linkedin&utm_medium=paid_social&utm_campaign=linkedin-aware-icp-us-en&utm_content=video")
 
 
 def test_chatgpt_build_tags_every_ad():

@@ -24,7 +24,7 @@ LEGACY = {
     "junk intent": "negatives|junk",
 }
 MEDIUM = {"search": "cpc", "pmax": "cpc", "chatgpt": "cpc", "demandgen": "display", "audience": "display",
-          "youtube": "video"}
+          "youtube": "video", "linkedin": "paid_social"}
 
 
 def is_standard(name: str) -> bool:

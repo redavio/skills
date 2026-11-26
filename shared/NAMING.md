@@ -51,5 +51,6 @@ Where they're set:
 - **Display and video** (Demand Gen, YouTube, Microsoft Audience): a campaign-level final URL suffix,
   because the medium differs: `utm_source=google&utm_medium=display&utm_campaign=<slug>&utm_content={adgroupid}&campaignid={campaignid}`.
 - **ChatGPT ads**: no suffix exists, so the UTMs go on each ad's target URL (`naming.with_utms`).
+- **LinkedIn**: no suffix exists, so the build puts the UTMs on each ad's landing page: `utm_source=linkedin&utm_medium=paid_social&utm_campaign=<slug>&utm_content=<format>` (`naming.with_utms`, the app's `paid_linkedin.landing_url`).
 
 Keep UTMs lowercase. Never put a person's details in a UTM.
