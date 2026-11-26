@@ -1,0 +1,20 @@
+{
+ "insight_tag": "1234567",
+ "tag_on_site": true,
+ "conversions": [
+  {
+   "name": "Demo request",
+   "enabled": true
+  }
+ ],
+ "landing_urls": [
+  {
+   "campaign": "linkedin|aware|icp|us|en",
+   "url": "https://example.com/signup?utm_source=linkedin&utm_medium=paid_social&utm_campaign=linkedin-aware-icp-us-en&utm_content=video"
+  },
+  {
+   "campaign": "linkedin|engaged|all|us|en",
+   "url": "https://example.com/demo?utm_source=linkedin&utm_medium=social&utm_campaign=linkedin-engaged-all-us-en"
+  }
+ ]
+}

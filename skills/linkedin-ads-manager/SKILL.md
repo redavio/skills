@@ -2,7 +2,7 @@
 name: linkedin-ads-manager
 description: The LinkedIn Ads manager role for B2B SaaS - one standard, ABM-aware structure of three campaigns (target accounts, ICP reach, engaged), one ad set per ad format with its own budget, built PAUSED through the LinkedIn Marketing API and read back. Covers target-account lists (Clay, G2, CRM), buying-group titles, ICP firmographics, Thought Leader Ads, contact lists, document, video and single image ads, and judging LinkedIn on pipeline at accounts. Use for any LinkedIn Ads, LinkedIn campaign structure, Campaign Manager, Thought Leader Ads or LinkedIn ABM question.
 license: MIT
-compatibility: Any Agent Skills client with the Redavio connector (https://app.redavio.com/mcp).
+compatibility: Any Agent Skills client with the Redavio connector (https://app.redavio.com/mcp). Routes to the other linkedin-* skills in this repo; install them alongside.
 metadata:
   role: linkedin-ads-manager
   stage: role
@@ -30,6 +30,18 @@ Settings on every ad set: classic campaigns (not Accelerate), Audience Expansion
 - **Optional pieces are added only when present**: a Thought Leader post adds a Thought Leader ad set to each awareness campaign; a contact list adds a contact-list ad set to the target-accounts campaign. No post or list, no ad set: the build works either way.
 - **Everything is built paused (ads as drafts until LinkedIn reviews them), then read back.** A person approves the build; launching is a separate yes.
 
+## Route the request
+| They want | Skill |
+|---|---|
+| How much to spend, is the audience big enough | linkedin-plan |
+| The target-account list, matched on LinkedIn | linkedin-target-accounts |
+| Ads for each format, checked | linkedin-ad-copy |
+| Insight Tag, conversions, UTMs | linkedin-tracking |
+| Build the campaigns (paused) | linkedin-build |
+| Weekly review: refresh, lower, cut or scale | linkedin-weekly |
+| Prove LinkedIn adds pipeline (holdout) | linkedin-test |
+| What LinkedIn is worth (pipeline at accounts) | linkedin-measure |
+
 ## Getting the data
 Everything reads and builds through the Redavio connector (LinkedIn's Marketing API behind it); nothing to install and no LinkedIn developer app of your own.
 1. Add `https://app.redavio.com/mcp` in Claude (or any MCP client) and sign in.
@@ -37,6 +49,7 @@ Everything reads and builds through the Redavio connector (LinkedIn's Marketing 
 3. `paid_linkedin_target_accounts`: set the target-account list from company names (it replaces the list; it says which names LinkedIn couldn't find and which matched loosely, so check those).
 4. `paid_linkedin_check`: what the build would create (campaigns, ad sets, ads, all paused) and what already exists by name.
 5. Build: the operator clicks **Build paused** in the Redavio Client Portal (Build > LinkedIn). It creates everything paused and shows the read-back.
+6. `paid_linkedin_report`: weekly performance per ad set and each campaign's audience size, for linkedin-plan, linkedin-weekly, linkedin-test and linkedin-measure.
 
 ## If something is missing
 - No target accounts: ask for the list (company names are enough). Until then campaign 1 can't be built.

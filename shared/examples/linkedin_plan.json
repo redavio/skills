@@ -1,0 +1,46 @@
+{
+ "campaigns": [
+  {
+   "name": "linkedin|aware|target_accounts|us|en",
+   "members": 4200,
+   "ad_sets": [
+    {
+     "name": "linkedin|aware|target_accounts|us|en|single_image",
+     "daily_budget": 10
+    },
+    {
+     "name": "linkedin|aware|target_accounts|us|en|video",
+     "daily_budget": 10
+    }
+   ]
+  },
+  {
+   "name": "linkedin|aware|icp|us|en",
+   "members": 310000,
+   "ad_sets": [
+    {
+     "name": "linkedin|aware|icp|us|en|single_image",
+     "daily_budget": 10
+    },
+    {
+     "name": "linkedin|aware|icp|us|en|video",
+     "daily_budget": 10
+    }
+   ]
+  },
+  {
+   "name": "linkedin|engaged|all|us|en",
+   "members": 62000,
+   "ad_sets": [
+    {
+     "name": "linkedin|engaged|all|us|en|document",
+     "daily_budget": 10
+    },
+    {
+     "name": "linkedin|engaged|all|us|en|single_image",
+     "daily_budget": 10
+    }
+   ]
+  }
+ ]
+}

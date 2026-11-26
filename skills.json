@@ -173,6 +173,120 @@
       "zip": "dist/linkedin-ads-manager.zip"
     },
     {
+      "name": "linkedin-ad-copy",
+      "role": "linkedin-ads-manager",
+      "stage": "set-up",
+      "cadence": "At setup, then when creative fatigues",
+      "description": "Ads for every LinkedIn format, checked against LinkedIn's limits and the UTM standard before they're built.",
+      "needs": [
+        "The offer, the audience (target accounts, ICP or engaged), the landing page, and any current ads"
+      ],
+      "path": "skills/linkedin-ad-copy",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-ad-copy",
+      "zip": "dist/linkedin-ad-copy.zip"
+    },
+    {
+      "name": "linkedin-build",
+      "role": "linkedin-ads-manager",
+      "stage": "set-up",
+      "cadence": "Once at setup, then per new campaign",
+      "description": "The 3-campaign structure: Check, then Build paused, then read back from LinkedIn.",
+      "needs": [
+        "LinkedIn connected, target accounts, creative and a landing page"
+      ],
+      "path": "skills/linkedin-build",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-build",
+      "zip": "dist/linkedin-build.zip"
+    },
+    {
+      "name": "linkedin-plan",
+      "role": "linkedin-ads-manager",
+      "stage": "set-up",
+      "cadence": "Once at setup, then quarterly",
+      "description": "Budget per campaign, the month it buys, and whether each audience is big enough to spend it.",
+      "needs": [
+        "Each campaign's audience size and ad sets with daily budgets (paid_linkedin_report gives sizes)",
+        "optional CPM and CTR"
+      ],
+      "path": "skills/linkedin-plan",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-plan",
+      "zip": "dist/linkedin-plan.zip"
+    },
+    {
+      "name": "linkedin-target-accounts",
+      "role": "linkedin-ads-manager",
+      "stage": "set-up",
+      "cadence": "Once at setup, then monthly",
+      "description": "Your target companies cleaned, matched on LinkedIn by name, and every miss or loose match flagged.",
+      "needs": [
+        "Target company names (Clay, G2, Account Hub, HubSpot or the CRM)"
+      ],
+      "path": "skills/linkedin-target-accounts",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-target-accounts",
+      "zip": "dist/linkedin-target-accounts.zip"
+    },
+    {
+      "name": "linkedin-tracking",
+      "role": "linkedin-ads-manager",
+      "stage": "set-up",
+      "cadence": "Once at setup, then after any site change",
+      "description": "Insight Tag, conversions and UTMs checked before any money is spent on LinkedIn.",
+      "needs": [
+        "The Insight Tag partner ID, the conversions set up, and the live landing-page URLs"
+      ],
+      "path": "skills/linkedin-tracking",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-tracking",
+      "zip": "dist/linkedin-tracking.zip"
+    },
+    {
+      "name": "linkedin-test",
+      "role": "linkedin-ads-manager",
+      "stage": "run",
+      "cadence": "Once per quarter",
+      "description": "A repeatable account-level holdout, then pipeline in both groups: does LinkedIn add pipeline?",
+      "needs": [
+        "The target-account list (100+ companies for a readable result)",
+        "CRM opportunities and pipeline per account after the test"
+      ],
+      "path": "skills/linkedin-test",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-test",
+      "zip": "dist/linkedin-test.zip"
+    },
+    {
+      "name": "linkedin-weekly",
+      "role": "linkedin-ads-manager",
+      "stage": "run",
+      "cadence": "Weekly",
+      "description": "Each week: which LinkedIn ad sets to refresh, lower, cut or scale, judged the way each campaign should be.",
+      "needs": [
+        "Weekly performance per ad set (2+ full weeks) and each campaign's audience size"
+      ],
+      "path": "skills/linkedin-weekly",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-weekly",
+      "zip": "dist/linkedin-weekly.zip"
+    },
+    {
+      "name": "linkedin-measure",
+      "role": "linkedin-ads-manager",
+      "stage": "review",
+      "cadence": "Monthly",
+      "description": "Pipeline at accounts LinkedIn reached vs ones it didn't: what LinkedIn is worth, monthly.",
+      "needs": [
+        "Per account over 90 days: LinkedIn impressions (company report) and CRM opportunities and pipeline"
+      ],
+      "path": "skills/linkedin-measure",
+      "has_scripts": true,
+      "install": "npx skills add redavio/skills --skill linkedin-measure",
+      "zip": "dist/linkedin-measure.zip"
+    },
+    {
       "name": "paid-display-manager",
       "role": "paid-display-manager",
       "stage": "role",

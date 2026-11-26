@@ -39,6 +39,13 @@ Commands (one per job; see each skill's SKILL.md for when to use which):
   chatgpt-weekly  ad groups through the volume gate vs the account, plus every ad's copy checked
   chatgpt-bulk    the bulk mutation job (paused, validate_only) for a reviewed build
   chatgpt-compare ChatGPT next to other channels on CPA and pipeline, with attribution warnings
+  linkedin-plan      LinkedIn month per campaign: impressions, clicks, frequency, audience and budget checks
+  linkedin-accounts  target-account names cleaned (suffixes, duplicates); --matches flags loose LinkedIn matches
+  linkedin-ad        LinkedIn ads against LinkedIn's limits, CTAs and the UTM standard
+  linkedin-tracking  Insight Tag, conversions and landing-page UTMs checked
+  linkedin-weekly    ad sets: cost to reach, frequency, creative fatigue; engaged campaign through the volume gate
+  linkedin-holdout   a repeatable account-level holdout split for a LinkedIn lift test
+  linkedin-measure   pipeline at accounts LinkedIn reached vs not, with significance
 """
 from __future__ import annotations
 
@@ -48,7 +55,7 @@ import json
 import sys
 from datetime import date, datetime
 
-from . import alerts, chatgpt, audit, budget, display, expansion, experiments, fencing, gates, limits, naming, parity
+from . import alerts, chatgpt, audit, linkedin, budget, display, expansion, experiments, fencing, gates, limits, naming, parity
 from . import plan, prune_promote, report, safety, targets
 from .diagnosis import deepdiver
 from .schema import CrmRecord, FactRow
@@ -400,6 +407,53 @@ def c_chatgpt_compare(a):
     _out(chatgpt.compare(_json(a.input)))
 
 
+def _list(path_or_text):
+    """JSON list, or a CSV/text file (first column, header skipped when it says company/account/name)."""
+    s = str(path_or_text)
+    if s.lstrip().startswith("["):
+        return json.loads(s)
+    if s.endswith(".json"):
+        return _json(s)
+    with open(s, encoding="utf-8-sig") as f:
+        lines = [l.split(",")[0].strip().strip('"') for l in f if l.strip()]
+    return lines[1:] if lines and lines[0].lower() in ("company", "company_name", "account", "name") else lines
+
+
+def c_linkedin_plan(a):
+    d = _json(a.input)
+    _out(linkedin.plan(d.get("campaigns", d) if isinstance(d, dict) else d, cpm=a.cpm, ctr=a.ctr))
+
+
+def c_linkedin_accounts(a):
+    _out(linkedin.check_matches(_json(a.matches)) if a.matches else linkedin.clean_accounts(_list(a.input)))
+
+
+def c_linkedin_ad(a):
+    data = _json(a.input) if a.input.endswith(".json") or a.input.lstrip().startswith(("[", "{")) else _rows(a.input)
+    _out([linkedin.check_ad(x) for x in (data if isinstance(data, list) else [data])])
+
+
+def c_linkedin_tracking(a):
+    _out(linkedin.check_tracking(_json(a.input)))
+
+
+def c_linkedin_weekly(a):
+    if a.input.endswith(".csv"):
+        rows, aud = _rows(a.input), (_json(a.audiences) if a.audiences else None)
+    else:
+        d = _json(a.input)
+        rows, aud = (d.get("rows", []), d.get("audiences")) if isinstance(d, dict) else (d, None)
+    _out(linkedin.weekly(rows, audiences=aud, target_cpa=a.target_cpa))
+
+
+def c_linkedin_holdout(a):
+    _out(linkedin.holdout_split(_list(a.input), a.holdout_share, a.salt))
+
+
+def c_linkedin_measure(a):
+    _out(linkedin.measure(_rows(a.input) if a.input.endswith(".csv") else _json(a.input)))
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="perfos", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
@@ -545,6 +599,17 @@ def main(argv=None):
     p.add_argument("--goal-cvr", type=float); p.set_defaults(f=c_chatgpt_weekly)
     p = sp.add_parser("chatgpt-bulk"); p.add_argument("--input", required=True, help="JSON build: campaign, ad_groups (see chatgpt-build skill)"); p.set_defaults(f=c_chatgpt_bulk)
     p = sp.add_parser("chatgpt-compare"); p.add_argument("--input", required=True, help="JSON [{channel, spend, conversions, pipeline, click_window_days, view_window_days}]"); p.set_defaults(f=c_chatgpt_compare)
+    p = sp.add_parser("linkedin-plan"); p.add_argument("--input", required=True, help="JSON [{name, members, ad_sets: [{name, daily_budget}]}]")
+    p.add_argument("--cpm", type=float, default=linkedin.DEFAULT_CPM); p.add_argument("--ctr", type=float, default=linkedin.DEFAULT_CTR); p.set_defaults(f=c_linkedin_plan)
+    p = sp.add_parser("linkedin-accounts"); p.add_argument("--input", help="company names: CSV, text or JSON list")
+    p.add_argument("--matches", help="JSON [{company_name, matched_name}] from paid_linkedin_plan"); p.set_defaults(f=c_linkedin_accounts)
+    p = sp.add_parser("linkedin-ad"); p.add_argument("--input", required=True, help="CSV or JSON: format, intro, headline, cta, landing_url, campaign"); p.set_defaults(f=c_linkedin_ad)
+    p = sp.add_parser("linkedin-tracking"); p.add_argument("--input", required=True, help="JSON {insight_tag, conversions, landing_urls}"); p.set_defaults(f=c_linkedin_tracking)
+    p = sp.add_parser("linkedin-weekly"); p.add_argument("--input", required=True, help="paid_linkedin_report JSON, or CSV: week, campaign, ad_set, format, impressions, clicks, spend, conversions")
+    p.add_argument("--audiences", help="JSON [{campaign, members}] (with a CSV)"); p.add_argument("--target-cpa", type=float); p.set_defaults(f=c_linkedin_weekly)
+    p = sp.add_parser("linkedin-holdout"); p.add_argument("--input", required=True, help="target-account names: CSV, text or JSON list")
+    p.add_argument("--holdout-share", type=float, default=0.5); p.add_argument("--salt", default="linkedin"); p.set_defaults(f=c_linkedin_holdout)
+    p = sp.add_parser("linkedin-measure"); p.add_argument("--input", required=True, help="CSV or JSON: account, impressions, opportunities, pipeline"); p.set_defaults(f=c_linkedin_measure)
 
     a = ap.parse_args(argv)
     a.f(a)

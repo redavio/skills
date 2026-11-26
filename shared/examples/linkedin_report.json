@@ -1,0 +1,498 @@
+{
+ "rows": [
+  {
+   "week": "2026-09-28",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-05",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-12",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-19",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-26",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-02",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-09",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-16",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|single_image",
+   "format": "single_image",
+   "impressions": 2100,
+   "clicks": 12,
+   "spend": 147.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-09-28",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-05",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-12",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-19",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-26",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-02",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-09",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-16",
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "ad_set": "linkedin|aware|target_accounts|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 140.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-09-28",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-05",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-12",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-19",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-26",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-02",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-09",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-16",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1900,
+   "clicks": 11,
+   "spend": 68.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-09-28",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 14,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-05",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 13,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-12",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 12,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-19",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 10,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-26",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 9,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-02",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 8,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-09",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 7,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-16",
+   "campaign": "linkedin|aware|icp|us|en",
+   "ad_set": "linkedin|aware|icp|us|en|video",
+   "format": "video",
+   "impressions": 2000,
+   "clicks": 6,
+   "spend": 72.0,
+   "conversions": 0
+  },
+  {
+   "week": "2026-09-28",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-05",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-12",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-19",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-10-26",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-02",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-09",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-11-16",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|document",
+   "format": "document",
+   "impressions": 1400,
+   "clicks": 17,
+   "spend": 50.4,
+   "conversions": 0
+  },
+  {
+   "week": "2026-09-28",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-10-05",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-10-12",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-10-19",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-10-26",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-11-02",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-11-09",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  },
+  {
+   "week": "2026-11-16",
+   "campaign": "linkedin|engaged|all|us|en",
+   "ad_set": "linkedin|engaged|all|us|en|single_image",
+   "format": "single_image",
+   "impressions": 1500,
+   "clicks": 16,
+   "spend": 54.0,
+   "conversions": 1
+  }
+ ],
+ "audiences": [
+  {
+   "campaign": "linkedin|aware|target_accounts|us|en",
+   "members": 4200
+  },
+  {
+   "campaign": "linkedin|aware|icp|us|en",
+   "members": 310000
+  },
+  {
+   "campaign": "linkedin|engaged|all|us|en",
+   "members": 62000
+  }
+ ]
+}

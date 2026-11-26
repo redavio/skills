@@ -1,0 +1,39 @@
+[
+ {
+  "name": "Payroll in one place",
+  "format": "single_image",
+  "intro": "Close payroll in a day, not a week. See how 40-person finance teams do it.",
+  "headline": "Payroll that closes itself",
+  "cta": "LEARN_MORE",
+  "landing_url": "https://example.com/signup?utm_source=linkedin&utm_medium=paid_social&utm_campaign=linkedin-aware-icp-us-en&utm_content=single_image",
+  "campaign": "linkedin|aware|icp|us|en"
+ },
+ {
+  "name": "Demo video",
+  "format": "video",
+  "intro": "Two minutes: how Brightline cut month-end payroll from 5 days to 1.",
+  "headline": "Watch the 2-minute tour",
+  "cta": "REQUEST_DEMO",
+  "landing_url": "https://example.com/signup?utm_source=linkedin&utm_medium=paid_social&utm_campaign=linkedin-aware-icp-us-en&utm_content=video",
+  "campaign": "linkedin|aware|icp|us|en",
+  "video_seconds": 118
+ },
+ {
+  "name": "Guide",
+  "format": "document",
+  "intro": "The month-end payroll checklist we give every new customer, free to read here.",
+  "cta": "DOWNLOAD",
+  "landing_url": "https://example.com/guide?utm_source=linkedin&utm_medium=cpc",
+  "campaign": "linkedin|engaged|all|us|en",
+  "document_pages": 3
+ },
+ {
+  "name": "Too long",
+  "format": "single_image",
+  "intro": "Payroll software for growing teams. Payroll software for growing teams. Payroll software for growing teams. Payroll software for growing teams. Payroll software for growing teams. Payroll software for growing teams. ",
+  "headline": "The payroll platform that finance teams at growing software companies actually like using",
+  "cta": "CLICK_HERE",
+  "landing_url": "https://example.com/signup?utm_source=linkedin&utm_medium=paid_social&utm_campaign=linkedin-engaged-all-us-en&utm_content=single_image",
+  "campaign": "linkedin|engaged|all|us|en"
+ }
+]
