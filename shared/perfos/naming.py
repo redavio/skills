@@ -8,8 +8,8 @@ from __future__ import annotations
 import re
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-CHANNELS = ("search", "pmax", "demandgen", "youtube", "audience", "chatgpt")
-SEGMENTS = ("brand", "nonbrand", "competitor", "prospecting", "retargeting")
+CHANNELS = ("search", "pmax", "demandgen", "youtube", "audience", "chatgpt", "linkedin")
+SEGMENTS = ("brand", "nonbrand", "competitor", "prospecting", "retargeting", "aware", "engaged")
 STANDARD = re.compile(rf"^({'|'.join(CHANNELS)})\|({'|'.join(SEGMENTS)})\|[a-z0-9_]+\|[a-z0-9_]+\|[a-z]{{2,3}}$")
 LEGACY = {
     "search | brand": "search|brand|core|us|en",

@@ -11,15 +11,15 @@ and never inside a value.
 
 | Slot | Values |
 |---|---|
-| channel | `search`, `pmax`, `demandgen`, `youtube`, `audience` (Microsoft Audience ads), `chatgpt` |
-| segment | demand capture: `brand`, `nonbrand`, `competitor`; demand creation: `prospecting`, `retargeting` |
+| channel | `search`, `pmax`, `demandgen`, `youtube`, `audience` (Microsoft Audience ads), `chatgpt`, `linkedin` |
+| segment | demand capture: `brand`, `nonbrand`, `competitor`; demand creation: `prospecting`, `retargeting`; LinkedIn: `aware`, `engaged` |
 | theme | `core` (one campaign, themes as ad groups). A separate theme campaign (`agency_crm`) only when budget, target, geo or goal differ. AI Max copy: add `_aimax` (`core_aimax`) |
 | geo | country code (`us`) or a location slug |
 | language | first language code (`en`) |
 
 Examples: `search|brand|core|us|en`, `search|nonbrand|core_aimax|us|en`, `pmax|nonbrand|core|us|en`,
 `demandgen|retargeting|core|us|en`, `youtube|prospecting|core|us|en`, `audience|prospecting|core|us|en`,
-`chatgpt|nonbrand|core|us|en`.
+`chatgpt|nonbrand|core|us|en`, `linkedin|aware|target_accounts|us|en` (LinkedIn ad sets add the format: `...|video`).
 
 Other objects:
 - Bid portfolios: `portfolio|<segment>`, plus `|aimax` for the AI Max test copy (`portfolio|nonbrand|aimax`).
@@ -36,10 +36,10 @@ map to the standard with `naming.standard_name()`; anything it can't map is left
 
 | Parameter | Value |
 |---|---|
-| utm_source | `google`, `bing` (Microsoft Advertising), `chatgpt` |
-| utm_medium | `cpc` (search, PMax, ChatGPT), `display` (Demand Gen, Microsoft Audience), `video` (YouTube) |
+| utm_source | `google`, `bing` (Microsoft Advertising), `chatgpt`, `linkedin` |
+| utm_medium | `cpc` (search, PMax, ChatGPT), `display` (Demand Gen, Microsoft Audience), `video` (YouTube), `paid_social` (LinkedIn) |
 | utm_campaign | the campaign name with `|` replaced by `-` (`search-nonbrand-core-us-en`) |
-| utm_content | the ad group ID (Google `{adgroupid}`, Microsoft `{AdGroupId}`); ChatGPT: the ad group slug |
+| utm_content | the ad group ID (Google `{adgroupid}`, Microsoft `{AdGroupId}`); ChatGPT: the ad group slug; LinkedIn: the ad set format |
 | utm_term | the keyword (`{keyword}` / `{keyword}`), search only |
 | campaignid | the campaign ID (`{campaignid}` / `{CampaignId}`): what reports join on |
 

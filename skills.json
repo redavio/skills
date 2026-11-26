@@ -158,6 +158,20 @@
       "zip": "dist/chatgpt-measure.zip"
     },
     {
+      "name": "linkedin-ads-manager",
+      "role": "linkedin-ads-manager",
+      "stage": "role",
+      "cadence": "Once at setup, then per new campaign",
+      "description": "The role: the standard 3-campaign LinkedIn structure, built paused and read back, judged on pipeline at accounts.",
+      "needs": [
+        "The ICP (industries, company sizes, functions, seniority), a target-account list, the landing page, creative"
+      ],
+      "path": "skills/linkedin-ads-manager",
+      "has_scripts": false,
+      "install": "npx skills add redavio/skills --skill linkedin-ads-manager",
+      "zip": "dist/linkedin-ads-manager.zip"
+    },
+    {
       "name": "paid-display-manager",
       "role": "paid-display-manager",
       "stage": "role",
